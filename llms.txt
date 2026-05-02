@@ -1,0 +1,31 @@
+# Nelson Inno
+
+> Salvadoran entrepreneur, Founder & CEO of WeSpark, author of Unstable Innovation, and TEDx speaker. Builds AI-powered education systems for large enterprises, governments, and universities.
+
+## About
+Nelson Inno is a Salvadoran entrepreneur based in San Salvador. He is the Founder and CEO of WeSpark, an innovation agency that designs AI-powered learning systems for Fortune 500 companies, governments, and universities. He co-designed Bitcoin Diploma 2.0 with El Salvador's National Bitcoin Office (ONBTC) — a curriculum the Ministry of Education plans to deliver to up to 500,000 students. His TEDx talk "Are Schools Prepared for the Future?" was delivered at TEDxVaduz in 2021.
+
+## Work
+- WeSpark (2019–present): AI product design, learning design, Bitcoin education — wespark.io
+- Bitcoin Diploma 2.0 (2025–2026): Co-designed with ONBTC/Stacy Herbert; official national Bitcoin curriculum of El Salvador
+- Gloria Kriete Foundation (2020–present): Multi-year educational partnership, Programa Oportunidades
+- ADDN Advisor (2024–present): Ad-honorem Technology & Innovation Advisor to El Salvador's Agency for National Development and Design
+
+## Books
+- Unstable Innovation (January 2025) — unstableinnovation.com
+- Diplomado en Bitcoin — Curso Oficial (April 2026, with MINED and ONBTC)
+- Thinking in Images (forthcoming 2026)
+
+## Media
+- Forbes Centroamérica, ARD/ZDF, Cointelegraph en Español, Diario El Salvador, El Salvador in English
+- TEDxVaduz 2021: "Are Schools Prepared for the Future?"
+
+## Links
+- [Website (EN)](https://nelsoninno.com)
+- [Website (ES)](https://nelsoninno.com/es/)
+- [LinkedIn](https://www.linkedin.com/in/nelsoninno/)
+- [WeSpark](https://wespark.io)
+- [Unstable Innovation](https://unstableinnovation.com)
+- [X / Twitter](https://twitter.com/nelsoninno)
+- [YouTube](https://www.youtube.com/nelsoninno)
+- [Full content](https://nelsoninno.com/llms-full.txt)
