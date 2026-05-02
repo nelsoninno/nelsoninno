@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nelson Inno — Founder & CEO, WeSpark</title>
+<meta name="description" content="Nelson Inno — Founder and CEO of WeSpark, author of Unstable Innovation, co-designer of Bitcoin Diploma 2.0 with El Salvador's National Bitcoin Office.">
+
+<meta property="og:title" content="Nelson Inno — Founder & CEO, WeSpark">
+<meta property="og:description" content="He builds AI-powered education systems for the institutions that shape how nations learn.">
+<meta property="og:type" content="profile">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Roboto:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Nelson Inno",
+  "jobTitle": "Founder & CEO",
+  "worksFor": { "@type": "Organization", "name": "WeSpark", "url": "https://wespark.io" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Hochschule Furtwangen University" },
+  "nationality": "Salvadoran",
+  "url": "https://nelsoninno.com",
+  "sameAs": [
+    "https://www.linkedin.com/in/nelsoninno/",
+    "https://twitter.com/nelsoninno",
+    "https://www.youtube.com/nelsoninno",
+    "https://www.instagram.com/nelsoninno",
+    "https://primal.net/nelson"
+  ],
+  "knowsAbout": ["Artificial Intelligence", "Education Design", "Bitcoin Education", "Innovation Methodology"],
+  "author": { "@type": "Book", "name": "Unstable Innovation", "url": "https://unstableinnovation.com" }
+}
+</script>
+
+<style>
+  :root {
+    /* Color system — dark, modern, WeSpark-aligned */
+    --bg: #0E0D0B;          /* warm near-black, lifted off pure #000 */
+    --bg-2: #161412;        /* slightly lifted card surface */
+    --bg-3: #1F1C18;        /* hover state */
+    --ink: #F5F1EA;         /* warm off-white text */
+    --ink-soft: #C7C0B5;    /* secondary text */
+    --muted: #6E6860;       /* muted metadata */
+    --muted-2: #4A4540;     /* very muted, dividers */
+    --rule: #2A2620;        /* subtle separator */
+    --yellow: #FCD307;      /* WeSpark Yellow Spark — the hero color */
+    --yellow-deep: #FFBC00; /* WeSpark Golden Goal — secondary accent */
+    --sand: #E7DCB9;        /* WeSpark Sandbox Clay — used very sparingly */
+
+    --display: 'Bricolage Grotesque', system-ui, sans-serif;
+    --body: 'Roboto', -apple-system, sans-serif;
+    --mono: 'JetBrains Mono', monospace;
+
+    --max: 1320px;
+    --pad-x: clamp(1.5rem, 5vw, 4.5rem);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  a { color: inherit; text-decoration: none; }
+  ::selection { background: var(--yellow); color: var(--bg); }
+
+  /* Subtle ambient glow at top */
+  body::before {
+    content: '';
+    position: fixed;
+    top: -200px; left: 50%; transform: translateX(-50%);
+    width: 1200px; height: 600px;
+    background: radial-gradient(ellipse, rgba(252, 211, 7, 0.06), transparent 60%);
+    pointer-events: none; z-index: 1;
+  }
+
+  main, header, section, footer { position: relative; z-index: 2; }
+
+  /* ============== TOP BAR ============== */
+  .topbar {
+    position: fixed; top: 0; left: 0; right: 0;
+    padding: 1.25rem var(--pad-x);
+    display: flex; justify-content: space-between; align-items: center;
+    z-index: 100;
+    backdrop-filter: blur(16px) saturate(1.2);
+    background: rgba(14, 13, 11, 0.7);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s, padding 0.3s, background 0.3s;
+  }
+  .topbar.scrolled {
+    border-bottom-color: var(--rule);
+    padding: 0.85rem var(--pad-x);
+    background: rgba(14, 13, 11, 0.92);
+  }
+  .topbar .mark {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: -0.02em;
+    display: flex; align-items: center; gap: 0.5rem;
+  }
+  .topbar .mark .dot {
+    width: 8px; height: 8px;
+    background: var(--yellow);
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(252, 211, 7, 0.6);
+  }
+  .topbar .nav { display: flex; gap: 2rem; font-size: 0.85rem; color: var(--ink-soft); font-weight: 400; }
+  .topbar .nav a { transition: color 0.2s; }
+  .topbar .nav a:hover { color: var(--yellow); }
+  .topbar .lang {
+    font-family: var(--mono); font-size: 0.7rem;
+    color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em;
+  }
+  .topbar .lang span.active { color: var(--ink); }
+  .topbar .lang a:hover { color: var(--yellow); }
+  @media (max-width: 820px) { .topbar .nav { display: none; } }
+
+  /* ============== HERO ============== */
+  .hero {
+    min-height: 100vh;
+    padding: 8rem var(--pad-x) 4rem;
+    max-width: var(--max);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+  }
+  @media (max-width: 920px) {
+    .hero { grid-template-columns: 1fr; gap: 3rem; padding-top: 6.5rem; }
+  }
+
+  .hero-eyebrow {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--yellow);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    display: flex; align-items: center; gap: 0.75rem;
+    margin-bottom: 2rem;
+  }
+  .hero-eyebrow::before {
+    content: ''; width: 2.5rem; height: 1px;
+    background: var(--yellow);
+  }
+
+  .hero h1 {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: clamp(3.5rem, 9vw, 7.5rem);
+    line-height: 0.92;
+    letter-spacing: -0.04em;
+    margin-bottom: 1.75rem;
+    font-variation-settings: "opsz" 96;
+  }
+  .hero h1 .accent {
+    color: var(--yellow);
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .hero .role {
+    font-family: var(--body);
+    font-size: 1rem;
+    color: var(--ink-soft);
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+    display: flex; align-items: center; flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  .hero .role .sep { color: var(--yellow); font-weight: 700; }
+  .hero .role strong { color: var(--ink); font-weight: 500; }
+
+  .hero .pitch {
+    font-family: var(--display);
+    font-size: clamp(1.35rem, 2.4vw, 1.75rem);
+    line-height: 1.3;
+    font-weight: 400;
+    color: var(--ink);
+    max-width: 38ch;
+    margin-bottom: 2.5rem;
+    letter-spacing: -0.015em;
+  }
+  .hero .pitch em {
+    color: var(--yellow);
+    font-style: normal;
+    font-weight: 600;
+    background: linear-gradient(180deg, transparent 65%, rgba(252, 211, 7, 0.18) 65%);
+    padding: 0 0.15em;
+  }
+
+  .hero .anchors {
+    display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem;
+    font-family: var(--mono); font-size: 0.7rem;
+    color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.1em;
+    margin-bottom: 2.5rem;
+  }
+  .hero .anchors span {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+  }
+  .hero .anchors span::before {
+    content: ''; width: 5px; height: 5px;
+    background: var(--yellow);
+    transform: rotate(45deg);
+  }
+
+  .hero .cta-row {
+    display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;
+  }
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 0.7rem;
+    background: var(--yellow); color: var(--bg);
+    padding: 1.1rem 1.8rem;
+    font-family: var(--body); font-size: 0.85rem; font-weight: 500;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    border-radius: 999px;
+    transition: transform 0.25s, box-shadow 0.25s;
+    box-shadow: 0 0 0 0 rgba(252, 211, 7, 0);
+  }
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(252, 211, 7, 0.25);
+  }
+  .btn-primary svg { width: 14px; height: 14px; }
+
+  .hero .links {
+    display: flex; gap: 1.5rem; font-size: 0.88rem; color: var(--ink-soft);
+  }
+  .hero .links a {
+    border-bottom: 1px solid var(--muted);
+    padding-bottom: 2px; transition: border-color 0.2s, color 0.2s;
+  }
+  .hero .links a:hover { color: var(--yellow); border-color: var(--yellow); }
+
+  /* Hero portrait — bold treatment with sketch overlay */
+  .hero-portrait {
+    position: relative;
+    aspect-ratio: 4/5;
+    overflow: hidden;
+    background: var(--bg-2);
+    border-radius: 4px;
+  }
+  .hero-portrait img.main {
+    width: 100%; height: 100%; object-fit: cover;
+    filter: contrast(1.05) saturate(1.05);
+  }
+  .hero-portrait .frame-tag {
+    position: absolute; top: 1rem; left: 1rem;
+    font-family: var(--mono); font-size: 0.62rem;
+    color: var(--bg); text-transform: uppercase; letter-spacing: 0.15em;
+    background: var(--yellow); padding: 0.4rem 0.7rem;
+    font-weight: 500;
+  }
+  .hero-portrait .frame-caption {
+    position: absolute; bottom: 1rem; left: 1rem; right: 1rem;
+    font-family: var(--mono); font-size: 0.65rem;
+    color: var(--ink); text-transform: uppercase; letter-spacing: 0.12em;
+    background: rgba(14, 13, 11, 0.8);
+    padding: 0.6rem 0.9rem;
+    backdrop-filter: blur(8px);
+  }
+  .hero-portrait .sketch-overlay {
+    position: absolute; bottom: -20px; right: -20px;
+    width: 180px; height: auto;
+    transform: rotate(-8deg);
+    z-index: 3;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.4));
+  }
+
+  /* Floating decorative sketches in hero — subtle, drifting */
+  .hero-sketch-1 {
+    position: absolute;
+    top: 12%; right: -3%;
+    width: 80px; opacity: 0.5;
+    transform: rotate(15deg);
+    pointer-events: none;
+  }
+  .hero-sketch-2 {
+    position: absolute;
+    bottom: 10%; left: -2%;
+    width: 60px; opacity: 0.35;
+    transform: rotate(-20deg);
+    pointer-events: none;
+  }
+  @media (max-width: 920px) {
+    .hero-sketch-1, .hero-sketch-2 { display: none; }
+  }
+
+  /* ============== SECTION FRAMEWORK ============== */
+  .section {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 7rem var(--pad-x);
+    position: relative;
+  }
+  .section-divider {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 var(--pad-x);
+    display: flex; align-items: center; gap: 1rem;
+  }
+  .section-divider hr {
+    flex: 1; border: none; height: 1px; background: var(--rule);
+  }
+  .section-divider .marker {
+    width: 8px; height: 8px;
+    background: var(--yellow);
+    transform: rotate(45deg);
+    flex-shrink: 0;
+  }
+
+  .eyebrow {
+    font-family: var(--mono); font-size: 0.7rem;
+    color: var(--yellow); text-transform: uppercase; letter-spacing: 0.2em;
+    margin-bottom: 1.5rem;
+    display: flex; align-items: center; gap: 0.75rem;
+  }
+  .eyebrow::before {
+    content: ''; display: inline-block; width: 1.5rem; height: 1px;
+    background: var(--yellow);
+  }
+  .eyebrow .num {
+    color: var(--muted); margin-left: auto;
+    padding-left: 0.5rem;
+  }
+
+  h2 {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+    line-height: 0.98;
+    letter-spacing: -0.035em;
+    margin-bottom: 2.5rem;
+    font-variation-settings: "opsz" 96;
+    max-width: 22ch;
+  }
+  h2 .accent {
+    color: var(--yellow);
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  h3 {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.75rem;
+  }
+
+  /* ============== HIGHLIGHTS VIDEO ============== */
+  .video-block {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem var(--pad-x);
+    position: relative;
+  }
+  .video-block .helmet-float {
+    position: absolute;
+    top: -10px; left: 5%;
+    width: 100px;
+    transform: rotate(-12deg);
+    z-index: 3;
+    filter: drop-shadow(0 8px 20px rgba(0,0,0,0.4));
+  }
+  .video-frame {
+    position: relative;
+    aspect-ratio: 16/9;
+    background: #000;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.6),
+                0 0 0 1px var(--rule);
+  }
+  .video-frame iframe { width: 100%; height: 100%; border: 0; }
+  .video-frame .placeholder {
+    position: absolute; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    background: linear-gradient(135deg, #1F1C18 0%, #0E0D0B 100%);
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .video-frame .placeholder .tedx-thumb {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    opacity: 0.55;
+    transition: opacity 0.3s;
+  }
+  .video-frame .placeholder:hover .tedx-thumb { opacity: 0.45; }
+  .video-frame .placeholder::before {
+    content: ''; position: absolute; inset: 0;
+    background:
+      radial-gradient(circle at 30% 30%, rgba(252, 211, 7, 0.06), transparent 50%),
+      radial-gradient(circle at 70% 70%, rgba(0, 0, 0, 0.4), transparent 60%);
+    z-index: 1;
+  }
+  .play-btn { position: relative; z-index: 3; display: flex; flex-direction: column; align-items: center; gap: 1.25rem; }
+  .play-icon {
+    width: 88px; height: 88px; border-radius: 50%;
+    background: var(--yellow);
+    display: flex; align-items: center; justify-content: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 0 0 rgba(252, 211, 7, 0.4);
+    animation: pulse 2.5s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(252, 211, 7, 0.4); }
+    50% { box-shadow: 0 0 0 16px rgba(252, 211, 7, 0); }
+  }
+  .play-btn:hover .play-icon { transform: scale(1.1); animation: none; }
+  .play-icon svg { width: 30px; height: 30px; fill: var(--bg); margin-left: 4px; }
+  .play-btn .label {
+    font-family: var(--mono); font-size: 0.72rem;
+    text-transform: uppercase; letter-spacing: 0.2em;
+    color: var(--ink-soft);
+  }
+  .video-caption {
+    font-family: var(--mono); font-size: 0.7rem;
+    color: var(--muted); text-transform: uppercase; letter-spacing: 0.15em;
+    text-align: center; margin-top: 1.5rem;
+  }
+  .video-caption span { color: var(--yellow); }
+
+  /* ============== ABOUT ============== */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 5rem;
+    align-items: start;
+    position: relative;
+  }
+  @media (max-width: 920px) { .about-grid { grid-template-columns: 1fr; gap: 2rem; } }
+
+  .about-body {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--ink-soft);
+    max-width: 56ch;
+  }
+  .about-body em {
+    color: var(--yellow);
+    font-style: normal;
+    font-weight: 500;
+    background: linear-gradient(180deg, transparent 70%, rgba(252, 211, 7, 0.15) 70%);
+    padding: 0 0.1em;
+  }
+  .about-body p { margin-bottom: 1.25rem; }
+  .about-body p:last-child { margin-bottom: 0; }
+
+  .about-sketch {
+    position: absolute;
+    top: 0; right: 0;
+    width: 110px; opacity: 0.7;
+    transform: rotate(8deg);
+  }
+  @media (max-width: 920px) { .about-sketch { display: none; } }
+
+  /* PULL QUOTE — feature treatment */
+  .pull-quote-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 5rem var(--pad-x);
+    text-align: center;
+    position: relative;
+  }
+  .pull-quote-section .sketch-bg {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px; opacity: 0.05;
+    pointer-events: none;
+  }
+  .pull-quote {
+    font-family: var(--display);
+    font-size: clamp(2rem, 4.5vw, 3.5rem);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    color: var(--ink);
+    max-width: 18ch;
+    margin: 0 auto;
+    position: relative;
+    font-variation-settings: "opsz" 96;
+  }
+  .pull-quote em {
+    color: var(--yellow);
+    font-style: italic;
+    font-weight: 300;
+  }
+  .pull-quote-attr {
+    font-family: var(--mono); font-size: 0.72rem;
+    color: var(--muted); text-transform: uppercase; letter-spacing: 0.18em;
+    margin-top: 2.5rem;
+    display: flex; align-items: center; justify-content: center; gap: 0.75rem;
+  }
+  .pull-quote-attr::before, .pull-quote-attr::after {
+    content: ''; display: inline-block; width: 2rem; height: 1px;
+    background: var(--yellow);
+  }
+
+  /* ============== METRICS ============== */
+  .metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  @media (max-width: 720px) { .metrics { grid-template-columns: repeat(2, 1fr); } }
+
+  .metric {
+    padding: 3rem 1.5rem 3rem 0;
+    border-right: 1px solid var(--rule);
+    position: relative;
+  }
+  .metric:last-child { border-right: none; }
+  .metric:nth-child(2) { padding-left: 1.5rem; }
+  .metric:nth-child(3) { padding-left: 1.5rem; }
+  .metric:nth-child(4) { padding-left: 1.5rem; }
+  @media (max-width: 720px) {
+    .metric:nth-child(2n) { border-right: none; padding-left: 1.5rem; }
+    .metric:nth-child(2n+1) { padding-left: 0; }
+    .metric:nth-child(-n+2) { border-bottom: 1px solid var(--rule); }
+  }
+
+  .metric .num {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: clamp(2.5rem, 5vw, 4.2rem);
+    line-height: 1;
+    letter-spacing: -0.04em;
+    color: var(--ink);
+    margin-bottom: 0.75rem;
+    font-variation-settings: "opsz" 96;
+  }
+  .metric .num em {
+    color: var(--yellow);
+    font-style: normal;
+    font-weight: 300;
+  }
+  .metric .label {
+    font-family: var(--body);
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+    line-height: 1.4;
+    max-width: 22ch;
+  }
+  .metric .label strong { color: var(--ink); font-weight: 500; }
+
+  .metrics-foot {
+    text-align: center;
+    margin-top: 2rem;
+    font-family: var(--mono); font-size: 0.7rem;
+    color: var(--muted); text-transform: uppercase; letter-spacing: 0.12em;
+  }
+
+  /* ============== BUILDING NOW ============== */
+  .building {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 5rem;
+    align-items: start;
+    position: relative;
+  }
+  @media (max-width: 920px) { .building { grid-template-columns: 1fr; gap: 2rem; } }
+
+  .building-body {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--ink-soft);
+    max-width: 60ch;
+  }
+  .building-body p { margin-bottom: 1.5rem; }
+  .building-body p:last-child { margin-bottom: 0; }
+  .building-body em {
+    color: var(--yellow);
+    font-style: normal;
+    font-weight: 500;
+    background: linear-gradient(180deg, transparent 70%, rgba(252, 211, 7, 0.15) 70%);
+    padding: 0 0.1em;
+  }
+
+  .building-sketch {
+    position: absolute;
+    top: -30px; right: -10px;
+    width: 130px; opacity: 0.65;
+    transform: rotate(-10deg);
+  }
+  @media (max-width: 920px) { .building-sketch { display: none; } }
+
+  /* ============== FEATURED WORK ============== */
+  .work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  @media (max-width: 920px) { .work-grid { grid-template-columns: 1fr; gap: 2rem; } }
+
+  .work-card {
+    background: var(--bg-2);
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.4s, background 0.4s;
+    display: flex; flex-direction: column;
+    border: 1px solid var(--rule);
+    position: relative;
+  }
+  .work-card:hover {
+    transform: translateY(-4px);
+    background: var(--bg-3);
+    border-color: var(--muted-2);
+  }
+  .work-card .img {
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    position: relative;
+    background: var(--bg-3);
+  }
+  .work-card .img img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 0.6s;
+    filter: contrast(1.05) saturate(0.95);
+  }
+  .work-card:hover .img img { transform: scale(1.05); }
+  .work-card .img-tag {
+    position: absolute; top: 0.85rem; left: 0.85rem;
+    background: var(--yellow); padding: 0.35rem 0.7rem;
+    font-family: var(--mono); font-size: 0.62rem;
+    text-transform: uppercase; letter-spacing: 0.12em;
+    color: var(--bg); font-weight: 500;
+  }
+  .work-card .content { padding: 1.75rem; flex: 1; display: flex; flex-direction: column; }
+  .work-card .meta {
+    font-family: var(--mono); font-size: 0.7rem;
+    color: var(--yellow); text-transform: uppercase; letter-spacing: 0.12em;
+    margin-bottom: 0.6rem;
+  }
+  .work-card h3 { color: var(--ink); margin-bottom: 1rem; }
+  .work-card .body { color: var(--ink-soft); font-size: 0.93rem; line-height: 1.6; margin-bottom: 1.25rem; flex: 1; }
+  .work-card .body em { color: var(--ink); font-style: italic; font-weight: 500; }
+  .work-card .coverage {
+    font-family: var(--mono); font-size: 0.68rem;
+    color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em;
+    line-height: 1.5;
+    border-top: 1px solid var(--rule);
+    padding-top: 1rem;
+  }
+
+  /* ============== LOGO GRID ============== */
+  .logos-img {
+    width: 100%; display: block;
+    border-radius: 4px;
+    margin-top: 1rem;
+    border: 1px solid var(--rule);
+  }
+
+  /* ============== BOOKS ============== */
+  .books-lead {
+    display: grid;
+    grid-template-columns: 0.8fr 1.4fr;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+  }
+  @media (max-width: 920px) { .books-lead { grid-template-columns: 1fr; gap: 3rem; } }
+
+  .book-cover-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    transform: rotate(-2deg);
+    transition: transform 0.4s;
+    box-shadow: 0 30px 60px -25px rgba(252, 211, 7, 0.4),
+                0 10px 30px -15px rgba(0,0,0,0.5);
+  }
+  .book-cover-img:hover { transform: rotate(0deg) scale(1.02); }
+
+  .book-info .b-meta {
+    font-family: var(--mono); font-size: 0.7rem;
+    color: var(--yellow); text-transform: uppercase; letter-spacing: 0.15em;
+    margin-bottom: 1rem;
+  }
+  .book-info h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--ink);
+  }
+  .book-info .b-italic {
+    font-family: var(--display);
+    font-style: italic;
+    font-weight: 300;
+    color: var(--ink-soft);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  .book-info .b-body {
+    color: var(--ink-soft); line-height: 1.7; margin-bottom: 2rem;
+    max-width: 50ch;
+  }
+  .book-info .b-cta {
+    display: inline-flex; align-items: center; gap: 0.6rem;
+    background: transparent;
+    border: 1px solid var(--yellow);
+    color: var(--yellow);
+    padding: 0.85rem 1.4rem;
+    font-family: var(--body); font-size: 0.85rem; font-weight: 500;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    border-radius: 999px;
+    transition: background 0.25s, color 0.25s;
+  }
+  .book-info .b-cta:hover { background: var(--yellow); color: var(--bg); }
+  .book-info .b-cta svg { width: 14px; height: 14px; }
+
+  .books-also-label {
+    font-family: var(--mono); font-size: 0.7rem;
+    color: var(--muted); text-transform: uppercase; letter-spacing: 0.15em;
+    margin-bottom: 1.5rem;
+    padding-top: 3rem;
+    border-top: 1px solid var(--rule);
+  }
+  .books-also {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  @media (max-width: 720px) { .books-also { grid-template-columns: 1fr; } }
+  .also-card {
+    background: var(--bg-2);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .also-card img {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 1.5rem 1.5rem 0;
+  }
+  .also-card .also-inner {
+    padding: 1.5rem;
+  }
+  .also-card .also-tag {
+    font-family: var(--mono); font-size: 0.65rem;
+    color: var(--yellow); text-transform: uppercase; letter-spacing: 0.15em;
+    margin-bottom: 0.75rem;
+  }
+  .also-card h4 {
+    font-family: var(--display); font-weight: 500;
+    font-size: 1.2rem; margin-bottom: 0.5rem; line-height: 1.2;
+    color: var(--ink);
+    letter-spacing: -0.015em;
+  }
+  .also-card p { color: var(--ink-soft); font-size: 0.9rem; line-height: 1.55; }
+
+  /* ============== TEDX + MEDIA ============== */
+  .tedx-frame {
+    margin-top: 1rem;
+    margin-bottom: 1.25rem;
+  }
+  .media-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--rule);
+    margin-top: 4rem;
+  }
+  @media (max-width: 720px) { .media-grid { grid-template-columns: 1fr; } }
+
+  .media-item {
+    padding: 2rem 2rem 2rem 0;
+    border-bottom: 1px solid var(--rule);
+    display: flex; flex-direction: column; gap: 0.5rem;
+    transition: background 0.3s, padding-left 0.3s;
+    cursor: pointer;
+  }
+  .media-item:nth-child(2n) { padding-left: 2rem; border-left: 1px solid var(--rule); }
+  @media (max-width: 720px) {
+    .media-item:nth-child(2n) { padding-left: 0; border-left: none; }
+  }
+  .media-item:hover {
+    background: var(--bg-2);
+    padding-left: 1rem;
+  }
+  .media-item:nth-child(2n):hover { padding-left: 3rem; }
+
+  .media-item .source {
+    font-family: var(--mono); font-size: 0.7rem;
+    color: var(--yellow); text-transform: uppercase; letter-spacing: 0.12em;
+  }
+  .media-item .title {
+    font-family: var(--display); font-weight: 500;
+    font-size: 1.15rem; line-height: 1.3; color: var(--ink);
+    letter-spacing: -0.015em;
+  }
+  .media-item .meta-line {
+    font-family: var(--mono); font-size: 0.7rem;
+    color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em;
+    margin-top: 0.5rem;
+  }
+  .media-item:hover .title { color: var(--yellow); }
+
+  /* ============== TIMELINE ============== */
+  .timeline-wrap {
+    position: relative;
+    margin-top: 2rem;
+  }
+  .timeline-wrap::before {
+    content: ''; position: absolute;
+    left: 7rem; top: 0; bottom: 0;
+    width: 1px;
+    background: linear-gradient(180deg, var(--yellow) 0%, var(--rule) 8%, var(--rule) 92%, transparent 100%);
+  }
+  @media (max-width: 720px) { .timeline-wrap::before { left: 5rem; } }
+
+  .tl-item {
+    display: grid;
+    grid-template-columns: 7rem 1fr;
+    gap: 2.5rem;
+    padding: 1.4rem 0;
+    align-items: baseline;
+    position: relative;
+  }
+  @media (max-width: 720px) {
+    .tl-item { grid-template-columns: 5rem 1fr; gap: 1.5rem; }
+  }
+  .tl-item::before {
+    content: ''; position: absolute;
+    left: calc(7rem - 5px); top: 1.95rem;
+    width: 9px; height: 9px;
+    background: var(--yellow);
+    border: 1px solid var(--yellow);
+    border-radius: 50%;
+    transition: all 0.25s;
+    z-index: 2;
+    opacity: 0.55;
+  }
+  @media (max-width: 720px) {
+    .tl-item::before { left: calc(5rem - 5px); }
+  }
+  .tl-item:hover::before {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+  .tl-item.key::before {
+    width: 13px; height: 13px;
+    left: calc(7rem - 7px);
+    top: 1.85rem;
+    opacity: 1;
+    box-shadow: 0 0 12px rgba(252, 211, 7, 0.5);
+  }
+  @media (max-width: 720px) {
+    .tl-item.key::before { left: calc(5rem - 7px); }
+  }
+
+  .tl-year {
+    font-family: var(--mono); font-size: 0.78rem;
+    color: var(--muted); font-weight: 500;
+    letter-spacing: 0.04em;
+    text-align: right;
+    padding-top: 0.1rem;
+    padding-right: 1.1rem;
+  }
+  .tl-item.key .tl-year { color: var(--yellow); font-weight: 500; }
+
+  .tl-content .role {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--ink);
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+  }
+  .tl-item.key .tl-content .role {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  .tl-content .org {
+    font-family: var(--body); font-size: 0.88rem;
+    color: var(--ink-soft); margin-top: 0.25rem;
+  }
+  .tl-content .detail {
+    font-family: var(--body); font-size: 0.88rem;
+    color: var(--muted); margin-top: 0.5rem; line-height: 1.55;
+    max-width: 60ch;
+  }
+
+  .tl-summary {
+    margin-top: 4rem;
+    margin-left: 9.5rem;
+    padding: 2rem;
+    background: var(--bg-2);
+    border-left: 3px solid var(--yellow);
+    border-radius: 0 4px 4px 0;
+    font-size: 1.02rem; line-height: 1.7;
+    color: var(--ink-soft);
+    max-width: 65ch;
+  }
+  @media (max-width: 720px) {
+    .tl-summary { margin-left: 0; margin-top: 3rem; }
+  }
+
+  /* ============== PHILOSOPHY ============== */
+  .philosophy-block {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 5rem;
+    align-items: start;
+    position: relative;
+  }
+  @media (max-width: 920px) { .philosophy-block { grid-template-columns: 1fr; gap: 2rem; } }
+
+  .philosophy-body {
+    font-size: 1.05rem; line-height: 1.75;
+    color: var(--ink-soft);
+    max-width: 60ch;
+  }
+  .philosophy-body p { margin-bottom: 1.5rem; }
+  .philosophy-body em {
+    color: var(--yellow);
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .principles {
+    margin-top: 3rem;
+    border-top: 1px solid var(--rule);
+  }
+  .principle {
+    display: grid;
+    grid-template-columns: 50px 1fr auto;
+    gap: 2rem;
+    padding: 1.75rem 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: center;
+    transition: padding-left 0.3s, background 0.3s;
+  }
+  .principle:hover {
+    padding-left: 1rem;
+    background: var(--bg-2);
+  }
+  .principle .num {
+    font-family: var(--mono); font-size: 0.85rem;
+    color: var(--yellow); font-weight: 500;
+  }
+  .principle .text {
+    font-family: var(--display); font-weight: 500;
+    font-size: 1.4rem; line-height: 1.3; color: var(--ink);
+    letter-spacing: -0.02em;
+  }
+  .principle .arrow {
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 1rem;
+    transition: color 0.3s, transform 0.3s;
+  }
+  .principle:hover .arrow { color: var(--yellow); transform: translateX(4px); }
+
+  .philosophy-sketch {
+    position: absolute;
+    top: -50px; right: 0;
+    width: 140px; opacity: 0.7;
+    transform: rotate(8deg);
+  }
+  @media (max-width: 920px) { .philosophy-sketch { display: none; } }
+
+  /* ============== GALLERY ============== */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.85rem;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+  }
+  @media (max-width: 920px) { .gallery-grid { grid-template-columns: repeat(2, 1fr); } }
+
+  .gallery-item {
+    aspect-ratio: 1/1;
+    background: var(--bg-2);
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  .gallery-item img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 0.5s, filter 0.3s;
+    filter: grayscale(0.05);
+  }
+  .gallery-item:hover img { transform: scale(1.06); filter: grayscale(0); }
+  .gallery-item .download {
+    position: absolute; inset: 0; display: flex; align-items: flex-end;
+    padding: 1rem; opacity: 0; transition: opacity 0.25s;
+    background: linear-gradient(to top, rgba(14, 13, 11, 0.9), transparent 60%);
+  }
+  .gallery-item:hover .download { opacity: 1; }
+  .gallery-item .download span {
+    font-family: var(--mono); font-size: 0.7rem;
+    color: var(--yellow); text-transform: uppercase; letter-spacing: 0.12em;
+  }
+
+  .gallery-foot {
+    display: flex; justify-content: space-between; align-items: center;
+    padding-top: 2rem; border-top: 1px solid var(--rule);
+    flex-wrap: wrap; gap: 1.5rem;
+  }
+  .gallery-foot .note {
+    font-family: var(--body); font-size: 0.92rem; color: var(--ink-soft);
+    max-width: 42ch; line-height: 1.55;
+  }
+  .btn-secondary {
+    display: inline-flex; align-items: center; gap: 0.6rem;
+    border: 1px solid var(--ink); color: var(--ink);
+    padding: 1rem 1.7rem;
+    font-family: var(--body); font-size: 0.85rem; font-weight: 500;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    border-radius: 999px;
+    transition: all 0.25s;
+  }
+  .btn-secondary:hover { background: var(--yellow); color: var(--bg); border-color: var(--yellow); }
+
+  /* ============== CONNECT ============== */
+  .connect-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  @media (max-width: 720px) { .connect-wrap { grid-template-columns: 1fr; gap: 2.5rem; } }
+
+  .connect-text {
+    font-family: var(--display); font-weight: 400;
+    font-size: clamp(1.4rem, 2.6vw, 2rem);
+    line-height: 1.3; color: var(--ink);
+    letter-spacing: -0.025em;
+  }
+  .connect-text em {
+    color: var(--yellow);
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  .connect-channels {
+    display: flex; flex-direction: column;
+  }
+  .channel {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1.4rem 0;
+    border-bottom: 1px solid var(--rule);
+    transition: padding-left 0.3s;
+  }
+  .channel:hover { padding-left: 0.5rem; }
+  .channel .name {
+    font-family: var(--display); font-weight: 500;
+    font-size: 1.15rem; color: var(--ink);
+    letter-spacing: -0.015em;
+  }
+  .channel .platform {
+    font-family: var(--mono); font-size: 0.72rem;
+    text-transform: uppercase; letter-spacing: 0.12em;
+    color: var(--muted);
+    transition: color 0.3s;
+  }
+  .channel:hover .platform { color: var(--yellow); }
+  .channel.primary .platform { color: var(--yellow); }
+  .channel.primary .name { color: var(--yellow); }
+
+  .external-links {
+    display: flex; gap: 2rem; margin-top: 2.5rem;
+    font-family: var(--mono); font-size: 0.75rem;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--muted);
+    flex-wrap: wrap;
+  }
+  .external-links a:hover { color: var(--yellow); }
+
+  /* ============== FOOTER ============== */
+  footer {
+    padding: 4rem var(--pad-x) 3rem;
+    max-width: var(--max);
+    margin: 0 auto;
+    border-top: 1px solid var(--rule);
+    display: flex; justify-content: space-between; align-items: flex-end;
+    flex-wrap: wrap; gap: 2rem;
+    margin-top: 4rem;
+  }
+  footer .colophon {
+    font-family: var(--mono); font-size: 0.7rem;
+    color: var(--muted); text-transform: uppercase; letter-spacing: 0.12em;
+    line-height: 1.8;
+  }
+  footer .colophon strong { color: var(--ink); font-weight: 500; }
+  footer .lang-toggle {
+    font-family: var(--mono); font-size: 0.72rem;
+    text-transform: uppercase; letter-spacing: 0.12em;
+    color: var(--muted);
+  }
+  footer .lang-toggle .active { color: var(--ink); }
+  footer .lang-toggle a:hover { color: var(--yellow); }
+  footer .signature {
+    width: 100%; text-align: center;
+    font-family: var(--mono); font-size: 0.65rem;
+    color: var(--muted-2); text-transform: uppercase; letter-spacing: 0.2em;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px dashed var(--rule);
+  }
+  footer .signature .yellow-dot {
+    display: inline-block; width: 6px; height: 6px;
+    background: var(--yellow);
+    transform: rotate(45deg);
+    margin: 0 0.5rem;
+    vertical-align: middle;
+  }
+
+  /* ============== ANIMATIONS ============== */
+  .reveal {
+    opacity: 0; transform: translateY(20px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+  }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  /* mobile fine-tune */
+  @media (max-width: 480px) {
+    .hero h1 { font-size: 3rem; }
+    .section { padding: 5rem var(--pad-x); }
+  }
+</style>
+</head>
+<body>
+
+<!-- ==================== TOP BAR ==================== -->
+<header class="topbar" id="topbar">
+  <a href="#" class="mark"><span class="dot"></span> Nelson Inno</a>
+  <nav class="nav">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#books">Books</a>
+    <a href="#career">Career</a>
+    <a href="#connect">Connect</a>
+  </nav>
+  <div class="lang"><span class="active">EN</span> · <a href="#">ES</a></div>
+</header>
+
+<main>
+
+<!-- ==================== HERO ==================== -->
+<section class="hero">
+
+
+  <div>
+    <div class="hero-eyebrow">El Salvador · MMXXVI · 947740</div>
+    <h1>Nelson<br><span class="accent">Inno</span></h1>
+    <div class="role">
+      <strong>Founder &amp; CEO, WeSpark</strong>
+      <span class="sep">/</span> Author
+      <span class="sep">/</span> Speaker
+    </div>
+
+    <p class="pitch">He builds <em>AI-powered education systems</em> for the institutions that shape how people learn: large enterprises, governments, and universities.</p>
+
+    <div class="anchors">
+      <span>TEDx speaker</span>
+      <span>Author of <i>Unstable Innovation</i></span>
+      <span>Co-designer, El Salvador's National Bitcoin Diploma 2.0</span>
+    </div>
+
+    <div class="cta-row">
+      <a href="#about" class="btn-primary">
+        Read his story
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </a>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/nelsoninno/" target="_blank">LinkedIn</a>
+        <a href="https://unstableinnovation.com" target="_blank">Books</a>
+        <a href="https://wespark.io" target="_blank">WeSpark</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-portrait">
+    <img class="main" src="images/photos/Nelson%20Inno%20-%20WeSpark%20-%20Founder%20%26%20CEO.jpg" alt="Nelson Inno — Founder & CEO, WeSpark">
+    <div class="frame-tag">Inno / 2026</div>
+  </div>
+</section>
+
+<!-- ==================== HIGHLIGHTS VIDEO ==================== -->
+<div class="section-divider"><hr><div class="marker"></div><hr></div>
+<section class="video-block">
+  <div class="video-frame">
+    <div class="placeholder" id="highlightsPlaceholder" onclick="loadVideo('highlightsPlaceholder', 'zixfXJvVo24')">
+        <img class="tedx-thumb" src="images/photos/Nelson%20Inno%20with%20the%20WeSpark%20Logo%20Background.jpg" alt="Nelson Inno — WeSpark Founder & CEO">
+      <div class="play-btn">
+        <div class="play-icon">
+          <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+        </div>
+        <div class="label">One minute · A decade of work</div>
+      </div>
+    </div>
+  </div>
+  <div class="video-caption">Highlights <span>·</span> 60 seconds</div>
+</section>
+
+<!-- ==================== ABOUT ==================== -->
+<div class="section-divider"><hr><div class="marker"></div><hr></div>
+<section class="section" id="about">
+  <div class="about-grid">
+    <div>
+      <div class="eyebrow">About <span class="num">— 01</span></div>
+      <h2>A founder shaped by <span class="accent">two continents</span>, building for many.</h2>
+    </div>
+    <div class="about-body">
+      <p>Nelson Inno is a Salvadoran entrepreneur, the founder and CEO of WeSpark, and the author of <em>Unstable Innovation</em>. He builds AI-powered education systems for large enterprises, governments, and universities, and co-designed Bitcoin Diploma 2.0 with El Salvador's National Bitcoin Office, a curriculum the country's Ministry of Education plans to bring to up to <em>500,000 students</em> over the coming years.</p>
+      <p>His work has been featured in Forbes Centroamérica, ARD, ZDF, Cointelegraph, and El Salvador's press. His TEDx talk, <em>Are Schools Prepared for the Future?</em>, explores the same question that has guided his career: how learning has to change if the people who learn through it are going to thrive in the world they will actually live in.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PULL QUOTE -->
+<div class="pull-quote-section">
+  <div class="pull-quote">Be the ordinary, <em>build the extraordinary.</em></div>
+  <div class="pull-quote-attr">Nelson's mantra</div>
+</div>
+
+<!-- ==================== METRICS ==================== -->
+<section class="section" style="padding-top: 2rem;">
+  <div class="metrics">
+    <div class="metric">
+      <div class="num">7<em>+</em></div>
+      <div class="label"><strong>Years of entrepreneurial</strong> experience building in education</div>
+    </div>
+    <div class="metric">
+      <div class="num">1,200<em>+</em></div>
+      <div class="label"><strong>Workshop participants</strong> trained across institutions</div>
+    </div>
+    <div class="metric">
+      <div class="num">40<em>+</em></div>
+      <div class="label"><strong>Education projects</strong> designed and delivered</div>
+    </div>
+    <div class="metric">
+      <div class="num">110K<em>+</em></div>
+      <div class="label"><strong>End users</strong> reached through learning systems</div>
+    </div>
+  </div>
+  <div class="metrics-foot">Across seven years of WeSpark engagements with Fortune 500 enterprises, governments, universities, and foundations.</div>
+</section>
+
+<!-- ==================== BUILDING NOW ==================== -->
+<div class="section-divider"><hr><div class="marker"></div><hr></div>
+<section class="section">
+  <div class="building">
+    <div>
+      <div class="eyebrow">Now <span class="num">— 02</span></div>
+      <h2>What he's <span class="accent">building now</span>.</h2>
+    </div>
+    <div style="position: relative;">
+      <div class="building-body">
+        <p>Corporate training has a structural problem. The best workplace learning has always come from direct, personal relationships between skilled facilitators and the people in the room. A great trainer knows each participant: their role, their gaps, their blind spots. That knowledge is what converts information into behavior that actually sticks. With time, that model became too expensive to scale. Organizations moved to webinars, e-learning modules, and slide decks built for hundreds at once. A platform cannot know a thousand employees the way a trainer knows twelve. The numbers tell the story: completion rates for asynchronous e-learning average 3 to 6 percent, 87 percent of employees forget training within 30 days, and the $400 billion corporate learning industry measures the wrong thing entirely: clicks, not comprehension. <em>AI makes it possible to fix that.</em></p>
+        <p>The work draws on everything that came before it: the workshop methodologies and corporate training frameworks refined across seven years of WeSpark engagements with Fortune 500 clients, the visual-first pedagogy proven by Bitcoin Diploma 2.0 at national scale, and the conviction formed early in Nelson's career and reinforced in his TEDx talk that organizations which redesign how they train will outpace those that only redesign what they train. The opportunity is to bring the attentive, dialogical quality of expert human coaching to every team in every enterprise that has ever had to prove its people actually learned something.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FEATURED WORK ==================== -->
+<div class="section-divider"><hr><div class="marker"></div><hr></div>
+<section class="section" id="work">
+  <div class="eyebrow">Featured work <span class="num">— 03</span></div>
+  <h2>Three projects that <span class="accent">tell the story</span>.</h2>
+
+  <div class="work-grid">
+
+    <div class="work-card">
+      <div class="img">
+        <img src="images/photos/Bitcoin%20Historico%20-%20ONBTC%20-%20Bitcoin%20Diploma%20Announcement%20-%20Nelson%20Inno.jpg" alt="Nelson Inno at Bitcoin Histórico 2025 — Bitcoin Diploma 2.0 announcement, El Salvador">
+        <div class="img-tag">2025–present</div>
+      </div>
+      <div class="content">
+        <div class="meta">National scale education · El Salvador</div>
+        <h3>Bitcoin Diploma 2.0</h3>
+        <p class="body">A complete redesign of El Salvador's flagship Bitcoin and modern finance curriculum, built with the National Bitcoin Office [ONBTC] under the direction of Stacy Herbert. Officially announced by Nelson at <em>Bitcoin Histórico</em> in November 2025; being rolled out by the Ministry of Education with a national reach goal of up to 500,000 students in the next couple of years.</p>
+        <div class="coverage">Cointelegraph en Español · ARD/ZDF Bitcoineros · El Salvador in English · Diario El Salvador · news.bitcoin.com</div>
+      </div>
+    </div>
+
+    <div class="work-card">
+      <div class="img">
+        <img src="images/photos/Gloria%20Kriete%20Foundation%20Award%20to%20Nelson%20Inno%20and%20WeSpark.JPG" alt="Nelson Inno receiving the Gloria Kriete Foundation award at Programa Oportunidades 15th anniversary, El Salvador">
+        <div class="img-tag">2020–present</div>
+      </div>
+      <div class="content">
+        <div class="meta">Long-term institutional</div>
+        <h3>Gloria Kriete Foundation</h3>
+        <p class="body">A multi-year partnership with one of Central America's most respected educational foundations. WeSpark has supported <em>Programa Oportunidades</em> through workshops, curriculum design, and trainer development. Formalized through a Memorandum of Understanding in 2022 and renewed in 2025. Recognized by Roberto and Fernando Kriete for years of strategic volunteer contributions.</p>
+        <div class="coverage">Strategic partnership · Thousands of youth and educators reached</div>
+      </div>
+    </div>
+
+    <div class="work-card">
+      <div class="img">
+        <img src="images/photos/Build%20in%20El%20Salvador%20-%20Interview%20with%20Nelson%20Inno%20-%20Michael%20Ruiz.JPG" alt="Nelson Inno — Technology and Innovation Advisor, ADDN, Government of El Salvador">
+        <div class="img-tag">2024–present</div>
+      </div>
+      <div class="content">
+        <div class="meta">Ad-honorem advisory · El Salvador's Government</div>
+        <h3>Technology &amp; Innovation Advisor, ADDN</h3>
+        <p class="body">Nelson serves as an ad-honorem Technology and Innovation Advisor to the ADDN (Agency for National Development and Design), El Salvador's strategic planning body. His advisory work centers on megatrends strategy for national planning, AI-fluency training for government teams, and the design and implementation of AI systems to modernize how the institution operates and delivers value.</p>
+        <div class="coverage">Ongoing advisory · Agency for National Development and Design</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==================== WORKED WITH ==================== -->
+<div class="section-divider"><hr><div class="marker"></div><hr></div>
+<section class="section">
+  <div class="eyebrow">Worked with <span class="num">— 04</span></div>
+  <h2>Selected partners across <span class="accent">seven years</span>.</h2>
+
+  <img class="logos-img" src="images/photos/Customers%20Nelson%20Inno.jpg" alt="Organizations Nelson Inno has worked with — WeSpark clients and partners">
+</section>
+
+<!-- ==================== BOOKS ==================== -->
+<div class="section-divider"><hr><div class="marker"></div><hr></div>
+<section class="section" id="books">
+  <div class="eyebrow">Books <span class="num">— 05</span></div>
+  <h2>Writing as <span class="accent">long-form thinking</span>.</h2>
+
+  <div class="books-lead">
+    <img class="book-cover-img" src="images/photos/Book%20Cover%20-%20Unstable%20Innovation%20-%20Nelson%20inno.jpg" alt="Unstable Innovation — book by Nelson Inno">
+    <div class="book-info">
+      <div class="b-meta">Published · January 2025</div>
+      <h3>Unstable Innovation</h3>
+      <div class="b-italic">The Fragile State Most Will Never Understand</div>
+      <p class="b-body">Nelson's first book, written for innovators navigating uncertainty, accelerating change, and the gap between corporate frameworks and what actually works in the field. It distills lessons from a decade of innovation work across aviation, finance, government, and education, and has been read by more than 2,000 innovators since launch.</p>
+      <a href="https://unstableinnovation.com" target="_blank" class="b-cta">
+        Get the book
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="books-also-label">— Also</div>
+  <div class="books-also">
+    <div class="also-card">
+      <img src="images/photos/Diplomado%20en%20Bitcoin%20-%20Curso%20Oficial.png" alt="Diplomado en Bitcoin — Curso Oficial, Nelson Inno, MINED, ONBTC">
+      <div class="also-inner">
+        <div class="also-tag">Published · April 2026</div>
+        <h4>Diplomado en Bitcoin</h4>
+        <p>El Salvador's official national Bitcoin curriculum. Published together with the Ministry of Education (MINED) and the National Bitcoin Office (ONBTC).</p>
+      </div>
+    </div>
+    <div class="also-card">
+      <img src="images/photos/Thinking%20in%20Images%20-%20Front%20Book%20Cover%20-%20Nelson%20Inno.jpeg" alt="Thinking in Images — Nelson Inno, forthcoming 2026">
+      <div class="also-inner">
+        <div class="also-tag">Forthcoming · 2026</div>
+        <h4>Thinking in Images</h4>
+        <p>A framework for translating complex ideas into visual communication. Influenced by Feynman's method and seven years of visual-first pedagogy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TEDX + MEDIA ==================== -->
+<div class="section-divider"><hr><div class="marker"></div><hr></div>
+<section class="section">
+  <div class="eyebrow">TEDx &amp; Media <span class="num">— 06</span></div>
+  <h2>On stage and <span class="accent">on the record</span>.</h2>
+
+  <div class="tedx-frame">
+    <div class="video-frame">
+      <div class="placeholder" id="tedxPlaceholder" onclick="loadVideo('tedxPlaceholder', 'trEo4g7MIUU')">
+        <img class="tedx-thumb" src="images/photos/TEDx%20-%20Nelson%20Inno%20-%20TEDxTalk%20Vaduz.jpg" alt="Nelson Inno at TEDxVaduz — Are Schools Prepared for the Future?">
+        <div class="play-btn">
+          <div class="play-icon">
+            <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+          </div>
+          <div class="label">TEDxVaduz · 18 minutes</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="video-caption"><span>Are Schools Prepared for the Future?</span> · TEDxVaduz · August 2021</div>
+
+  <div class="media-grid">
+    <div class="media-item" onclick="window.open('https://forbescentroamerica.com/2020/05/22/este-salvadoreno-triunfa-en-alemania-gracias-a-la-innovacion/', '_blank')">
+      <div class="source">Forbes Centroamérica</div>
+      <div class="title">Este salvadoreño triunfa en Alemania gracias a la innovación</div>
+      <div class="meta-line">May 2020 · Spanish</div>
+    </div>
+    <div class="media-item" onclick="window.open('https://www.ardmediathek.de/video/dokus-und-reportagen-im-br/bitcoineros-das-digitale-gold/br/Y3JpZDovL2JyLmRlL3ZpZGVvLzI1ZmJkNjA5LWEzNjctNGQ3Zi05YWNiLTQzZjNhYzZlYTU0Yw', '_blank')">
+      <div class="source">ARD Mediathek</div>
+      <div class="title">Bitcoineros: Das Digitale Gold</div>
+      <div class="meta-line">ARD/ZDF · 2022 · German</div>
+    </div>
+    <div class="media-item" onclick="window.open('https://elsalvadorinenglish.com/2025/11/13/el-salvador-announces-bitcoin-diploma-2-0-to-accelerate-national-adoption/', '_blank')">
+      <div class="source">El Salvador in English</div>
+      <div class="title">El Salvador Announces Bitcoin Diploma 2.0 to Accelerate National Adoption</div>
+      <div class="meta-line">November 2025 · English</div>
+    </div>
+    <div class="media-item" onclick="window.open('https://es.cointelegraph.com/news/el-salvador-finalizo-el-diploma-bitcoin-2-0-y-avanza-hacia-su-implementacion-en-escuelas', '_blank')">
+      <div class="source">Cointelegraph en Español</div>
+      <div class="title">El Salvador finalizó el Diploma Bitcoin 2.0 y avanza hacia su implementación en escuelas</div>
+      <div class="meta-line">February 2026 · Spanish</div>
+    </div>
+    <div class="media-item" onclick="window.open('https://diarioelsalvador.com/el-salvador-concluye-diseno-de-diploma-bitcoin-2-0-para-su-distribucion-nacional/762114/', '_blank')">
+      <div class="source">Diario El Salvador</div>
+      <div class="title">El Salvador concluye diseño de Diploma Bitcoin 2.0 para su distribución nacional</div>
+      <div class="meta-line">February 2026 · Spanish</div>
+    </div>
+    <div class="media-item" onclick="window.open('https://podcasts.apple.com/us/podcast/building-a-sovereign-grade-bitcoin-education/id1497540130?i=1000754848414', '_blank')">
+      <div class="source">Once Bitten Podcast</div>
+      <div class="title">Building a Sovereign-Grade Bitcoin Education with Daniel Prince</div>
+      <div class="meta-line">2025 · English audio</div>
+    </div>
+    <div class="media-item" onclick="window.open('https://podcasts.apple.com/fr/podcast/the-bitcoin-book-that-finally-orange-pills-your-friends/id1719117707?i=1000702373428&l=en-GB', '_blank')">
+      <div class="source">The Bitcoin Book Podcast</div>
+      <div class="title">The Bitcoin Book That Finally Orange-Pills Your Friends</div>
+      <div class="meta-line">2025 · English audio</div>
+    </div>
+    <div class="media-item" onclick="window.open('https://youtu.be/Ji8H3t6_3qU', '_blank')">
+      <div class="source">YouTube · Keynote</div>
+      <div class="title">Bitcoin Histórico — the official Bitcoin Diploma 2.0 announcement</div>
+      <div class="meta-line">November 2025 · English</div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TIMELINE ==================== -->
+<div class="section-divider"><hr><div class="marker"></div><hr></div>
+<section class="section" id="career">
+  <div class="eyebrow">Career <span class="num">— 07</span></div>
+  <h2>Fifteen years of <span class="accent">learning by building</span>.</h2>
+
+  <div class="timeline-wrap">
+
+    <div class="tl-item key">
+      <div class="tl-year">2026</div>
+      <div class="tl-content">
+        <div class="role">Bitcoin Diploma 2.0 finalized</div>
+        <div class="org">National Bitcoin Office of El Salvador · co-designed with WeSpark</div>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-year">2025–present</div>
+      <div class="tl-content">
+        <div class="role">Partner</div>
+        <div class="org">Indigo Mastermind · San Salvador</div>
+        <div class="detail">An exclusive international group of entrepreneurs, investors, builders, and philanthropists.</div>
+      </div>
+    </div>
+
+    <div class="tl-item key">
+      <div class="tl-year">2025</div>
+      <div class="tl-content">
+        <div class="role">Co-founded WeSpark S.A.S. de C.V. in El Salvador</div>
+        <div class="org">San Salvador · with Adam Nili</div>
+        <div class="detail">Headquarters relocated from Frankfurt to San Salvador. The Salvadoran entity formally founded on WeSpark's 6th anniversary.</div>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-year">2023–2024</div>
+      <div class="tl-content">
+        <div class="role">Co-Founder</div>
+        <div class="org">EarnB · Bitcoin-only marketing platform · Frankfurt</div>
+      </div>
+    </div>
+
+    <div class="tl-item key">
+      <div class="tl-year">2019–present</div>
+      <div class="tl-content">
+        <div class="role">Founder &amp; CEO, WeSpark</div>
+        <div class="org">Frankfurt → San Salvador</div>
+        <div class="detail">Innovation agency for governments, institutions, and Fortune 500 enterprises. AI product design, learning design, Bitcoin education.</div>
+      </div>
+    </div>
+
+    <div class="tl-item key">
+      <div class="tl-year">2017–2019</div>
+      <div class="tl-content">
+        <div class="role">Senior Innovation Manager</div>
+        <div class="org">Lufthansa · Frankfurt</div>
+        <div class="detail">Designed and built four new innovation departments and strategies for multiple Lufthansa Group companies. New methodologies, workshop formats, and services that built working innovation cultures across the group.</div>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-year">2016–2017</div>
+      <div class="tl-content">
+        <div class="role">ProTeam Member</div>
+        <div class="org">Lufthansa Group · Frankfurt</div>
+        <div class="detail">Innovation strategy across Lufthansa Systems, Lufthansa Group Business Services, and Lufthansa Aviation Training.</div>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-year">2015–2017</div>
+      <div class="tl-content">
+        <div class="role">MBA, Sales and Service Engineering</div>
+        <div class="org">Furtwangen University · Germany</div>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-year">2015</div>
+      <div class="tl-content">
+        <div class="role">Intern · Microsoft</div>
+        <div class="org">El Salvador</div>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-year">2015–2016</div>
+      <div class="tl-content">
+        <div class="role">Project Leader · Aeroman</div>
+        <div class="org">El Salvador International Airport</div>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-year">2014–2015</div>
+      <div class="tl-content">
+        <div class="role">Business Intelligence Strategy Intern</div>
+        <div class="org">Marquardt Group · Rietheim-Weilheim, Germany</div>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-year">2013</div>
+      <div class="tl-content">
+        <div class="role">Business Intelligence Consultant · Avianca</div>
+        <div class="org">El Salvador</div>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-year">2012–2013</div>
+      <div class="tl-content">
+        <div class="role">Sales Project Developer · Marquardt GmbH</div>
+        <div class="org">Germany · with strategy work for Marquardt India (bachelor thesis)</div>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-year">2010–2013</div>
+      <div class="tl-content">
+        <div class="role">BEng Industrial Engineering · Product Development Engineering</div>
+        <div class="org">Furtwangen University · Germany</div>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-year">2010</div>
+      <div class="tl-content">
+        <div class="role">Apprentice · Siemens</div>
+        <div class="org">El Salvador</div>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-year">1991–2009</div>
+      <div class="tl-content">
+        <div class="role">Born and raised in El Salvador</div>
+        <div class="org">German School of San Salvador · International Baccalaureate Diploma</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="tl-summary">
+    Nelson's career has moved consistently in one direction: from technical foundations toward systems that change how people learn and work. He trained as an industrial engineer and earned an MBA in Sales and Service Engineering at Furtwangen University in Germany. His corporate years took him through Microsoft, Siemens, Avianca, Aeroman, and Marquardt, culminating in the role that pushed him toward entrepreneurship: Senior Innovation Manager at Lufthansa, where he designed and built four new innovation departments and strategies for multiple Lufthansa Group companies within three years. He founded WeSpark in March 2019 and has led it ever since, first from Frankfurt, then from San Salvador.
+  </div>
+</section>
+
+<!-- ==================== PHILOSOPHY ==================== -->
+<div class="section-divider"><hr><div class="marker"></div><hr></div>
+<section class="section">
+  <div class="philosophy-block">
+    <div>
+      <div class="eyebrow">Philosophy <span class="num">— 08</span></div>
+      <h2>How he <span class="accent">operates</span>.</h2>
+    </div>
+    <div style="position: relative;">
+      <div class="philosophy-body">
+        <p>Nelson's professional life is organized around three directional preferences and three operating principles.</p>
+
+        <p>The preferences sound simple and are not: <em>slow rather than fast</em>, but with the intention, direction, and focus that move you further than anyone else. <em>Quality rather than quantity</em>, because the right quality brings abundance in the things that matter. <em>Calmness rather than noise</em>; and yet, when the moment calls for it, knowing how to make people genuinely excited.</p>
+
+      </div>
+
+      <div class="principles">
+        <div class="principle">
+          <div class="num">01</div>
+          <div class="text">Add value to others.</div>
+          <div class="arrow">→</div>
+        </div>
+        <div class="principle">
+          <div class="num">02</div>
+          <div class="text">Focus on what truly matters.</div>
+          <div class="arrow">→</div>
+        </div>
+        <div class="principle">
+          <div class="num">03</div>
+          <div class="text">Never forget your roots.</div>
+          <div class="arrow">→</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== GALLERY ==================== -->
+<div class="section-divider"><hr><div class="marker"></div><hr></div>
+<section class="section">
+  <div class="eyebrow">Photos <span class="num">— 09</span></div>
+  <h2>Press &amp; <span class="accent">portrait</span> assets.</h2>
+
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="images/photos/Nelson%20Inno%20-%20WeSpark%20-%20Founder%20%26%20CEO.jpg" alt="Nelson Inno — Founder & CEO, WeSpark">
+      <a class="download" href="images/photos/Nelson%20Inno%20-%20WeSpark%20-%20Founder%20%26%20CEO.jpg" download><span>↓ Download</span></a>
+    </div>
+    <div class="gallery-item">
+      <img src="images/photos/TEDx%20-%20Nelson%20Inno%20-%20TEDxTalk%20Vaduz.jpg" alt="Nelson Inno at TEDxVaduz — WeSpark Innovation Helmet">
+      <a class="download" href="images/photos/TEDx%20-%20Nelson%20Inno%20-%20TEDxTalk%20Vaduz.jpg" download><span>↓ Download</span></a>
+    </div>
+    <div class="gallery-item">
+      <img src="images/photos/Nelson%20Inno%20-%20WeSpark%20Speaker.jpg" alt="Nelson Inno — keynote speaker, innovation educator">
+      <a class="download" href="images/photos/Nelson%20Inno%20-%20WeSpark%20Speaker.jpg" download><span>↓ Download</span></a>
+    </div>
+    <div class="gallery-item">
+      <img src="images/photos/Kristofer%20Norvick%20and%20Nelson%20Inno%20-%20WeSpark%20Innovation%20Helmet.png" alt="Kristofer Norvick and Nelson Inno — WeSpark Innovation Helmet">
+      <a class="download" href="images/photos/Kristofer%20Norvick%20and%20Nelson%20Inno%20-%20WeSpark%20Innovation%20Helmet.png" download><span>↓ Download</span></a>
+    </div>
+    <div class="gallery-item">
+      <img src="images/photos/Nelson%20Inno%20-%20Unstable%20Innovation%20-%20Book%20Launch.jpg" alt="Nelson Inno — Unstable Innovation book launch event">
+      <a class="download" href="images/photos/Nelson%20Inno%20-%20Unstable%20Innovation%20-%20Book%20Launch.jpg" download><span>↓ Download</span></a>
+    </div>
+    <div class="gallery-item">
+      <img src="images/photos/Nelson%20Inno%20with%20the%20WeSpark%20Logo%20Background.jpg" alt="Nelson Inno with the WeSpark logo — innovation agency founder">
+      <a class="download" href="images/photos/Nelson%20Inno%20with%20the%20WeSpark%20Logo%20Background.jpg" download><span>↓ Download</span></a>
+    </div>
+    <div class="gallery-item">
+      <img src="images/photos/Nelson%20Inno%20with%20Innovation%20Helmet%20-%20WeSpark%20Innovation%20Hub.jpg" alt="Nelson Inno with Innovation Helmet — WeSpark Innovation Hub">
+      <a class="download" href="images/photos/Nelson%20Inno%20with%20Innovation%20Helmet%20-%20WeSpark%20Innovation%20Hub.jpg" download><span>↓ Download</span></a>
+    </div>
+    <div class="gallery-item">
+      <img src="images/photos/Unstable%20Innovation%20-%20Book%20Launch%20Event.jpg" alt="Unstable Innovation book launch — Nelson Inno, WeSpark">
+      <a class="download" href="images/photos/Unstable%20Innovation%20-%20Book%20Launch%20Event.jpg" download><span>↓ Download</span></a>
+    </div>
+  </div>
+
+  <div class="gallery-foot">
+    <p class="note">High-resolution photos and short bio in English and Spanish, packaged for press and conference organizers.</p>
+    <a href="images/Nelson%20Inno%20-%20Press%20Kit.zip" class="btn-secondary">
+      Download Press Kit
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ==================== CONNECT ==================== -->
+<div class="section-divider"><hr><div class="marker"></div><hr></div>
+<section class="section" id="connect">
+  <div class="eyebrow">Connect <span class="num">— 10</span></div>
+  <h2>The fastest path is <span class="accent">LinkedIn</span>.</h2>
+
+  <div class="connect-wrap">
+    <div class="connect-text">
+      WeSpark is the home of the <em>work</em>.<br>
+      Nelson Inno is the home of the <em>person</em> behind it.
+    </div>
+
+    <div class="connect-channels">
+      <a class="channel primary" href="https://www.linkedin.com/in/nelsoninno/" target="_blank">
+        <div class="name">Connect on LinkedIn</div>
+        <div class="platform">/in/nelsoninno →</div>
+      </a>
+      <a class="channel" href="https://primal.net/nelson" target="_blank">
+        <div class="name">NOSTR</div>
+        <div class="platform">primal.net/nelson →</div>
+      </a>
+      <a class="channel" href="https://twitter.com/nelsoninno" target="_blank">
+        <div class="name">X</div>
+        <div class="platform">@nelsoninno →</div>
+      </a>
+      <a class="channel" href="https://www.youtube.com/nelsoninno" target="_blank">
+        <div class="name">YouTube</div>
+        <div class="platform">/nelsoninno →</div>
+      </a>
+      <a class="channel" href="https://www.instagram.com/nelsoninno" target="_blank">
+        <div class="name">Instagram</div>
+        <div class="platform">@nelsoninno →</div>
+      </a>
+    </div>
+  </div>
+
+  <div class="external-links">
+    <a href="https://wespark.io" target="_blank">→ WeSpark · wespark.io</a>
+    <a href="https://unstableinnovation.com" target="_blank">→ Unstable Innovation · unstableinnovation.com</a>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+  <div class="colophon">
+    <strong>© 2026 Nelson Inno.</strong> All rights reserved.<br>
+    Built in El Salvador. Hosted on GitHub Pages.
+  </div>
+  <div class="lang-toggle">
+    <span class="active">English</span> · <a href="#">Español</a>
+  </div>
+  <div class="signature">
+    Add value to others <span class="yellow-dot"></span> Focus on what truly matters <span class="yellow-dot"></span> Never forget your roots
+  </div>
+</footer>
+</main>
+
+<script>
+  const topbar = document.getElementById('topbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 30) topbar.classList.add('scrolled');
+    else topbar.classList.remove('scrolled');
+  });
+
+  function loadVideo(placeholderId, ytId) {
+    const ph = document.getElementById(placeholderId);
+    const wrap = ph.parentElement;
+    wrap.innerHTML = `<iframe src="https://www.youtube.com/embed/${ytId}?autoplay=1&rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+  }
+
+  const reveal = document.querySelectorAll('.section, .video-block, .pull-quote-section');
+  reveal.forEach(el => el.classList.add('reveal'));
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.05, rootMargin: '0px 0px -50px 0px' });
+  reveal.forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
