@@ -17,7 +17,7 @@
 <meta property="og:description" content="He builds AI-powered education systems for the institutions that shape how nations learn.">
 <meta property="og:type" content="profile">
 <meta property="og:url" content="https://nelsoninno.com/">
-<meta property="og:image" content="https://nelsoninno.com/images/photos/Nelson%20Inno%20with%20the%20WeSpark%20Logo%20Background.webp">
+<meta property="og:image" content="https://nelsoninno.com/images/photos/Nelson%20Inno%20-%20WeSpark%20-%20Founder%20%26%20CEO.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:site_name" content="Nelson Inno">
@@ -30,7 +30,7 @@
 <meta name="twitter:creator" content="@nelsoninno">
 <meta name="twitter:title" content="Nelson Inno — Founder & CEO, WeSpark">
 <meta name="twitter:description" content="He builds AI-powered education systems for the institutions that shape how nations learn.">
-<meta name="twitter:image" content="https://nelsoninno.com/images/photos/Nelson%20Inno%20with%20the%20WeSpark%20Logo%20Background.webp">
+<meta name="twitter:image" content="https://nelsoninno.com/images/photos/Nelson%20Inno%20-%20WeSpark%20-%20Founder%20%26%20CEO.jpg">
 
 <!-- Search -->
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -41,9 +41,14 @@
 <link rel="icon" href="/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
+<!-- Hero image preload — tells browser to fetch it immediately, before parsing body -->
+<link rel="preload" as="image" href="images/photos/Nelson%20Inno%20-%20WeSpark%20-%20Founder%20%26%20CEO.webp" type="image/webp">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Roboto:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<!-- Async font load — eliminates render-blocking, font-display:swap already in URL -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Roboto:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Roboto:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
 
 <script type="application/ld+json">
 {
@@ -1231,7 +1236,7 @@
   </div>
 
   <div class="hero-portrait">
-    <img class="main" src="images/photos/Nelson%20Inno%20-%20WeSpark%20-%20Founder%20%26%20CEO.webp" alt="Nelson Inno — Founder & CEO, WeSpark">
+    <img fetchpriority="high" class="main" src="images/photos/Nelson%20Inno%20-%20WeSpark%20-%20Founder%20%26%20CEO.webp" alt="Nelson Inno — Founder & CEO, WeSpark" width="1200" height="800">
     <div class="frame-tag">Inno / 2026</div>
   </div>
 </section>
@@ -1241,7 +1246,7 @@
 <section class="video-block">
   <div class="video-frame">
     <div class="placeholder" id="highlightsPlaceholder" onclick="loadVideo('highlightsPlaceholder', 'zixfXJvVo24')">
-        <img class="tedx-thumb" src="images/photos/Nelson%20Inno%20with%20the%20WeSpark%20Logo%20Background.webp" alt="Nelson Inno — WeSpark Founder & CEO">
+        <img loading="lazy" class="tedx-thumb" src="images/photos/Nelson%20Inno%20with%20the%20WeSpark%20Logo%20Background.webp" alt="Nelson Inno — WeSpark Founder & CEO" width="1400" height="787">
       <div class="play-btn">
         <div class="play-icon">
           <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
@@ -1324,7 +1329,7 @@
 
     <div class="work-card">
       <div class="img">
-        <img src="images/photos/Bitcoin%20Historico%20-%20ONBTC%20-%20Bitcoin%20Diploma%20Announcement%20-%20Nelson%20Inno.webp" alt="Nelson Inno at Bitcoin Histórico 2025 — Bitcoin Diploma 2.0 announcement, El Salvador">
+        <img loading="lazy" src="images/photos/Bitcoin%20Historico%20-%20ONBTC%20-%20Bitcoin%20Diploma%20Announcement%20-%20Nelson%20Inno.webp" alt="Nelson Inno at Bitcoin Histórico 2025 — Bitcoin Diploma 2.0 announcement, El Salvador" width="1400" height="933">
         <div class="img-tag">2025–present</div>
       </div>
       <div class="content">
@@ -1337,7 +1342,7 @@
 
     <div class="work-card">
       <div class="img">
-        <img src="images/photos/Gloria%20Kriete%20Foundation%20Award%20to%20Nelson%20Inno%20and%20WeSpark.webp" alt="Nelson Inno receiving the Gloria Kriete Foundation award at Programa Oportunidades 15th anniversary, El Salvador">
+        <img loading="lazy" src="images/photos/Gloria%20Kriete%20Foundation%20Award%20to%20Nelson%20Inno%20and%20WeSpark.webp" alt="Nelson Inno receiving the Gloria Kriete Foundation award at Programa Oportunidades 15th anniversary, El Salvador" width="1400" height="1050">
         <div class="img-tag">2020–present</div>
       </div>
       <div class="content">
@@ -1350,7 +1355,7 @@
 
     <div class="work-card">
       <div class="img">
-        <img src="images/photos/Build%20in%20El%20Salvador%20-%20Interview%20with%20Nelson%20Inno%20-%20Michael%20Ruiz.webp" alt="Nelson Inno — Technology and Innovation Advisor, ADDN, Government of El Salvador">
+        <img loading="lazy" src="images/photos/Build%20in%20El%20Salvador%20-%20Interview%20with%20Nelson%20Inno%20-%20Michael%20Ruiz.webp" alt="Nelson Inno — Technology and Innovation Advisor, ADDN, Government of El Salvador" width="1400" height="933">
         <div class="img-tag">2024–present</div>
       </div>
       <div class="content">
@@ -1370,7 +1375,7 @@
   <div class="eyebrow">Worked with <span class="num">— 04</span></div>
   <h2>Selected partners across <span class="accent">seven years</span>.</h2>
 
-  <img class="logos-img" src="images/photos/Customers%20Nelson%20Inno.webp" alt="Organizations Nelson Inno has worked with — WeSpark clients and partners">
+  <img loading="lazy" class="logos-img" src="images/photos/Customers%20Nelson%20Inno.webp" alt="Organizations Nelson Inno has worked with — WeSpark clients and partners" width="1400" height="808">
 </section>
 
 <!-- ==================== BOOKS ==================== -->
@@ -1380,7 +1385,7 @@
   <h2>Writing as <span class="accent">long-form thinking</span>.</h2>
 
   <div class="books-lead">
-    <img class="book-cover-img" src="images/photos/Book%20Cover%20-%20Unstable%20Innovation%20-%20Nelson%20inno.webp" alt="Unstable Innovation — book by Nelson Inno">
+    <img loading="lazy" class="book-cover-img" src="images/photos/Book%20Cover%20-%20Unstable%20Innovation%20-%20Nelson%20inno.webp" alt="Unstable Innovation — book by Nelson Inno" width="900" height="1403">
     <div class="book-info">
       <div class="b-meta">Published · January 2025</div>
       <h3>Unstable Innovation</h3>
@@ -1396,7 +1401,7 @@
   <div class="books-also-label">— Also</div>
   <div class="books-also">
     <div class="also-card">
-      <img src="images/photos/Diplomado%20en%20Bitcoin%20-%20Curso%20Oficial.webp" alt="Diplomado en Bitcoin — Curso Oficial, Nelson Inno, MINED, ONBTC">
+      <img loading="lazy" src="images/photos/Diplomado%20en%20Bitcoin%20-%20Curso%20Oficial.webp" alt="Diplomado en Bitcoin — Curso Oficial, Nelson Inno, MINED, ONBTC" width="900" height="1099">
       <div class="also-inner">
         <div class="also-tag">Published · April 2026</div>
         <h4>Diplomado en Bitcoin</h4>
@@ -1404,7 +1409,7 @@
       </div>
     </div>
     <div class="also-card">
-      <img src="images/photos/Thinking%20in%20Images%20-%20Front%20Book%20Cover%20-%20Nelson%20Inno.webp" alt="Thinking in Images — Nelson Inno, forthcoming 2026">
+      <img loading="lazy" src="images/photos/Thinking%20in%20Images%20-%20Front%20Book%20Cover%20-%20Nelson%20Inno.webp" alt="Thinking in Images — Nelson Inno, forthcoming 2026" width="900" height="1100">
       <div class="also-inner">
         <div class="also-tag">Forthcoming · 2026</div>
         <h4>Thinking in Images</h4>
@@ -1423,7 +1428,7 @@
   <div class="tedx-frame">
     <div class="video-frame">
       <div class="placeholder" id="tedxPlaceholder" onclick="loadVideo('tedxPlaceholder', 'trEo4g7MIUU')">
-        <img class="tedx-thumb" src="images/photos/TEDx%20-%20Nelson%20Inno%20-%20TEDxTalk%20Vaduz.webp" alt="Nelson Inno at TEDxVaduz — Are Schools Prepared for the Future?">
+        <img loading="lazy" class="tedx-thumb" src="images/photos/TEDx%20-%20Nelson%20Inno%20-%20TEDxTalk%20Vaduz.webp" alt="Nelson Inno at TEDxVaduz — Are Schools Prepared for the Future?" width="1400" height="787">
         <div class="play-btn">
           <div class="play-icon">
             <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
@@ -1672,36 +1677,36 @@
 
   <div class="gallery-grid">
     <div class="gallery-item">
-      <img src="images/photos/Nelson%20Inno%20-%20WeSpark%20-%20Founder%20%26%20CEO.webp" alt="Nelson Inno — Founder & CEO, WeSpark">
-      <a class="download" href="images/photos/Nelson%20Inno%20-%20WeSpark%20-%20Founder%20%26%20CEO.webp" download><span>↓ Download</span></a>
+      <img loading="lazy" src="images/photos/Nelson%20Inno%20-%20WeSpark%20-%20Founder%20%26%20CEO.webp" alt="Nelson Inno — Founder & CEO, WeSpark" width="1200" height="800">
+      <a class="download" href="images/photos/Nelson%20Inno%20-%20WeSpark%20-%20Founder%20%26%20CEO.jpg" download><span>↓ Download</span></a>
     </div>
     <div class="gallery-item">
-      <img src="images/photos/TEDx%20-%20Nelson%20Inno%20-%20TEDxTalk%20Vaduz.webp" alt="Nelson Inno at TEDxVaduz — WeSpark Innovation Helmet">
-      <a class="download" href="images/photos/TEDx%20-%20Nelson%20Inno%20-%20TEDxTalk%20Vaduz.webp" download><span>↓ Download</span></a>
+      <img loading="lazy" src="images/photos/TEDx%20-%20Nelson%20Inno%20-%20TEDxTalk%20Vaduz.webp" alt="Nelson Inno at TEDxVaduz — WeSpark Innovation Helmet" width="1400" height="787">
+      <a class="download" href="images/photos/TEDx%20-%20Nelson%20Inno%20-%20TEDxTalk%20Vaduz.jpg" download><span>↓ Download</span></a>
     </div>
     <div class="gallery-item">
-      <img src="images/photos/Nelson%20Inno%20-%20WeSpark%20Speaker.webp" alt="Nelson Inno — keynote speaker, innovation educator">
-      <a class="download" href="images/photos/Nelson%20Inno%20-%20WeSpark%20Speaker.webp" download><span>↓ Download</span></a>
+      <img loading="lazy" src="images/photos/Nelson%20Inno%20-%20WeSpark%20Speaker.webp" alt="Nelson Inno — keynote speaker, innovation educator" width="1400" height="786">
+      <a class="download" href="images/photos/Nelson%20Inno%20-%20WeSpark%20Speaker.jpg" download><span>↓ Download</span></a>
     </div>
     <div class="gallery-item">
-      <img src="images/photos/Kristofer%20Norvick%20and%20Nelson%20Inno%20-%20WeSpark%20Innovation%20Helmet.webp" alt="Kristofer Norvick and Nelson Inno — WeSpark Innovation Helmet">
-      <a class="download" href="images/photos/Kristofer%20Norvick%20and%20Nelson%20Inno%20-%20WeSpark%20Innovation%20Helmet.webp" download><span>↓ Download</span></a>
+      <img loading="lazy" src="images/photos/Kristofer%20Norvick%20and%20Nelson%20Inno%20-%20WeSpark%20Innovation%20Helmet.webp" alt="Kristofer Norvick and Nelson Inno — WeSpark Innovation Helmet" width="600" height="800">
+      <a class="download" href="images/photos/Kristofer%20Norvick%20and%20Nelson%20Inno%20-%20WeSpark%20Innovation%20Helmet.png" download><span>↓ Download</span></a>
     </div>
     <div class="gallery-item">
-      <img src="images/photos/Nelson%20Inno%20-%20Unstable%20Innovation%20-%20Book%20Launch.webp" alt="Nelson Inno — Unstable Innovation book launch event">
-      <a class="download" href="images/photos/Nelson%20Inno%20-%20Unstable%20Innovation%20-%20Book%20Launch.webp" download><span>↓ Download</span></a>
+      <img loading="lazy" src="images/photos/Nelson%20Inno%20-%20Unstable%20Innovation%20-%20Book%20Launch.webp" alt="Nelson Inno — Unstable Innovation book launch event" width="1400" height="931">
+      <a class="download" href="images/photos/Nelson%20Inno%20-%20Unstable%20Innovation%20-%20Book%20Launch.jpg" download><span>↓ Download</span></a>
     </div>
     <div class="gallery-item">
-      <img src="images/photos/Nelson%20Inno%20with%20the%20WeSpark%20Logo%20Background.webp" alt="Nelson Inno with the WeSpark logo — innovation agency founder">
-      <a class="download" href="images/photos/Nelson%20Inno%20with%20the%20WeSpark%20Logo%20Background.webp" download><span>↓ Download</span></a>
+      <img loading="lazy" src="images/photos/Nelson%20Inno%20with%20the%20WeSpark%20Logo%20Background.webp" alt="Nelson Inno with the WeSpark logo — innovation agency founder" width="1400" height="787">
+      <a class="download" href="images/photos/Nelson%20Inno%20with%20the%20WeSpark%20Logo%20Background.jpg" download><span>↓ Download</span></a>
     </div>
     <div class="gallery-item">
-      <img src="images/photos/Nelson%20Inno%20with%20Innovation%20Helmet%20-%20WeSpark%20Innovation%20Hub.webp" alt="Nelson Inno with Innovation Helmet — WeSpark Innovation Hub">
-      <a class="download" href="images/photos/Nelson%20Inno%20with%20Innovation%20Helmet%20-%20WeSpark%20Innovation%20Hub.webp" download><span>↓ Download</span></a>
+      <img loading="lazy" src="images/photos/Nelson%20Inno%20with%20Innovation%20Helmet%20-%20WeSpark%20Innovation%20Hub.webp" alt="Nelson Inno with Innovation Helmet — WeSpark Innovation Hub" width="1400" height="787">
+      <a class="download" href="images/photos/Nelson%20Inno%20with%20Innovation%20Helmet%20-%20WeSpark%20Innovation%20Hub.jpg" download><span>↓ Download</span></a>
     </div>
     <div class="gallery-item">
-      <img src="images/photos/Unstable%20Innovation%20-%20Book%20Launch%20Event.webp" alt="Unstable Innovation book launch — Nelson Inno, WeSpark">
-      <a class="download" href="images/photos/Unstable%20Innovation%20-%20Book%20Launch%20Event.webp" download><span>↓ Download</span></a>
+      <img loading="lazy" src="images/photos/Unstable%20Innovation%20-%20Book%20Launch%20Event.webp" alt="Unstable Innovation book launch — Nelson Inno, WeSpark" width="1400" height="933">
+      <a class="download" href="images/photos/Unstable%20Innovation%20-%20Book%20Launch%20Event.jpg" download><span>↓ Download</span></a>
     </div>
   </div>
 
@@ -1779,19 +1784,4 @@
   });
 
   function loadVideo(placeholderId, ytId) {
-    const ph = document.getElementById(placeholderId);
-    const wrap = ph.parentElement;
-    wrap.innerHTML = `<iframe src="https://www.youtube.com/embed/${ytId}?autoplay=1&rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
-  }
-
-  const reveal = document.querySelectorAll('.section, .video-block, .pull-quote-section');
-  reveal.forEach(el => el.classList.add('reveal'));
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-  }, { threshold: 0.05, rootMargin: '0px 0px -50px 0px' });
-  reveal.forEach(el => io.observe(el));
-</script>
-
-</body>
-</html>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+    const ph = document.getElementById(pla
