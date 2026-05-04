@@ -658,7 +658,7 @@
 
   /* ============== LOGO GRID ============== */
   .logos-img {
-    width: 100%; display: block;
+    width: 100%; height: auto; display: block;
     border-radius: 4px;
     margin-top: 1rem;
     border: 1px solid var(--rule);
@@ -1288,7 +1288,7 @@
   <div class="eyebrow">Ha trabajado con <span class="num">— 04</span></div>
   <h2>Socios seleccionados a lo largo de <span class="accent">siete años</span>.</h2>
 
-  <img loading="lazy" class="logos-img" src="../images/photos/Customers%20Nelson%20Inno.webp" alt="Organizaciones con las que ha trabajado Nelson Inno — clientes y socios de WeSpark" width="1400" height="808">
+  <img loading="lazy" class="logos-img" src="../images/photos/Customers%20Nelson%20Inno%20White.webp" alt="Organizaciones con las que ha trabajado Nelson Inno — clientes y socios de WeSpark" width="1400" height="833">
 </section>
 
 <!-- ==================== BOOKS ==================== -->
@@ -1699,16 +1699,4 @@
   function loadVideo(placeholderId, ytId) {
     const ph = document.getElementById(placeholderId);
     const wrap = ph.parentElement;
-    wrap.innerHTML = `<iframe src="https://www.youtube.com/embed/${ytId}?autoplay=1&rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
-  }
-
-  const reveal = document.querySelectorAll('.section, .video-block, .pull-quote-section');
-  reveal.forEach(el => el.classList.add('reveal'));
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-  }, { threshold: 0.05, rootMargin: '0px 0px -50px 0px' });
-  reveal.forEach(el => io.observe(el));
-</script>
-
-</body>
-</html>
+    wrap.innerHTML = `<i
