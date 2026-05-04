@@ -1776,4 +1776,46 @@
 
   <div class="external-links">
     <a href="https://wespark.io" target="_blank">→ WeSpark · wespark.io</a>
-    <a href="https://unstableinnovation.com" target="_blank">→ Unstable Inno
+    <a href="https://unstableinnovation.com" target="_blank">→ Unstable Innovation · unstableinnovation.com</a>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+  <div class="colophon">
+    <strong>© 2026 Nelson Inno.</strong> All rights reserved.<br>
+    Built in El Salvador. Hosted on GitHub Pages.
+  </div>
+  <div class="lang-toggle">
+    <span class="active">English</span> · <a href="/es/">Español</a>
+  </div>
+  <div class="signature">
+    Add value to others <span class="yellow-dot"></span> Focus on what truly matters <span class="yellow-dot"></span> Never forget your roots
+  </div>
+</footer>
+</main>
+
+<script>
+  const topbar = document.getElementById('topbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 30) topbar.classList.add('scrolled');
+    else topbar.classList.remove('scrolled');
+  });
+
+  function loadVideo(placeholderId, ytId) {
+  function loadVideo(placeholderId, ytId) {
+    const ph = document.getElementById(placeholderId);
+    const wrap = ph.parentElement;
+    wrap.innerHTML = `<iframe src="https://www.youtube.com/embed/${ytId}?autoplay=1&rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+  }
+
+  const reveal = document.querySelectorAll('.section, .video-block, .pull-quote-section');
+  reveal.forEach(el => el.classList.add('reveal'));
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.05, rootMargin: '0px 0px -50px 0px' });
+  reveal.forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>

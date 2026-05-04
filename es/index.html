@@ -1674,4 +1674,41 @@
   </div>
 </section>
 
-<!-- ==================== FOOTER =========
+<!-- ==================== FOOTER ==================== -->
+<footer>
+  <div class="colophon">
+    <strong>© 2026 Nelson Inno.</strong> Todos los derechos reservados.<br>
+    Construido en El Salvador. Alojado en GitHub Pages.
+  </div>
+  <div class="lang-toggle">
+    <a href="/">English</a> · <span class="active">Español</span>
+  </div>
+  <div class="signature">
+    Añade valor a los demás <span class="yellow-dot"></span> Enfócate en lo que realmente importa <span class="yellow-dot"></span> Nunca olvides tus raíces
+  </div>
+</footer>
+</main>
+
+<script>
+  const topbar = document.getElementById('topbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 30) topbar.classList.add('scrolled');
+    else topbar.classList.remove('scrolled');
+  });
+
+  function loadVideo(placeholderId, ytId) {
+    const ph = document.getElementById(placeholderId);
+    const wrap = ph.parentElement;
+    wrap.innerHTML = `<iframe src="https://www.youtube.com/embed/${ytId}?autoplay=1&rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+  }
+
+  const reveal = document.querySelectorAll('.section, .video-block, .pull-quote-section');
+  reveal.forEach(el => el.classList.add('reveal'));
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.05, rootMargin: '0px 0px -50px 0px' });
+  reveal.forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
