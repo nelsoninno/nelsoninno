@@ -1746,25 +1746,14 @@
     <div class="bio-blocks">
       <div class="bio-block">
         <div class="bio-block-header">
-          <span class="bio-lang">EN &mdash; English</span>
-          <button class="bio-copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('bio-en').innerText).then(()=>{this.textContent='Copied ✓';setTimeout(()=>this.textContent='Copy',2000)})">Copy</button>
+          <span class="bio-lang">Nelson Inno &mdash; Biography &mdash; English</span>
+          <button class="bio-copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('bio-en').innerText.replace(/\n(?!\n)/g,'\n\n')).then(()=>{this.textContent='Copied ✓';setTimeout(()=>this.textContent='Copy',2000)})">Copy</button>
         </div>
         <p id="bio-en" class="bio-text">Nelson Inno is a Salvadoran entrepreneur, founder and CEO of WeSpark, and author of Unstable Innovation. He builds AI-powered education systems for enterprises, governments, and universities, and co-designed Bitcoin Diploma 2.0 with El Salvador&#39;s National Bitcoin Office, a curriculum the Ministry of Education is deploying to the next 500,000 students.
 
 His work has been featured in Forbes, ZDF, ARD, and Cointelegraph. He delivered a TEDx Talk titled &#34;Are Schools Prepared for the Future?&#34; and advises the government of El Salvador on technology, innovation, education and Bitcoin.
 
 Nelson lives by the mantra: Be the ordinary, build the extraordinary.</p>
-      </div>
-      <div class="bio-block">
-        <div class="bio-block-header">
-          <span class="bio-lang">ES &mdash; Espa&ntilde;ol</span>
-          <button class="bio-copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('bio-es').innerText).then(()=>{this.textContent='Copiado ✓';setTimeout(()=>this.textContent='Copiar',2000)})">Copiar</button>
-        </div>
-        <p id="bio-es" class="bio-text">Nelson Inno es un emprendedor salvadore&ntilde;o, fundador y CEO de WeSpark, y autor de Unstable Innovation. Construye sistemas de educaci&oacute;n potenciados por IA para empresas, gobiernos y universidades, y co-dise&ntilde;&oacute; el Diplomado Bitcoin 2.0 con la Oficina Nacional Bitcoin de El Salvador, un curr&iacute;culo que el Ministerio de Educaci&oacute;n est&aacute; desplegando a los pr&oacute;ximos 500,000 estudiantes.
-
-Su trabajo ha sido destacado en Forbes, ZDF, ARD y Cointelegraph. Dio una charla TEDx titulada &#34;&iquest;Est&aacute;n las escuelas preparadas para el futuro?&#34; y asesora al gobierno de El Salvador en tecnolog&iacute;a, innovaci&oacute;n, educaci&oacute;n y Bitcoin.
-
-Nelson vive bajo el mantra: S&eacute; lo ordinario, construye lo extraordinario.</p>
       </div>
     </div>
   </div>
