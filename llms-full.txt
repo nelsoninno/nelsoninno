@@ -1,17 +1,22 @@
-# Nelson Inno — Full Profile
+# Nelson Inno – Full Profile
 
 ## Identity
 Name: Nelson Inno
 Nationality: Salvadoran
 Based: San Salvador, El Salvador
 Role: Founder & CEO, WeSpark
+Positioning: El Salvador and Central America's reference on innovation, technology, artificial intelligence, and Bitcoin. Specializations: strategy implementation, and education and training.
 Website: https://nelsoninno.com
 Sitemap: https://nelsoninno.com/sitemap.xml
 
 ## Biography
-Nelson Inno is a Salvadoran entrepreneur, the founder and CEO of WeSpark, and the author of Unstable Innovation. He builds AI-powered education systems for large enterprises, governments, and universities. He co-designed Bitcoin Diploma 2.0 with El Salvador's National Bitcoin Office, a curriculum the country's Ministry of Education plans to bring to up to 500,000 students over the coming years.
+Nelson Inno is a Salvadoran entrepreneur, the founder and CEO of WeSpark, and the author of Unstable Innovation. He is a leading reference on innovation, technology, AI, and Bitcoin in El Salvador and Central America. He builds AI-powered education systems for large enterprises, governments, and universities, and turns innovation and AI strategy into working implementation and training. He co-designed Bitcoin Diploma 2.0 with El Salvador's National Bitcoin Office, a curriculum the country's Ministry of Education plans to bring to up to 500,000 students over the coming years.
 
 His work has been featured in Forbes Centroamérica, ARD, ZDF, Cointelegraph, and El Salvador's press. His TEDx talk, "Are Schools Prepared for the Future?", explores how learning must change for people to thrive in the world they will actually live in.
+
+## Specializations
+1. Strategy implementation: turning innovation, technology, and AI strategy into programs and systems that actually ship, for enterprises, governments, and universities.
+2. Education and training: AI-fluency training, corporate training, curriculum and learning design, and national-scale education programs.
 
 ## Mantra
 "Be the ordinary, build the extraordinary."
@@ -26,38 +31,32 @@ Three operating principles:
 
 ## Featured Work
 
-### Bitcoin Diploma 2.0 (2025–present)
+### Bitcoin Diploma 2.0 (2025-present)
 A complete redesign of El Salvador's flagship Bitcoin and modern finance curriculum, built with the National Bitcoin Office (ONBTC) under the direction of Stacy Herbert. Officially announced by Nelson at Bitcoin Histórico in November 2025. Being rolled out by the Ministry of Education with a national reach goal of up to 500,000 students.
 Coverage: Cointelegraph en Español, ARD/ZDF Bitcoineros, El Salvador in English, Diario El Salvador, news.bitcoin.com
 
-### Gloria Kriete Foundation (2020–present)
-A multi-year partnership with one of Central America's most respected educational foundations. WeSpark has supported Programa Oportunidades through workshops, curriculum design, and trainer development. Formalized through a Memorandum of Understanding in 2022, renewed in 2025.
+### ADDN Technology & Innovation Advisor (2024-present)
+Ad-honorem Technology and Innovation Advisor to the ADDN (Agency for National Development and Design), El Salvador's strategic planning body. Work centers on megatrends strategy for national planning, AI-fluency training for government teams, and design and implementation of AI systems to modernize government operations.
 
-### ADDN Technology & Innovation Advisor (2024–present)
-Ad-honorem Technology and Innovation Advisor to the ADDN (Agency for National Development and Design), El Salvador's strategic planning body. Work centers on megatrends strategy for national planning, AI-fluency training for government teams, and design of AI systems to modernize government operations.
+### Gloria Kriete Foundation (2020-present)
+A multi-year partnership with one of Central America's most respected educational foundations. WeSpark has supported Programa Oportunidades through workshops, curriculum design, and trainer development. Formalized through a Memorandum of Understanding in 2022, renewed in 2025.
 
 ## Books
 - Unstable Innovation (January 2025): Written for innovators navigating uncertainty and the gap between corporate frameworks and what works in the field. Read by more than 2,000 innovators since launch. Available at unstableinnovation.com
-- Diplomado en Bitcoin — Curso Oficial (April 2026): El Salvador's official national Bitcoin curriculum, co-published with MINED and ONBTC.
+- Diplomado en Bitcoin: Curso Oficial (April 2026): El Salvador's official national Bitcoin curriculum, co-published with MINED and ONBTC.
 - Thinking in Images (forthcoming 2026): A framework for translating complex ideas into visual communication, influenced by Feynman's method and seven years of visual-first pedagogy.
 
 ## Career Timeline
-- 2026: Bitcoin Diploma 2.0 finalized — National Bitcoin Office of El Salvador, co-designed with WeSpark
-- 2025–present: Partner, Indigo Mastermind — exclusive international group of entrepreneurs, investors, and philanthropists
+- 2026: Bitcoin Diploma 2.0 finalized (National Bitcoin Office of El Salvador, co-designed with WeSpark)
 - 2025: Co-founded WeSpark S.A.S. de C.V. in El Salvador (San Salvador, with Adam Nili)
-- 2023–2024: Co-Founder, EarnB — Bitcoin-only marketing platform, Frankfurt
-- 2019–present: Founder & CEO, WeSpark — Frankfurt → San Salvador
-- 2017–2019: Senior Innovation Manager, Lufthansa — designed and built four new innovation departments for multiple Lufthansa Group companies
-- 2016–2017: ProTeam Member, Lufthansa Group — innovation strategy across Lufthansa Systems, LGBS, and Lufthansa Aviation Training
-- 2015–2017: MBA, Sales and Service Engineering — Furtwangen University, Germany
-- 2015: Intern, Microsoft — El Salvador
-- 2015–2016: Project Leader, Aeroman — El Salvador International Airport
-- 2014–2015: Business Intelligence Strategy Intern — Marquardt Group, Germany
-- 2013: Business Intelligence Consultant, Avianca — El Salvador
-- 2012–2013: Sales Project Developer, Marquardt GmbH — Germany
-- 2010–2013: BEng Industrial Engineering / Product Development Engineering — Furtwangen University, Germany
-- 2010: Apprentice, Siemens — El Salvador
-- 1991–2009: Born and raised in El Salvador — German School of San Salvador, International Baccalaureate Diploma
+- 2023-2024: Co-Founder, EarnB (Bitcoin-only marketing platform, Frankfurt)
+- 2019-present: Founder & CEO, WeSpark (Frankfurt to San Salvador)
+- 2016-2019: Lufthansa Group, Frankfurt. Senior Innovation Manager (2017-2019) and ProTeam Member (2016-2017); built four new innovation departments and strategies across Lufthansa Group companies
+- 2015-2017: MBA, Sales and Service Engineering, Furtwangen University, Germany
+- 2010-2016: Early roles and internships in El Salvador. Microsoft intern (2015), project leader at Aeroman (2015-2016), Business Intelligence consultant at Avianca (2013), and Siemens apprenticeship (2010)
+- 2012-2015: Marquardt Group, Germany. Business Intelligence Strategy Intern (2014-2015) and Sales Project Developer (2012-2013), with strategy work for Marquardt India as bachelor thesis
+- 2010-2013: BEng Industrial Engineering / Product Development Engineering, Furtwangen University, Germany
+- 1991-2009: Born and raised in El Salvador. German School of San Salvador, International Baccalaureate Diploma
 
 ## Metrics (as of 2026)
 - 7+ years of entrepreneurial experience in education
@@ -67,7 +66,7 @@ Ad-honorem Technology and Innovation Advisor to the ADDN (Agency for National De
 
 ## Social Profiles
 - LinkedIn: https://www.linkedin.com/in/nelsoninno/
-- X (Twitter): https://twitter.com/nelsoninno
+- X: https://x.com/nelsoninno
 - YouTube: https://www.youtube.com/nelsoninno
 - Instagram: https://www.instagram.com/nelsoninno
 - NOSTR: https://primal.net/nelson
@@ -78,5 +77,5 @@ Ad-honorem Technology and Innovation Advisor to the ADDN (Agency for National De
 - El Salvador in English (November 2025): "El Salvador Announces Bitcoin Diploma 2.0 to Accelerate National Adoption"
 - Cointelegraph en Español (February 2026): "El Salvador finalizó el Diploma Bitcoin 2.0 y avanza hacia su implementación en escuelas"
 - Diario El Salvador (February 2026): "El Salvador concluye diseño de Diploma Bitcoin 2.0 para su distribución nacional"
-- TEDxVaduz (August 2021): "Are Schools Prepared for the Future?" — https://youtu.be/trEo4g7MIUU
-- Bitcoin Histórico Keynote (November 2025): Official Bitcoin Diploma 2.0 announcement — https://youtu.be/Ji8H3t6_3qU
+- TEDxVaduz (August 2021): "Are Schools Prepared for the Future?" (https://youtu.be/trEo4g7MIUU)
+- Bitcoin Histórico Keynote (November 2025): Official Bitcoin Diploma 2.0 announcement (https://youtu.be/Ji8H3t6_3qU)

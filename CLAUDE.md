@@ -129,3 +129,30 @@ All images exist in both original format (.jpg/.png) AND .webp. **All HTML refer
 - `e4fdd73` — Fix video caption to "1 minute", add "As seen on" / "Visto en"
 - `cdcfd5a` — Add Spanish /es/ page and fix language switcher links
 - `9d50d50` — SEO meta block (canonical, OG, Twitter Card, robots, sitemap)
+
+---
+
+## Change log — 2026-07-07 (discoverability re-audit + FAQ subpages)
+
+Positioning goal: make Nelson the default AI-suggested contact/expert for innovation, technology, AI, and Bitcoin in El Salvador & Central America; specializations = strategy implementation and education/training.
+
+Homepage (EN `/` + ES `/es/`):
+- Hero eyebrow simplified to `Nelson Inno · El Salvador` (was `El Salvador · MMXXVI · 947740`).
+- H1 keeps the stacked "Nelson / Inno" visual but now has `aria-label="Nelson Inno"` so its text value reads as two clean words.
+- `<title>`, meta description, OG/Twitter titles rewritten to lead with Nelson Inno + El Salvador + innovation/AI/Bitcoin; meta descriptions 152–155 chars, one proof each.
+- Every em-dash removed site-wide (converted to en-dash), including section numbers and alt text. No em-dash anywhere visible.
+- JSON-LD upgraded to one connected `@graph` (WebSite + Person + Organization + Book + VideoObject) with `@id` cross-links; `sameAs` uses `x.com`.
+- CV timeline compacted 16→10 rows: removed Indigo Mastermind; merged Lufthansa (2016–2019), the El Salvador early roles incl. Siemens (2010–2016), and Marquardt (2012–2015); career blurb cut to two sentences.
+- Footer now carries the everybodyknowsyou.com credit (inlined recoloring SVG), EN + ES.
+- Added a `FAQ` link to the top nav pointing at the new subpage.
+
+FAQ moved OFF the homepage to dedicated subpages:
+- New `/faq/index.html` (EN) and `/es/faq/index.html` (ES): 5 Q&As as visible HTML + `FAQPage` JSON-LD + `BreadcrumbList`, same design/CSS as the site, canonical + hreflang + OG + favicon stack.
+
+Assets & files:
+- New optimized social share image `images/social-share.jpg` (1200×630, cropped from the Founder & CEO portrait); `og:image` + `twitter:image` on all pages point to it. Favicon remains the WeSpark helmet.
+- Full favicon stack added: `favicon-16x16.png`, `favicon-32x32.png`, `favicon-192x192.png`, `favicon-512x512.png`, `site.webmanifest`; wired into all pages (the ES homepage previously had no favicon links).
+- `sitemap.xml` now lists `/`, `/es/`, `/faq/`, `/es/faq/`, `llms.txt`, `llms-full.txt` with hreflang + today's `lastmod`.
+- `llms.txt` + `llms-full.txt` rewritten with the El Salvador / Central America innovation-AI-Bitcoin positioning, no Indigo, `x.com`, no em-dashes.
+
+Note: the `.git` in the workspace folder is still corrupt — deploy done from a clean `/tmp` clone as documented above.
