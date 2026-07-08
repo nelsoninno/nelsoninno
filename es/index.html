@@ -11,6 +11,13 @@
 <link rel="alternate" hreflang="es" href="https://nelsoninno.com/es/">
 <link rel="alternate" hreflang="en" href="https://nelsoninno.com/">
 <link rel="alternate" hreflang="x-default" href="https://nelsoninno.com/">
+<link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#0E0D0B">
 
 <!-- Open Graph -->
 <meta property="og:title" content="Nelson Inno | Experto en Innovación, IA y Bitcoin en El Salvador">
@@ -36,14 +43,6 @@
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="author" content="Nelson Inno">
 <meta name="keywords" content="Nelson Inno, WeSpark, innovación El Salvador, experto en IA El Salvador, inteligencia artificial Centroamérica, educación Bitcoin, Diplomado Bitcoin, formación en IA, implementación de estrategia, Unstable Innovation">
-
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="icon" href="/favicon.png" type="image/png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="manifest" href="/site.webmanifest">
-<meta name="theme-color" content="#0E0D0B">
 
 <!-- Hero image preload -->
 <link rel="preload" as="image" href="../images/photos/Nelson%20Inno%20-%20WeSpark%20-%20Founder%20%26%20CEO.webp" type="image/webp">
@@ -75,7 +74,7 @@
       "@type": "Person",
       "@id": "https://nelsoninno.com/#person",
       "name": "Nelson Inno",
-      "jobTitle": "Fundador y CEO, WeSpark",
+      "jobTitle": "Founder & CEO, WeSpark",
       "description": "Emprendedor salvadoreño y experto en innovación, inteligencia artificial y educación Bitcoin. Fundador y CEO de WeSpark y co-diseñador del Diplomado Bitcoin 2.0 nacional de El Salvador.",
       "url": "https://nelsoninno.com/",
       "image": "https://nelsoninno.com/images/social-share.jpg",
@@ -106,7 +105,11 @@
         "https://x.com/nelsoninno",
         "https://www.youtube.com/nelsoninno",
         "https://www.instagram.com/nelsoninno",
-        "https://primal.net/nelson"
+        "https://primal.net/nelson",
+        "https://wespark.io",
+        "https://www.wespark.io/nelson",
+        "https://unstableinnovation.com",
+        "https://www.unstableinnovation.com/author/"
       ],
       "author": {
         "@id": "https://unstableinnovation.com/#book"
@@ -136,7 +139,7 @@
       "name": "Nelson Inno, Fundador y CEO, WeSpark | Resumen de 1 minuto",
       "description": "Video de un minuto con los momentos más destacados de Nelson Inno como Fundador y CEO de WeSpark, desde el co-diseño del currículo Bitcoin nacional de El Salvador hasta la construcción de sistemas educativos con IA para empresas y gobiernos.",
       "thumbnailUrl": "https://nelsoninno.com/images/photos/Nelson%20Inno%20with%20the%20WeSpark%20Logo%20Background.webp",
-      "uploadDate": "2026-05-03",
+      "uploadDate": "2026-05-03T00:00:00+00:00",
       "duration": "PT1M",
       "contentUrl": "https://www.youtube.com/watch?v=INoUV0tXTGY",
       "embedUrl": "https://www.youtube.com/embed/INoUV0tXTGY",
@@ -726,7 +729,6 @@
     width: 100%; height: auto; display: block;
     border-radius: 4px;
     margin-top: 1rem;
-    border: 1px solid var(--rule);
   }
 
   /* ============== BOOKS ============== */
@@ -1157,20 +1159,10 @@
   }
   .reveal.in { opacity: 1; transform: translateY(0); }
 
-  /* ============== FAQ ============== */
-  .faq-list { margin-top: 1rem; border-top: 1px solid var(--rule); }
-  .faq-item { padding: 2rem 0; border-bottom: 1px solid var(--rule); }
-  .faq-q {
-    font-family: var(--display); font-weight: 500;
-    font-size: 1.35rem; line-height: 1.3; color: var(--ink);
-    letter-spacing: -0.02em; margin-bottom: 0.85rem;
+  @media (max-width: 480px) {
+    .hero h1 { font-size: 3rem; }
+    .section { padding: 5rem var(--pad-x); }
   }
-  .faq-a {
-    font-family: var(--body); font-size: 1rem; line-height: 1.7;
-    color: var(--ink-soft); max-width: 68ch;
-  }
-  .faq-a a { color: var(--yellow); border-bottom: 1px solid var(--muted); padding-bottom: 1px; }
-  .faq-a a:hover { border-color: var(--yellow); }
 
   /* ============== EKY FOOTER CREDIT ============== */
   .eky-credit {
@@ -1183,11 +1175,6 @@
   .eky-credit:hover { opacity: 1; color: var(--ink-soft); }
   .eky-credit__text { color: inherit; }
   .eky-credit svg { --eky-bg: var(--bg); height: 15px; width: auto; display: block; }
-
-  @media (max-width: 480px) {
-    .hero h1 { font-size: 3rem; }
-    .section { padding: 5rem var(--pad-x); }
-  }
 </style>
 </head>
 <body>
@@ -1462,7 +1449,7 @@
       <div class="title">El Salvador Announces Bitcoin Diploma 2.0 to Accelerate National Adoption</div>
       <div class="meta-line">Noviembre 2025 · Inglés</div>
     </div>
-    <div class="media-item" onclick="window.open('https://es.cointelegraph.com/news/el-salvador-finalizo-el-diploma-bitcoin-2-0-y-avanza-hacia-su-implementacion-en-escuelas', '_blank')">
+    <div class="media-item" onclick="window.open('https://cointelegraph.es/news/el-salvador-finalizo-el-diploma-bitcoin-2-0-y-avanza-hacia-su-implementacion-en-escuelas', '_blank')">
       <div class="source">Cointelegraph en Español</div>
       <div class="title">El Salvador finalizó el Diploma Bitcoin 2.0 y avanza hacia su implementación en escuelas</div>
       <div class="meta-line">Febrero 2026 · Español</div>
@@ -1669,11 +1656,33 @@
   </div>
 
   <div class="gallery-foot">
-    <p class="note">Fotos en alta resolución y bio corta en inglés y español, preparadas para medios y organizadores de conferencias.</p>
+    <p class="note">Fotos en alta resoluci&oacute;n preparadas para medios y organizadores de conferencias. El kit de prensa contiene solo fotos – copia la biograf&iacute;a corta directamente a continuaci&oacute;n.</p>
     <a href="../images/Nelson%20Inno%20-%20Press%20Kit.zip" class="btn-secondary">
       Descargar Kit de Prensa
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
     </a>
+    <style>
+      .bio-blocks{margin-top:2.5rem;display:flex;flex-direction:column;gap:1.25rem}
+      .bio-block{background:var(--bg-2);border:1px solid var(--rule);border-radius:8px;padding:1.5rem}
+      .bio-block-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem}
+      .bio-lang{font-family:var(--mono);font-size:0.7rem;letter-spacing:0.12em;color:var(--yellow);text-transform:uppercase}
+      .bio-copy-btn{background:transparent;border:1px solid var(--muted-2);color:var(--ink-soft);font-family:var(--mono);font-size:0.7rem;letter-spacing:0.08em;padding:0.3rem 0.75rem;border-radius:4px;cursor:pointer;transition:border-color 0.15s,color 0.15s}
+      .bio-copy-btn:hover{border-color:var(--yellow);color:var(--yellow)}
+      .bio-text{font-size:0.9rem;line-height:1.8;color:var(--ink-soft);white-space:pre-wrap;margin:0;font-family:var(--display)}
+    </style>
+    <div class="bio-blocks">
+      <div class="bio-block">
+        <div class="bio-block-header">
+          <span class="bio-lang">Nelson Inno – Biograf&iacute;a – Espa&ntilde;ol</span>
+          <button class="bio-copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('bio-es').innerText.replace(/\n(?!\n)/g,'\n\n')).then(()=>{this.textContent='Copiado ✓';setTimeout(()=>this.textContent='Copiar',2000)})">Copiar</button>
+        </div>
+        <p id="bio-es" class="bio-text">Nelson Inno es un emprendedor salvadore&ntilde;o, fundador y CEO de WeSpark, y autor de Unstable Innovation. Construye sistemas de educaci&oacute;n potenciados por IA para empresas, gobiernos y universidades, y co-dise&ntilde;&oacute; el Diplomado Bitcoin 2.0 con la Oficina Nacional Bitcoin de El Salvador, un curr&iacute;culo que el Ministerio de Educaci&oacute;n est&aacute; desplegando a los pr&oacute;ximos 500,000 estudiantes.
+
+Su trabajo ha sido destacado en Forbes, ZDF, ARD y Cointelegraph. Dio una charla TEDx titulada &#34;&iquest;Est&aacute;n las escuelas preparadas para el futuro?&#34; y asesora al gobierno de El Salvador en tecnolog&iacute;a, innovaci&oacute;n, educaci&oacute;n y Bitcoin.
+
+Nelson vive bajo el mantra: S&eacute; lo ordinario, construye lo extraordinario.</p>
+      </div>
+    </div>
   </div>
 </section>
 

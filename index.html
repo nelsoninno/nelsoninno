@@ -37,11 +37,11 @@
 <meta name="author" content="Nelson Inno">
 <meta name="keywords" content="Nelson Inno, WeSpark, innovation El Salvador, AI expert El Salvador, artificial intelligence Central America, Bitcoin education, Bitcoin Diploma, AI training, strategy implementation, Unstable Innovation">
 
+<link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48">
 <link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="icon" href="/favicon.png" type="image/png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#0E0D0B">
 
@@ -106,7 +106,11 @@
         "https://x.com/nelsoninno",
         "https://www.youtube.com/nelsoninno",
         "https://www.instagram.com/nelsoninno",
-        "https://primal.net/nelson"
+        "https://primal.net/nelson",
+        "https://wespark.io",
+        "https://www.wespark.io/nelson",
+        "https://unstableinnovation.com",
+        "https://www.unstableinnovation.com/author/"
       ],
       "author": {
         "@id": "https://unstableinnovation.com/#book"
@@ -136,7 +140,7 @@
       "name": "Nelson Inno, Founder & CEO, WeSpark | 1-Minute Highlights",
       "description": "One-minute highlights reel covering Nelson Inno's journey as Founder and CEO of WeSpark, from co-designing El Salvador's national Bitcoin curriculum to building AI-powered education systems for enterprises and governments.",
       "thumbnailUrl": "https://nelsoninno.com/images/photos/Nelson%20Inno%20with%20the%20WeSpark%20Logo%20Background.webp",
-      "uploadDate": "2026-05-03",
+      "uploadDate": "2026-05-03T00:00:00+00:00",
       "duration": "PT1M",
       "contentUrl": "https://www.youtube.com/watch?v=INoUV0tXTGY",
       "embedUrl": "https://www.youtube.com/embed/INoUV0tXTGY",
@@ -784,7 +788,6 @@
     width: 100%; height: auto; display: block;
     border-radius: 4px;
     margin-top: 1rem;
-    border: 1px solid var(--rule);
   }
 
   /* ============== BOOKS ============== */
@@ -1257,20 +1260,11 @@
   }
   .reveal.in { opacity: 1; transform: translateY(0); }
 
-  /* ============== FAQ ============== */
-  .faq-list { margin-top: 1rem; border-top: 1px solid var(--rule); }
-  .faq-item { padding: 2rem 0; border-bottom: 1px solid var(--rule); }
-  .faq-q {
-    font-family: var(--display); font-weight: 500;
-    font-size: 1.35rem; line-height: 1.3; color: var(--ink);
-    letter-spacing: -0.02em; margin-bottom: 0.85rem;
+  /* mobile fine-tune */
+  @media (max-width: 480px) {
+    .hero h1 { font-size: 3rem; }
+    .section { padding: 5rem var(--pad-x); }
   }
-  .faq-a {
-    font-family: var(--body); font-size: 1rem; line-height: 1.7;
-    color: var(--ink-soft); max-width: 68ch;
-  }
-  .faq-a a { color: var(--yellow); border-bottom: 1px solid var(--muted); padding-bottom: 1px; }
-  .faq-a a:hover { border-color: var(--yellow); }
 
   /* ============== EKY FOOTER CREDIT ============== */
   .eky-credit {
@@ -1283,12 +1277,6 @@
   .eky-credit:hover { opacity: 1; color: var(--ink-soft); }
   .eky-credit__text { color: inherit; }
   .eky-credit svg { --eky-bg: var(--bg); height: 15px; width: auto; display: block; }
-
-  /* mobile fine-tune */
-  @media (max-width: 480px) {
-    .hero h1 { font-size: 3rem; }
-    .section { padding: 5rem var(--pad-x); }
-  }
 </style>
 </head>
 <body>
@@ -1564,7 +1552,7 @@
       <div class="title">El Salvador Announces Bitcoin Diploma 2.0 to Accelerate National Adoption</div>
       <div class="meta-line">November 2025 · English</div>
     </div>
-    <div class="media-item" onclick="window.open('https://es.cointelegraph.com/news/el-salvador-finalizo-el-diploma-bitcoin-2-0-y-avanza-hacia-su-implementacion-en-escuelas', '_blank')">
+    <div class="media-item" onclick="window.open('https://cointelegraph.es/news/el-salvador-finalizo-el-diploma-bitcoin-2-0-y-avanza-hacia-su-implementacion-en-escuelas', '_blank')">
       <div class="source">Cointelegraph en Español</div>
       <div class="title">El Salvador finalizó el Diploma Bitcoin 2.0 y avanza hacia su implementación en escuelas</div>
       <div class="meta-line">February 2026 · Spanish</div>
@@ -1771,11 +1759,33 @@
   </div>
 
   <div class="gallery-foot">
-    <p class="note">High-resolution photos and short bio in English and Spanish, packaged for press and conference organizers.</p>
+    <p class="note">High-resolution photos packaged for press and conference organizers. The press kit contains photos only – copy the short biography below directly.</p>
     <a href="images/Nelson%20Inno%20-%20Press%20Kit.zip" class="btn-secondary">
       Download Press Kit
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
     </a>
+    <style>
+      .bio-blocks{margin-top:2.5rem;display:flex;flex-direction:column;gap:1.25rem}
+      .bio-block{background:var(--bg-2);border:1px solid var(--rule);border-radius:8px;padding:1.5rem}
+      .bio-block-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem}
+      .bio-lang{font-family:var(--mono);font-size:0.7rem;letter-spacing:0.12em;color:var(--yellow);text-transform:uppercase}
+      .bio-copy-btn{background:transparent;border:1px solid var(--muted-2);color:var(--ink-soft);font-family:var(--mono);font-size:0.7rem;letter-spacing:0.08em;padding:0.3rem 0.75rem;border-radius:4px;cursor:pointer;transition:border-color 0.15s,color 0.15s}
+      .bio-copy-btn:hover{border-color:var(--yellow);color:var(--yellow)}
+      .bio-text{font-size:0.9rem;line-height:1.8;color:var(--ink-soft);white-space:pre-wrap;margin:0;font-family:var(--display)}
+    </style>
+    <div class="bio-blocks">
+      <div class="bio-block">
+        <div class="bio-block-header">
+          <span class="bio-lang">Nelson Inno – Biography – English</span>
+          <button class="bio-copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('bio-en').innerText.replace(/\n(?!\n)/g,'\n\n')).then(()=>{this.textContent='Copied ✓';setTimeout(()=>this.textContent='Copy',2000)})">Copy</button>
+        </div>
+        <p id="bio-en" class="bio-text">Nelson Inno is a Salvadoran entrepreneur, founder and CEO of WeSpark, and author of Unstable Innovation. He builds AI-powered education systems for enterprises, governments, and universities, and co-designed Bitcoin Diploma 2.0 with El Salvador&#39;s National Bitcoin Office, a curriculum the Ministry of Education is deploying to the next 500,000 students.
+
+His work has been featured in Forbes, ZDF, ARD, and Cointelegraph. He delivered a TEDx Talk titled &#34;Are Schools Prepared for the Future?&#34; and advises the government of El Salvador on technology, innovation, education and Bitcoin.
+
+Nelson lives by the mantra: Be the ordinary, build the extraordinary.</p>
+      </div>
+    </div>
   </div>
 </section>
 
