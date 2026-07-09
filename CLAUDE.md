@@ -156,3 +156,9 @@ Assets & files:
 - `llms.txt` + `llms-full.txt` rewritten with the El Salvador / Central America innovation-AI-Bitcoin positioning, no Indigo, `x.com`, no em-dashes.
 
 Note: the `.git` in the workspace folder is still corrupt — deploy done from a clean `/tmp` clone as documented above.
+
+## Change log — 2026-07-07 (Cloudflare Pages migration fix)
+- Cloudflare Pages rejects any single file > 25 MiB. Two press-kit zips exceeded it.
+- `images/Nelson Inno - Press Kit.zip` (linked from the site) recompressed to 11.2 MiB (8 photos capped at 4500px, JPEG q88, still print-grade).
+- Removed the unreferenced duplicate `images/photos/Nelson Inno - Press Kit.zip` (38.7 MiB).
+- Footer "Hosted on GitHub Pages" line removed (now "Built in El Salvador." / "Construido en El Salvador.") on all four pages, host-agnostic for the Cloudflare move.
