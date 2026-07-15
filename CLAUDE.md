@@ -162,3 +162,12 @@ Note: the `.git` in the workspace folder is still corrupt — deploy done from a
 - `images/Nelson Inno - Press Kit.zip` (linked from the site) recompressed to 11.2 MiB (8 photos capped at 4500px, JPEG q88, still print-grade).
 - Removed the unreferenced duplicate `images/photos/Nelson Inno - Press Kit.zip` (38.7 MiB).
 - Footer "Hosted on GitHub Pages" line removed (now "Built in El Salvador." / "Construido en El Salvador.") on all four pages, host-agnostic for the Cloudflare move.
+
+## Change log — 2026-07-15 (repositioning: broaden beyond AI-education; add EKY)
+- Hero/About/bio broadened: "helps enterprises, governments, and universities adopt AI and emerging technology," education & training as deepest expertise (was "builds AI-powered education systems").
+- Hero pitch converted to a semantic `<h2 class="pitch">` (value statement for SEO/AI), name-led ("Nelson Inno helps..."), full phrase "turn AI and emerging technology into real capability" highlighted. Appearance preserved via `font-variation-settings: normal` on `.hero .pitch`.
+- "What he's building now" reframed from fundraising thesis to focus areas: AI education & training (visualization + interactivity + AI) plus AI implementations & automations; everybodyknowsyou cited as AI-native example.
+- Career timeline: WeSpark set as gold-highlighted flagship (first), everybodyknowsyou (Co-Founder & CTO, 2026–present) added second. New `.tl-item.flagship` CSS.
+- Connect: added self-selecting line routed to LinkedIn; still no phone/email anywhere (privacy).
+- Discoverability broadened to match: title, meta description, OG/Twitter, JSON-LD (added everybodyknowsyou, emerging technology, AI implementation/automation), llms.txt, llms-full.txt.
+- Applied to EN and ES; zero em-dashes; one H1 per page.

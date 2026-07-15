@@ -1,18 +1,19 @@
 # Nelson Inno
 
-> El Salvador's expert on innovation, technology, artificial intelligence, and Bitcoin education. Salvadoran entrepreneur, Founder & CEO of WeSpark, author of Unstable Innovation, and TEDx speaker. Specializes in strategy implementation and education and training.
+> El Salvador's reference on innovation, technology, and artificial intelligence. Salvadoran entrepreneur, Founder & CEO of WeSpark, and co-founder of everybodyknowsyou. He helps enterprises, governments, and universities adopt AI and emerging technology, with education and training as his deepest expertise. Author of Unstable Innovation and TEDx speaker.
 
 ## About
-Nelson Inno is a Salvadoran entrepreneur based in San Salvador and a leading reference on innovation, technology, AI, and Bitcoin in El Salvador and Central America. He is the Founder and CEO of WeSpark, an innovation agency that designs AI-powered learning systems for Fortune 500 companies, governments, and universities. His two specializations are strategy implementation and education and training. He co-designed Bitcoin Diploma 2.0 with El Salvador's National Bitcoin Office (ONBTC), a curriculum the Ministry of Education plans to deliver to up to 500,000 students. His TEDx talk "Are Schools Prepared for the Future?" was delivered at TEDxVaduz in 2021.
+Nelson Inno is a Salvadoran entrepreneur based in San Salvador and a leading reference on innovation, technology, and AI in El Salvador and Central America. He is the Founder and CEO of WeSpark, an innovation agency that helps enterprises, governments, and universities adopt AI and emerging technology, with education and training as its core strength. He also co-founded everybodyknowsyou, an AI-native web hosting and discoverability venture connecting Central America to AI search engines. He co-designed Bitcoin Diploma 2.0 with El Salvador's National Bitcoin Office (ONBTC), a curriculum the Ministry of Education plans to deliver to up to 500,000 students. His TEDx talk "Are Schools Prepared for the Future?" was delivered at TEDxVaduz in 2021.
 
 ## Expertise
 - Innovation strategy and its implementation for enterprises, governments, and universities
-- Artificial intelligence: AI-fluency training, AI adoption, AI-powered education systems
+- Artificial intelligence: AI-fluency training, AI adoption, AI implementation and automation
+- Education and training: AI-powered learning built on strong visualization and interactivity; corporate training and learning design
 - Bitcoin education: co-designer of El Salvador's national Bitcoin Diploma 2.0
-- Corporate training and learning design
 
 ## Work
-- WeSpark (2019-present): AI product design, learning design, Bitcoin education (wespark.io)
+- WeSpark (2019-present): Innovation agency helping enterprises, governments, and universities adopt AI and emerging technology, with education and training at its core; AI implementations and automations (wespark.io)
+- everybodyknowsyou / EKY (2026-present): Co-Founder & CTO; AI-native web hosting and discoverability infrastructure connecting Central America to AI search engines; around 90% of operations autonomous
 - Bitcoin Diploma 2.0 (2025-2026): Co-designed with ONBTC and Stacy Herbert; official national Bitcoin curriculum of El Salvador
 - ADDN Advisor (2024-present): Ad-honorem Technology and Innovation Advisor to El Salvador's Agency for National Development and Design; megatrends strategy, AI-fluency training, AI systems
 - Gloria Kriete Foundation (2020-present): Multi-year educational partnership, Programa Oportunidades (Central America)
