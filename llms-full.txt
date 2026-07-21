@@ -73,6 +73,7 @@ A multi-year partnership with one of Central America's most respected educationa
 - NOSTR: https://primal.net/nelson
 
 ## Press & Media
+- Diario El Salvador (July 2026): "La presencia digital es clave para las marcas en la era de la IA" (feature on everybodyknowsyou, co-founded by Nelson Inno and Marcela Lemus) (https://diarioelsalvador.com/dedinero/la-presencia-digital-es-clave-para-las-marcas-en-la-era-de-la-ia/820060)
 - Forbes Centroamérica (May 2020): "Este salvadoreño triunfa en Alemania gracias a la innovación"
 - ARD Mediathek / ZDF (2022): "Bitcoineros: Das Digitale Gold"
 - El Salvador in English (November 2025): "El Salvador Announces Bitcoin Diploma 2.0 to Accelerate National Adoption"
