@@ -126,6 +126,34 @@
       "subjectOf": [
         {
           "@type": "CreativeWork",
+          "name": "Nelson Inno on AI discoverability for tourism and other industries, World Tourism Day 2026",
+          "url": "https://www.youtube.com/watch?v=KdUyYTFnR18&t=169s",
+          "datePublished": "2026-09",
+          "inLanguage": "es",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Diario El Salvador"
+          },
+          "about": {
+            "@id": "https://nelsoninno.com/#person"
+          }
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Press Secretariat of the Presidency of El Salvador: World Tourism Day 2026",
+          "url": "https://x.com/SecPrensaSV/status/2104303146562470346",
+          "datePublished": "2026-09-27",
+          "inLanguage": "es",
+          "publisher": {
+            "@type": "GovernmentOrganization",
+            "name": "Secretaría de Prensa de la Presidencia de El Salvador"
+          },
+          "about": {
+            "@id": "https://nelsoninno.com/#person"
+          }
+        },
+        {
+          "@type": "CreativeWork",
           "name": "La presencia digital es clave para las marcas en la era de la IA",
           "url": "https://diarioelsalvador.com/dedinero/la-presencia-digital-es-clave-para-las-marcas-en-la-era-de-la-ia/820060",
           "datePublished": "2026-07-19",
@@ -1376,8 +1404,14 @@
   .channel.primary .platform { color: var(--yellow); }
   .channel.primary .name { color: var(--yellow); }
 
-  a.eky-link { color: inherit; border-bottom: 1px solid var(--yellow); transition: color 0.2s; }
-  a.eky-link:hover { color: var(--yellow); }
+  a.brand-link { color: inherit; border-bottom: 1px solid var(--yellow); transition: color 0.2s; }
+  a.brand-link:hover { color: var(--yellow); }
+  a.media-item { color: inherit; text-decoration: none; }
+  .media-item.media-multi { cursor: default; }
+  .media-multi a { color: inherit; }
+  .media-multi a.title:hover { color: var(--yellow); }
+  .media-multi .meta-line a { border-bottom: 1px solid var(--yellow); }
+  .media-multi .meta-line a:hover { color: var(--yellow); }
   .external-links {
     display: flex; gap: 2rem; margin-top: 2.5rem;
     font-family: var(--mono); font-size: 0.75rem;
@@ -1565,7 +1599,7 @@
       <h2>A founder shaped by <span class="accent">two continents</span>, building for many.</h2>
     </div>
     <div class="about-body">
-      <p>Nelson Inno is a Salvadoran entrepreneur, the co-founder and CEO of WeSpark, and the author of <em>Unstable Innovation</em>. He helps enterprises, governments, and universities adopt AI and emerging technology, with education and training as his deepest expertise, and co-designed Bitcoin Diploma 2.0 with El Salvador's National Bitcoin Office, a curriculum the country's Ministry of Education plans to bring to up to <em>500,000 students</em> over the coming years.</p>
+      <p>Nelson Inno is a Salvadoran entrepreneur, the co-founder and CEO of <a class="brand-link" href="https://wespark.io" target="_blank" rel="noopener">WeSpark</a>, and the author of <em>Unstable Innovation</em>. He helps enterprises, governments, and universities adopt AI and emerging technology, with education and training as his deepest expertise, and co-designed Bitcoin Diploma 2.0 with El Salvador's National Bitcoin Office, a curriculum the country's Ministry of Education plans to bring to up to <em>500,000 students</em> over the coming years.</p>
       <p>His work has been featured in Forbes Centroamérica, ARD, ZDF, Cointelegraph, and El Salvador's press. His TEDx talk, <em>Are Schools Prepared for the Future?</em>, explores the same question that has guided his career: how learning has to change if the people who learn through it are going to thrive in the world they will actually live in.</p>
     </div>
   </div>
@@ -1610,8 +1644,8 @@
     </div>
     <div style="position: relative;">
       <div class="building-body">
-        <p>WeSpark's first focus is AI-powered education and training. The best learning has always come from skilled facilitators who truly know the people in the room: their role, their gaps, their blind spots. That is what turns information into behavior that sticks. That model became too expensive to scale, so organizations fell back on webinars and e-learning that measure clicks, not comprehension. Nelson's answer combines the three things that make learning actually land: strong visualization, real interactivity, and artificial intelligence. Together they bring the personal, engaging quality of great coaching to entire teams, and that is the work Nelson cares about most.</p>
-        <p>Around that core, WeSpark increasingly builds AI implementations and automations directly: internal systems, workflows, and tools that let small teams operate far above their size. <em><a class="eky-link" href="https://everybodyknowsyou.com" target="_blank" rel="noopener">everybodyknowsyou</a></em>, the AI-native venture Nelson co-founded, is one example, running roughly 90% of its operations autonomously. The throughline is always the same. Take a real problem, and use technology, design, and education to solve it in a way that lasts.</p>
+        <p><a class="brand-link" href="https://wespark.io" target="_blank" rel="noopener">WeSpark</a>'s first focus is AI-powered education and training. The best learning has always come from skilled facilitators who truly know the people in the room: their role, their gaps, their blind spots. That is what turns information into behavior that sticks. That model became too expensive to scale, so organizations fell back on webinars and e-learning that measure clicks, not comprehension. Nelson's answer combines the three things that make learning actually land: strong visualization, real interactivity, and artificial intelligence. Together they bring the personal, engaging quality of great coaching to entire teams, and that is the work Nelson cares about most.</p>
+        <p>Around that core, WeSpark increasingly builds AI implementations and automations directly: internal systems, workflows, and tools that let small teams operate far above their size. <em><a class="brand-link" href="https://everybodyknowsyou.com" target="_blank" rel="noopener">everybodyknowsyou</a></em>, the AI-native venture Nelson co-founded, is one example, running roughly 90% of its operations autonomously. The throughline is always the same. Take a real problem, and use technology, design, and education to solve it in a way that lasts.</p>
       </div>
     </div>
   </div>
@@ -1646,7 +1680,7 @@
       <div class="content">
         <div class="meta">Long-term institutional</div>
         <h3>Gloria Kriete Foundation</h3>
-        <p class="body">A multi-year partnership with one of Central America's most respected educational foundations. WeSpark has supported <em>Programa Oportunidades</em> through workshops, curriculum design, and trainer development. Formalized through a Memorandum of Understanding in 2022 and renewed in 2025. Recognized by Roberto and Fernando Kriete for years of strategic volunteer contributions.</p>
+        <p class="body">A multi-year partnership with one of Central America's most respected educational foundations. <a class="brand-link" href="https://wespark.io" target="_blank" rel="noopener">WeSpark</a> has supported <em>Programa Oportunidades</em> through workshops, curriculum design, and trainer development. Formalized through a Memorandum of Understanding in 2022 and renewed in 2025. Recognized by Roberto and Fernando Kriete for years of strategic volunteer contributions.</p>
         <div class="coverage">Strategic partnership · Thousands of youth and educators reached</div>
       </div>
     </div>
@@ -1740,51 +1774,56 @@
   <div class="video-caption"><span>Are Schools Prepared for the Future?</span> · TEDxVaduz · August 2021</div>
 
   <div class="media-grid">
-    <div class="media-item" onclick="window.open('https://diarioelsalvador.com/dedinero/la-presencia-digital-es-clave-para-las-marcas-en-la-era-de-la-ia/820060', '_blank')">
+    <div class="media-item media-multi">
+      <div class="source">Diario El Salvador · Video interview</div>
+      <a class="title" href="https://www.youtube.com/watch?v=KdUyYTFnR18&amp;t=169s" target="_blank" rel="noopener">Nelson Inno on AI discoverability for tourism and other industries</a>
+      <div class="meta-line">World Tourism Day · September 2026 · Spanish · <a href="https://x.com/SecPrensaSV/status/2104303146562470346" target="_blank" rel="noopener">Also shared by the Presidency's Press Secretariat</a></div>
+    </div>
+    <a class="media-item" href="https://diarioelsalvador.com/dedinero/la-presencia-digital-es-clave-para-las-marcas-en-la-era-de-la-ia/820060" target="_blank" rel="noopener">
       <div class="source">Diario El Salvador</div>
       <div class="title">La presencia digital es clave para las marcas en la era de la IA</div>
       <div class="meta-line">July 2026 · Spanish</div>
-    </div>
-    <div class="media-item" onclick="window.open('https://cointelegraph.es/news/el-salvador-finalizo-el-diploma-bitcoin-2-0-y-avanza-hacia-su-implementacion-en-escuelas', '_blank')">
+    </a>
+    <a class="media-item" href="https://cointelegraph.es/news/el-salvador-finalizo-el-diploma-bitcoin-2-0-y-avanza-hacia-su-implementacion-en-escuelas" target="_blank" rel="noopener">
       <div class="source">Cointelegraph en Español</div>
       <div class="title">El Salvador finalizó el Diploma Bitcoin 2.0 y avanza hacia su implementación en escuelas</div>
       <div class="meta-line">February 2026 · Spanish</div>
-    </div>
-    <div class="media-item" onclick="window.open('https://diarioelsalvador.com/el-salvador-concluye-diseno-de-diploma-bitcoin-2-0-para-su-distribucion-nacional/762114/', '_blank')">
+    </a>
+    <a class="media-item" href="https://diarioelsalvador.com/el-salvador-concluye-diseno-de-diploma-bitcoin-2-0-para-su-distribucion-nacional/762114/" target="_blank" rel="noopener">
       <div class="source">Diario El Salvador</div>
       <div class="title">El Salvador concluye diseño de Diploma Bitcoin 2.0 para su distribución nacional</div>
       <div class="meta-line">February 2026 · Spanish</div>
-    </div>
-    <div class="media-item" onclick="window.open('https://elsalvadorinenglish.com/2025/11/13/el-salvador-announces-bitcoin-diploma-2-0-to-accelerate-national-adoption/', '_blank')">
+    </a>
+    <a class="media-item" href="https://elsalvadorinenglish.com/2025/11/13/el-salvador-announces-bitcoin-diploma-2-0-to-accelerate-national-adoption/" target="_blank" rel="noopener">
       <div class="source">El Salvador in English</div>
       <div class="title">El Salvador Announces Bitcoin Diploma 2.0 to Accelerate National Adoption</div>
       <div class="meta-line">November 2025 · English</div>
-    </div>
-    <div class="media-item" onclick="window.open('https://youtu.be/Ji8H3t6_3qU', '_blank')">
+    </a>
+    <a class="media-item" href="https://youtu.be/Ji8H3t6_3qU" target="_blank" rel="noopener">
       <div class="source">YouTube · Keynote</div>
       <div class="title">Bitcoin Histórico – the official Bitcoin Diploma 2.0 announcement</div>
       <div class="meta-line">November 2025 · English</div>
-    </div>
-    <div class="media-item" onclick="window.open('https://podcasts.apple.com/us/podcast/building-a-sovereign-grade-bitcoin-education/id1497540130?i=1000754848414', '_blank')">
+    </a>
+    <a class="media-item" href="https://podcasts.apple.com/us/podcast/building-a-sovereign-grade-bitcoin-education/id1497540130?i=1000754848414" target="_blank" rel="noopener">
       <div class="source">Once Bitten Podcast</div>
       <div class="title">Building a Sovereign-Grade Bitcoin Education with Daniel Prince</div>
       <div class="meta-line">2025 · English audio</div>
-    </div>
-    <div class="media-item" onclick="window.open('https://podcasts.apple.com/fr/podcast/the-bitcoin-book-that-finally-orange-pills-your-friends/id1719117707?i=1000702373428&l=en-GB', '_blank')">
+    </a>
+    <a class="media-item" href="https://podcasts.apple.com/fr/podcast/the-bitcoin-book-that-finally-orange-pills-your-friends/id1719117707?i=1000702373428&amp;l=en-GB" target="_blank" rel="noopener">
       <div class="source">The Bitcoin Book Podcast</div>
       <div class="title">The Bitcoin Book That Finally Orange-Pills Your Friends</div>
       <div class="meta-line">2025 · English audio</div>
-    </div>
-    <div class="media-item" onclick="window.open('https://www.ardmediathek.de/video/dokus-und-reportagen-im-br/bitcoineros-das-digitale-gold/br/Y3JpZDovL2JyLmRlL3ZpZGVvLzI1ZmJkNjA5LWEzNjctNGQ3Zi05YWNiLTQzZjNhYzZlYTU0Yw', '_blank')">
+    </a>
+    <a class="media-item" href="https://www.ardmediathek.de/video/dokus-und-reportagen-im-br/bitcoineros-das-digitale-gold/br/Y3JpZDovL2JyLmRlL3ZpZGVvLzI1ZmJkNjA5LWEzNjctNGQ3Zi05YWNiLTQzZjNhYzZlYTU0Yw" target="_blank" rel="noopener">
       <div class="source">ARD Mediathek</div>
       <div class="title">Bitcoineros: Das Digitale Gold</div>
       <div class="meta-line">ARD/BR · ZDF · 2022 · German</div>
-    </div>
-    <div class="media-item" onclick="window.open('https://forbescentroamerica.com/2020/05/22/este-salvadoreno-triunfa-en-alemania-gracias-a-la-innovacion/', '_blank')">
+    </a>
+    <a class="media-item" href="https://forbescentroamerica.com/2020/05/22/este-salvadoreno-triunfa-en-alemania-gracias-a-la-innovacion/" target="_blank" rel="noopener">
       <div class="source">Forbes Centroamérica</div>
       <div class="title">Este salvadoreño triunfa en Alemania gracias a la innovación</div>
       <div class="meta-line">May 2020 · Spanish</div>
-    </div>
+    </a>
   </div>
 </section>
 
@@ -1799,7 +1838,7 @@
     <div class="tl-item key flagship">
       <div class="tl-year">2019–present</div>
       <div class="tl-content">
-        <div class="role">Co-Founder &amp; CEO, WeSpark</div>
+        <div class="role">Co-Founder &amp; CEO, <a class="brand-link" href="https://wespark.io" target="_blank" rel="noopener">WeSpark</a></div>
         <div class="org">Frankfurt → San Salvador</div>
         <div class="detail">Innovation agency helping enterprises, governments, and universities adopt AI and emerging technology, with education and training at its core.</div>
       </div>
@@ -1808,7 +1847,7 @@
     <div class="tl-item key">
       <div class="tl-year">2026–present</div>
       <div class="tl-content">
-        <div class="role">Co-Founder &amp; CTO, <a class="eky-link" href="https://everybodyknowsyou.com" target="_blank" rel="noopener">everybodyknowsyou</a></div>
+        <div class="role">Co-Founder &amp; CTO, <a class="brand-link" href="https://everybodyknowsyou.com" target="_blank" rel="noopener">everybodyknowsyou</a></div>
         <div class="org">San Salvador</div>
         <div class="detail">AI-native web hosting and discoverability infrastructure connecting Central America to AI search engines. Around 90% of operations run autonomously.</div>
       </div>
@@ -2014,7 +2053,7 @@ Nelson lives by the mantra: Be the ordinary, build the extraordinary.</p>
 
   <div class="connect-wrap">
     <div class="connect-text">
-      The people who reach out usually share something. They want to see real change, they want to be part of building it, and they care about doing it well. If that sounds like you, and you would like to work with Nelson, WeSpark, or <a class="eky-link" href="https://everybodyknowsyou.com" target="_blank" rel="noopener">everybodyknowsyou</a>, LinkedIn is the fastest way to reach him.<br><br>
+      The people who reach out usually share something. They want to see real change, they want to be part of building it, and they care about doing it well. If that sounds like you, and you would like to work with Nelson, WeSpark, or everybodyknowsyou, LinkedIn is the fastest way to reach him.<br><br>
       WeSpark is the home of the <em>work</em>.<br>
       Nelson Inno is the home of the <em>person</em> behind it.
     </div>
