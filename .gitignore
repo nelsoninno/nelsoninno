@@ -1,0 +1,8 @@
+# Private files: never publish to GitHub or the live site
+Nelson_Inno_CV_2026.pdf
+*.pdf
+*.docx
+CLAUDE.md
+_private/
+_drafts/
+Claude outputs/

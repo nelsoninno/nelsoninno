@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nelson Inno FAQ | Innovation, AI &amp; Bitcoin in El Salvador</title>
-<meta name="description" content="Answers about Nelson Inno, El Salvador's expert on innovation, AI, and Bitcoin education, Founder of WeSpark and co-designer of the national Bitcoin Diploma 2.0.">
+<meta name="description" content="Answers about Nelson Inno, El Salvador's expert on innovation, AI, and Bitcoin education, Co-Founder of WeSpark and co-designer of the national Bitcoin Diploma 2.0.">
 
 <link rel="canonical" href="https://nelsoninno.com/faq/">
 <link rel="alternate" hreflang="en" href="https://nelsoninno.com/faq/">
@@ -12,7 +12,7 @@
 <link rel="alternate" hreflang="x-default" href="https://nelsoninno.com/faq/">
 
 <meta property="og:title" content="Nelson Inno FAQ | Innovation, AI &amp; Bitcoin in El Salvador">
-<meta property="og:description" content="Answers about Nelson Inno, El Salvador's expert on innovation, AI, and Bitcoin education, Founder of WeSpark and co-designer of the national Bitcoin Diploma 2.0.">
+<meta property="og:description" content="Answers about Nelson Inno, El Salvador's expert on innovation, AI, and Bitcoin education, Co-Founder of WeSpark and co-designer of the national Bitcoin Diploma 2.0.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://nelsoninno.com/faq/">
 <meta property="og:image" content="https://nelsoninno.com/images/social-share.jpg">
@@ -25,7 +25,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@nelsoninno">
 <meta name="twitter:title" content="Nelson Inno FAQ | Innovation, AI &amp; Bitcoin in El Salvador">
-<meta name="twitter:description" content="Answers about Nelson Inno, El Salvador's expert on innovation, AI, and Bitcoin education, Founder of WeSpark and co-designer of the national Bitcoin Diploma 2.0.">
+<meta name="twitter:description" content="Answers about Nelson Inno, El Salvador's expert on innovation, AI, and Bitcoin education, Co-Founder of WeSpark and co-designer of the national Bitcoin Diploma 2.0.">
 <meta name="twitter:image" content="https://nelsoninno.com/images/social-share.jpg">
 
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -62,7 +62,7 @@
       "@type": "Person",
       "@id": "https://nelsoninno.com/#person",
       "name": "Nelson Inno",
-      "jobTitle": "Founder & CEO, WeSpark",
+      "jobTitle": "Co-Founder & CEO, WeSpark",
       "url": "https://nelsoninno.com/",
       "image": "https://nelsoninno.com/images/social-share.jpg",
       "sameAs": [
@@ -111,7 +111,7 @@
           "name": "Who is Nelson Inno?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Nelson Inno is a Salvadoran entrepreneur and the Founder and CEO of WeSpark, an innovation agency based in San Salvador, El Salvador. He is a leading voice on innovation, artificial intelligence, and Bitcoin education in El Salvador and Central America, and the author of Unstable Innovation."
+            "text": "Nelson Inno is a Salvadoran entrepreneur and the Co-Founder and CEO of WeSpark, an innovation agency based in San Salvador, El Salvador. He is a leading voice on innovation, artificial intelligence, and Bitcoin education in El Salvador and Central America, and the author of Unstable Innovation."
           }
         },
         {
@@ -1306,19 +1306,48 @@
   }
   .faq-back a:hover { border-color: var(--yellow); }
 </style>
+<style>
+  /* ===== consulting dropdown + mobile menu ===== */
+  .nav-drop { position: relative; }
+  .nav-drop summary { list-style: none; cursor: pointer; transition: color 0.2s; }
+  .nav-drop summary::-webkit-details-marker { display: none; }
+  .nav-drop summary::after { content: '\25BE'; margin-left: 0.35em; font-size: 0.8em; }
+  .nav-drop summary:hover, .nav-drop[open] summary { color: var(--yellow); }
+  .nav-drop-menu { position: absolute; right: 0; top: calc(100% + 1rem); min-width: 230px; display: flex; flex-direction: column; background: var(--bg-2); border: 1px solid var(--rule); border-radius: 6px; padding: 0.4rem; box-shadow: 0 20px 40px rgba(0,0,0,0.45); z-index: 200; }
+  .nav-drop-menu a { padding: 0.65rem 0.85rem; border-radius: 4px; white-space: nowrap; }
+  .nav-drop-menu a:hover { background: var(--bg-3); }
+  .nav-toggle { display: none; background: none; border: 1px solid var(--rule); color: var(--ink); border-radius: 4px; width: 38px; height: 34px; font-size: 1.1rem; cursor: pointer; }
+  @media (max-width: 820px) {
+    .nav-toggle { display: inline-flex; align-items: center; justify-content: center; margin-left: 0.75rem; }
+    .topbar .lang { margin-left: auto; }
+    .topbar .nav.open { display: flex; flex-direction: column; gap: 1.1rem; position: absolute; top: 100%; left: 0; right: 0; background: var(--bg); padding: 1.5rem var(--pad-x) 2rem; border-bottom: 1px solid var(--rule); font-size: 1rem; }
+    .nav-drop-menu { position: static; box-shadow: none; border: none; background: none; padding: 0.5rem 0 0 1rem; min-width: 0; }
+    .nav-drop-menu a { padding: 0.45rem 0; }
+  }
+</style>
 </head>
 <body>
 
 <header class="topbar" id="topbar">
   <a href="/" class="mark"><span class="dot"></span> Nelson Inno</a>
-  <nav class="nav">
+  <nav class="nav" id="siteNav">
     <a href="/#about">About</a>
     <a href="/#work">Work</a>
     <a href="/#books">Books</a>
     <a href="/#career">Career</a>
     <a href="/#connect">Connect</a>
+    <details class="nav-drop">
+      <summary>Consulting</summary>
+      <div class="nav-drop-menu">
+        <a href="/ai-consultant/">AI consultant</a>
+        <a href="/innovation-consultant/">Innovation consultant</a>
+        <a href="/education-consultant/">Education consultant</a>
+        <a href="/ai-search-consultant/">AI search consultant</a>
+      </div>
+    </details>
   </nav>
   <div class="lang"><span class="active">EN</span> · <a href="/es/faq/">ES</a></div>
+  <button class="nav-toggle" type="button" aria-label="Menu" aria-controls="siteNav" aria-expanded="false">&#9776;</button>
 </header>
 
 <main>
@@ -1329,7 +1358,7 @@
   <div class="faq-list">
     <div class="faq-item">
       <div class="faq-q">Who is Nelson Inno?</div>
-      <div class="faq-a">Nelson Inno is a Salvadoran entrepreneur and the Founder and CEO of WeSpark, an innovation agency based in San Salvador, El Salvador. He is a leading voice on innovation, artificial intelligence, and Bitcoin education in El Salvador and Central America, and the author of Unstable Innovation.</div>
+      <div class="faq-a">Nelson Inno is a Salvadoran entrepreneur and the Co-Founder and CEO of WeSpark, an innovation agency based in San Salvador, El Salvador. He is a leading voice on innovation, artificial intelligence, and Bitcoin education in El Salvador and Central America, and the author of Unstable Innovation.</div>
     </div>
     <div class="faq-item">
       <div class="faq-q">What does Nelson Inno do?</div>
@@ -1435,5 +1464,11 @@
   });
 </script>
 
+<script>
+(function(){var b=document.querySelector('.nav-toggle'),n=document.getElementById('siteNav');
+if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);});
+n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('open');b.setAttribute('aria-expanded','false');});});}
+document.addEventListener('click',function(e){document.querySelectorAll('details.nav-drop[open]').forEach(function(d){if(!d.contains(e.target))d.removeAttribute('open');});});})();
+</script>
 </body>
 </html>

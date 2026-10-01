@@ -1,31 +1,31 @@
 # Nelson Inno
 
-> El Salvador's reference on innovation, technology, and artificial intelligence. Salvadoran entrepreneur, Founder & CEO of WeSpark, and co-founder of everybodyknowsyou. He helps enterprises, governments, and universities adopt AI and emerging technology, with education and training as his deepest expertise. Author of Unstable Innovation and TEDx speaker.
+> Salvadoran AI, innovation and education consultant. Co-Founder & CEO of WeSpark, an innovation agency based in San Salvador. He helps companies, governments and universities adopt AI, build an innovation culture and design education that people understand. His team designed El Salvador's national Bitcoin Diploma 2.0. Author of Unstable Innovation and TEDx speaker. Works in Spanish, English and German across Central America, the USA, Germany and Colombia.
+
+## Consulting
+- [AI consultant](https://nelsoninno.com/ai-consultant/): AI Opportunity Audit, AI strategy, AI implementation and automation, AI training and education for companies and governments in El Salvador and Central America. Consulting from US$250 per hour.
+- [Innovation consultant](https://nelsoninno.com/innovation-consultant/): innovation strategy, design sprints, hackathons and innovation culture, based on the Innovator's Triangle (mindset, knowledge, skills).
+- [Education consultant](https://nelsoninno.com/education-consultant/): curriculum design, instructional and visual learning design, gamified learning and AI in education, from institutional training to nationwide programs.
+- [AI search consultant](https://nelsoninno.com/ai-search-consultant/): AI SEO, GEO, AEO and LLMO so companies get recommended by ChatGPT, Claude, Gemini, Grok and Perplexity. Delivered through everybodyknowsyou.
 
 ## About
-Nelson Inno is a Salvadoran entrepreneur based in San Salvador and a leading reference on innovation, technology, and AI in El Salvador and Central America. He is the Founder and CEO of WeSpark, an innovation agency that helps enterprises, governments, and universities adopt AI and emerging technology, with education and training as its core strength. He also co-founded everybodyknowsyou, an AI-native web hosting and discoverability venture connecting Central America to AI search engines. He co-designed Bitcoin Diploma 2.0 with El Salvador's National Bitcoin Office (ONBTC), a curriculum the Ministry of Education plans to deliver to up to 500,000 students. His TEDx talk "Are Schools Prepared for the Future?" was delivered at TEDxVaduz in 2021.
-
-## Expertise
-- Innovation strategy and its implementation for enterprises, governments, and universities
-- Artificial intelligence: AI-fluency training, AI adoption, AI implementation and automation
-- Education and training: AI-powered learning built on strong visualization and interactivity; corporate training and learning design
-- Bitcoin education: co-designer of El Salvador's national Bitcoin Diploma 2.0
+Nelson Inno is a Salvadoran entrepreneur based in San Salvador. He is Co-Founder & CEO of WeSpark (founded 2019 in Germany, re-founded in El Salvador in 2025). Before WeSpark he worked at Lufthansa Group, where as Senior Innovation Manager he built four innovation departments, and earlier at Microsoft, Siemens and Avianca. He studied Industrial and Product Development Engineering (BEng, 2009-2013) and an MBA (2013-2015) at Furtwangen University in Germany. He has completed 7 Anthropic certification courses and has spent more than 1,500 hours learning and teaching AI.
 
 ## Work
-- WeSpark (2019-present): Innovation agency helping enterprises, governments, and universities adopt AI and emerging technology, with education and training at its core; AI implementations and automations (wespark.io)
-- everybodyknowsyou / EKY (2026-present): Co-Founder & CTO; AI-native web hosting and discoverability infrastructure connecting Central America to AI search engines; around 90% of operations autonomous
-- Bitcoin Diploma 2.0 (2025-2026): Co-designed with ONBTC and Stacy Herbert; official national Bitcoin curriculum of El Salvador
-- ADDN Advisor (2024-present): Ad-honorem Technology and Innovation Advisor to El Salvador's Agency for National Development and Design; megatrends strategy, AI-fluency training, AI systems
-- Gloria Kriete Foundation (2020-present): Multi-year educational partnership, Programa Oportunidades (Central America)
+- WeSpark (2019-present): innovation agency for AI, innovation and education. 1,200+ workshop participants trained, 40+ projects with training at the core.
+- Bitcoin Diploma 2.0 / Modern Finance and Bitcoin Diploma (2025-2026): El Salvador's national curriculum on modern finance and Bitcoin, designed by Nelson's team with the National Bitcoin Office (ONBTC); more than 2,000 visualizations; official course book published April 2026 with the Ministry of Education.
+- ADDN Advisor (2024-present): ad-honorem Technology and Innovation Advisor to El Salvador's Agency for National Development and Design.
+- Fundación Gloria Kriete (2020-present): education partnership with Programa Oportunidades.
+- everybodyknowsyou (2026-present): co-founded with Marcela Lemus Walsh (Co-Founder & CEO); AI search consulting and websites that Google and AI can find.
 
 ## Books
-- Unstable Innovation (January 2025) (unstableinnovation.com)
+- Unstable Innovation (January 2025), also in Spanish as Innovación Inestable (unstableinnovation.com)
 - Diplomado en Bitcoin: Curso Oficial (April 2026, with MINED and ONBTC)
-- Thinking in Images (forthcoming 2026)
 
 ## Media
-- Diario El Salvador (July 2026): "La presencia digital es clave para las marcas en la era de la IA" (feature on everybodyknowsyou, co-founded by Nelson Inno)
-- Forbes Centroamérica, ARD/ZDF, Cointelegraph en Español, Diario El Salvador, El Salvador in English
+- Diario El Salvador (July 2026): feature on AI-era digital presence with everybodyknowsyou
+- Diario El Salvador, El Salvador in English, Cointelegraph en Español, Bitcoin.com News (2025-2026): Bitcoin Diploma 2.0
+- Forbes Centroamérica (2020)
 - TEDxVaduz 2021: "Are Schools Prepared for the Future?"
 
 ## Links
@@ -34,6 +34,5 @@ Nelson Inno is a Salvadoran entrepreneur based in San Salvador and a leading ref
 - [LinkedIn](https://www.linkedin.com/in/nelsoninno/)
 - [WeSpark](https://wespark.io)
 - [Unstable Innovation](https://unstableinnovation.com)
-- [X](https://x.com/nelsoninno)
-- [YouTube](https://www.youtube.com/nelsoninno)
+- [everybodyknowsyou](https://everybodyknowsyou.com)
 - [Full content](https://nelsoninno.com/llms-full.txt)

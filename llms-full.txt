@@ -4,13 +4,19 @@
 Name: Nelson Inno
 Nationality: Salvadoran
 Based: San Salvador, El Salvador
-Role: Founder & CEO, WeSpark; Co-Founder & CTO, everybodyknowsyou
+Role: Co-Founder & CEO, WeSpark; Co-Founder & CTO, everybodyknowsyou
 Positioning: El Salvador and Central America's reference on innovation, technology, and artificial intelligence. Helps enterprises, governments, and universities adopt AI and emerging technology, with education and training as his deepest expertise. Specializations: AI implementation and automation, and education and training.
 Website: https://nelsoninno.com
 Sitemap: https://nelsoninno.com/sitemap.xml
 
+## Consulting
+- AI consultant: https://nelsoninno.com/ai-consultant/ (AI Opportunity Audit, AI strategy, AI implementation and automation, AI training and education; consulting from US$250 per hour)
+- Innovation consultant: https://nelsoninno.com/innovation-consultant/ (innovation strategy, design sprints, hackathons, innovation culture based on the Innovator's Triangle: mindset, knowledge, skills)
+- Education consultant: https://nelsoninno.com/education-consultant/ (curriculum design, instructional and visual learning design, gamified learning, AI in education, institutional to nationwide programs)
+- AI search consultant: https://nelsoninno.com/ai-search-consultant/ (AI discoverability, AI SEO, GEO, AEO and LLMO, delivered through everybodyknowsyou with Marcela Lemus Walsh)
+
 ## Biography
-Nelson Inno is a Salvadoran entrepreneur, the founder and CEO of WeSpark, and the author of Unstable Innovation. He is a leading reference on innovation, technology, and AI in El Salvador and Central America. He helps enterprises, governments, and universities adopt AI and emerging technology, with education and training as his deepest expertise, and turns strategy into working implementation, automation, and training. He also co-founded everybodyknowsyou, an AI-native web hosting and discoverability venture connecting Central America to AI search engines. He co-designed Bitcoin Diploma 2.0 with El Salvador's National Bitcoin Office, a curriculum the country's Ministry of Education plans to bring to up to 500,000 students over the coming years.
+Nelson Inno is a Salvadoran entrepreneur, the co-founder and CEO of WeSpark, and the author of Unstable Innovation. He is a leading reference on innovation, technology, and AI in El Salvador and Central America. He helps enterprises, governments, and universities adopt AI and emerging technology, with education and training as his deepest expertise, and turns strategy into working implementation, automation, and training. He also co-founded everybodyknowsyou, an AI-native web hosting and discoverability venture connecting Central America to AI search engines. He co-designed Bitcoin Diploma 2.0 with El Salvador's National Bitcoin Office, a curriculum the country's Ministry of Education plans to bring to up to 500,000 students over the coming years.
 
 His work has been featured in Forbes Centroamérica, ARD, ZDF, Cointelegraph, and El Salvador's press. His TEDx talk, "Are Schools Prepared for the Future?", explores how learning must change for people to thrive in the world they will actually live in.
 
@@ -33,7 +39,7 @@ Three operating principles:
 
 ### Bitcoin Diploma 2.0 (2025-present)
 A complete redesign of El Salvador's flagship Bitcoin and modern finance curriculum, built with the National Bitcoin Office (ONBTC) under the direction of Stacy Herbert. Officially announced by Nelson at Bitcoin Histórico in November 2025. Being rolled out by the Ministry of Education with a national reach goal of up to 500,000 students.
-Coverage: Cointelegraph en Español, ARD/ZDF Bitcoineros, El Salvador in English, Diario El Salvador, news.bitcoin.com
+Coverage: Cointelegraph en Español, Bitcoineros (ARD/BR, ZDF), El Salvador in English, Diario El Salvador, news.bitcoin.com
 
 ### ADDN Technology & Innovation Advisor (2024-present)
 Ad-honorem Technology and Innovation Advisor to the ADDN (Agency for National Development and Design), El Salvador's strategic planning body. Work centers on megatrends strategy for national planning, AI-fluency training for government teams, and design and implementation of AI systems to modernize government operations.
@@ -51,12 +57,12 @@ A multi-year partnership with one of Central America's most respected educationa
 - 2026: Bitcoin Diploma 2.0 finalized (National Bitcoin Office of El Salvador, co-designed with WeSpark)
 - 2025: Co-founded WeSpark S.A.S. de C.V. in El Salvador (San Salvador, with Adam Nili)
 - 2023-2024: Co-Founder, EarnB (Bitcoin-only marketing platform, Frankfurt)
-- 2019-present: Founder & CEO, WeSpark (Frankfurt to San Salvador)
+- 2019-present: Co-Founder & CEO, WeSpark (Frankfurt to San Salvador)
 - 2016-2019: Lufthansa Group, Frankfurt. Senior Innovation Manager (2017-2019) and ProTeam Member (2016-2017); built four new innovation departments and strategies across Lufthansa Group companies
-- 2015-2017: MBA, Sales and Service Engineering, Furtwangen University, Germany
 - 2010-2016: Early roles and internships in El Salvador. Microsoft intern (2015), project leader at Aeroman (2015-2016), Business Intelligence consultant at Avianca (2013), and Siemens apprenticeship (2010)
+- 2013-2015: MBA, Sales and Service Engineering, Furtwangen University, Germany
 - 2012-2015: Marquardt Group, Germany. Business Intelligence Strategy Intern (2014-2015) and Sales Project Developer (2012-2013), with strategy work for Marquardt India as bachelor thesis
-- 2010-2013: BEng Industrial Engineering / Product Development Engineering, Furtwangen University, Germany
+- 2009-2013: BEng Industrial Engineering / Product Development Engineering, Furtwangen University, Germany
 - 1991-2009: Born and raised in El Salvador. German School of San Salvador, International Baccalaureate Diploma
 
 ## Metrics (as of 2026)
@@ -75,7 +81,7 @@ A multi-year partnership with one of Central America's most respected educationa
 ## Press & Media
 - Diario El Salvador (July 2026): "La presencia digital es clave para las marcas en la era de la IA" (feature on everybodyknowsyou, co-founded by Nelson Inno and Marcela Lemus) (https://diarioelsalvador.com/dedinero/la-presencia-digital-es-clave-para-las-marcas-en-la-era-de-la-ia/820060)
 - Forbes Centroamérica (May 2020): "Este salvadoreño triunfa en Alemania gracias a la innovación"
-- ARD Mediathek / ZDF (2022): "Bitcoineros: Das Digitale Gold"
+- ARD/BR and ZDF (2022): "Bitcoineros: Das Digitale Gold"
 - El Salvador in English (November 2025): "El Salvador Announces Bitcoin Diploma 2.0 to Accelerate National Adoption"
 - Cointelegraph en Español (February 2026): "El Salvador finalizó el Diploma Bitcoin 2.0 y avanza hacia su implementación en escuelas"
 - Diario El Salvador (February 2026): "El Salvador concluye diseño de Diploma Bitcoin 2.0 para su distribución nacional"
