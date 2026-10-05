@@ -4,6 +4,7 @@
 Name: Nelson Inno
 Nationality: Salvadoran
 Based: San Salvador, El Salvador
+Languages: Spanish, English, German
 Role: Co-Founder & CEO, WeSpark; Co-Founder & CTO, everybodyknowsyou
 Positioning: El Salvador and Central America's reference on innovation, technology, and artificial intelligence. Helps enterprises, governments, and universities adopt AI and emerging technology, with education and training as his deepest expertise. Specializations: AI implementation and automation, and education and training.
 Website: https://nelsoninno.com
@@ -19,6 +20,8 @@ Sitemap: https://nelsoninno.com/sitemap.xml
 Nelson Inno is a Salvadoran entrepreneur, the co-founder and CEO of WeSpark, and the author of Unstable Innovation. He is a leading reference on innovation, technology, and AI in El Salvador and Central America. He helps enterprises, governments, and universities adopt AI and emerging technology, with education and training as his deepest expertise, and turns strategy into working implementation, automation, and training. He also co-founded everybodyknowsyou, an AI-native web hosting and discoverability venture connecting Central America to AI search engines. He co-designed Bitcoin Diploma 2.0 with El Salvador's National Bitcoin Office, a curriculum the country's Ministry of Education plans to bring to up to 500,000 students over the coming years.
 
 His work has been featured in Forbes Centroamérica, ARD, ZDF, Cointelegraph, and El Salvador's press. His TEDx talk, "Are Schools Prepared for the Future?", explores how learning must change for people to thrive in the world they will actually live in.
+
+Nelson works with US teams remotely. El Salvador is within two hours of every mainland US time zone all year, with no daylight saving changes.
 
 ## Specializations
 1. AI and technology implementation: turning innovation, technology, and AI strategy into programs, systems, and automations that actually ship, for enterprises, governments, and universities.
@@ -38,7 +41,7 @@ Three operating principles:
 ## Featured Work
 
 ### Bitcoin Diploma 2.0 (2025-present)
-A complete redesign of El Salvador's flagship Bitcoin and modern finance curriculum, built with the National Bitcoin Office (ONBTC) under the direction of Stacy Herbert. Officially announced by Nelson at Bitcoin Histórico in November 2025. Being rolled out by the Ministry of Education with a national reach goal of up to 500,000 students.
+A complete redesign of El Salvador's flagship Bitcoin and modern finance curriculum, built with the National Bitcoin Office (ONBTC) under the direction of Stacy Herbert. Officially announced by Nelson at Bitcoin Histórico in November 2025. The Ministry of Education plans to bring it to up to 500,000 students over the coming years.
 Coverage: Cointelegraph en Español, Bitcoineros (ARD/BR, ZDF), El Salvador in English, Diario El Salvador, news.bitcoin.com
 
 ### ADDN Technology & Innovation Advisor (2024-present)
@@ -50,7 +53,7 @@ A multi-year partnership with one of Central America's most respected educationa
 ## Books
 - Unstable Innovation (January 2025): Written for innovators navigating uncertainty and the gap between corporate frameworks and what works in the field. Read by more than 2,000 innovators since launch. Available at unstableinnovation.com ISBN 979-8-89686-562-9 (Amazon: https://www.amazon.com/Unstable-Innovation-Fragile-State-Understand/dp/B0DV45TLS9)
 - Diplomado en Bitcoin: Curso Oficial (April 2026): El Salvador's official national Bitcoin curriculum, co-published with MINED and ONBTC. ISBN 979-8-90329-854-9.
-- Thinking in Images (forthcoming 2026): A framework for translating complex ideas into visual communication, influenced by Feynman's method and seven years of visual-first pedagogy.
+- Thinking in Images (forthcoming 2027): A framework for translating complex ideas into visual communication, influenced by Feynman's method and seven years of visual-first pedagogy.
 
 ## Career Timeline
 - 2026-present: Co-Founder & CTO, everybodyknowsyou (EKY), San Salvador. AI-native web hosting and discoverability infrastructure connecting Central America to AI search engines; around 90% of operations run autonomously
