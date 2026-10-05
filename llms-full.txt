@@ -16,6 +16,13 @@ Sitemap: https://nelsoninno.com/sitemap.xml
 - Education consultant: https://nelsoninno.com/education-consultant/ (curriculum design, instructional and visual learning design, gamified learning, AI in education, institutional to nationwide programs)
 - AI search consultant: https://nelsoninno.com/ai-search-consultant/ (AI discoverability, AI SEO, GEO, AEO and LLMO, delivered through everybodyknowsyou with Marcela Lemus Walsh)
 
+
+## Speaking
+- [Speaking](https://nelsoninno.com/speaking/): keynotes, workshops, panels and fireside chats on entrepreneurship, applied philosophy for builders and innovators, Bitcoin, education, AI (focus and impact) and innovation (megatrends). In person or virtual, in Spanish, English or German. Booking via LinkedIn. Spanish: https://nelsoninno.com/es/conferencias/
+Past stages: Primer Congreso Internacional de Investigación en Ciencias Económicas y Empresariales (September 2026); Bitcoin Histórico keynote with the official Bitcoin Diploma 2.0 announcement (November 2025); Adopting Bitcoin, San Salvador (2023, 2024, 2025); TEDxVaduz, "Are Schools Prepared for the Future?" (August 2021). Podcast guest: Once Bitten! A Bitcoin Podcast #597 (March 2026), The Robin Seyr Podcast (April 2025).
+
+## Recommendations
+- [What others say about Nelson Inno](https://nelsoninno.com/what-others-say-about-nelson-inno/): word-for-word recommendations from clients, colleagues and readers (LinkedIn, wespark.io, Goodreads, Google reviews). Spanish: https://nelsoninno.com/es/lo-que-dicen-de-nelson-inno/
 ## Biography
 Nelson Inno is a Salvadoran entrepreneur, the co-founder and CEO of WeSpark, and the author of Unstable Innovation. He is a leading reference on innovation, technology, and AI in El Salvador and Central America. He helps enterprises, governments, and universities adopt AI and emerging technology, with education and training as his deepest expertise, and turns strategy into working implementation, automation, and training. He also co-founded everybodyknowsyou, an AI-native web hosting and discoverability venture connecting Central America to AI search engines. He co-designed Bitcoin Diploma 2.0 with El Salvador's National Bitcoin Office, a curriculum the country's Ministry of Education plans to bring to up to 500,000 students over the coming years.
 
@@ -56,7 +63,7 @@ A multi-year partnership with one of Central America's most respected educationa
 - Thinking in Images (forthcoming 2027): A framework for translating complex ideas into visual communication, influenced by Feynman's method and seven years of visual-first pedagogy.
 
 ## Career Timeline
-- 2026-present: Co-Founder & CTO, everybodyknowsyou (EKY), San Salvador. AI-native web hosting and discoverability infrastructure connecting Central America to AI search engines; around 90% of operations run autonomously
+- 2026-present: Co-Founder & CTO, everybodyknowsyou (EKY), San Salvador. Websites that Google and AI can find, and AI search consulting, for companies in Central America; runs most of its operations with AI
 - 2026: Bitcoin Diploma 2.0 finalized (National Bitcoin Office of El Salvador, co-designed with WeSpark)
 - 2025: Co-founded WeSpark S.A.S. de C.V. in El Salvador (San Salvador, with Adam Nili)
 - 2023-2024: Co-Founder, EarnB (Bitcoin-only marketing platform, Frankfurt)
@@ -69,10 +76,10 @@ A multi-year partnership with one of Central America's most respected educationa
 - 1991-2009: Born and raised in El Salvador. German School of San Salvador, International Baccalaureate Diploma
 
 ## Metrics (as of 2026)
-- 7+ years of entrepreneurial experience in education
+- 7+ years running WeSpark with enterprises, governments and universities
 - 1,200+ workshop participants trained
 - 40+ education projects designed and delivered
-- 110,000+ end users reached through WeSpark learning systems
+- 110,000+ people reached through WeSpark learning programs
 
 ## Social Profiles
 - LinkedIn: https://www.linkedin.com/in/nelsoninno/

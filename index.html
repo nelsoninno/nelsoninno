@@ -93,6 +93,11 @@
         "name": "Hochschule Furtwangen University"
       },
       "knowsAbout": [
+        "Entrepreneurship",
+        "Applied Philosophy",
+        "Bitcoin",
+        "Education",
+        "Megatrends",
         "Innovation",
         "Artificial Intelligence",
         "AI Strategy",
@@ -1413,6 +1418,27 @@
   .media-multi a.title:hover { color: var(--yellow); }
   .media-multi .meta-line a { border-bottom: 1px solid var(--yellow); }
   .media-multi .meta-line a:hover { color: var(--yellow); }
+  .quote-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 1rem; }
+  .quote-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; margin-top: 1rem; align-items: start; }
+  @media (max-width: 920px) { .quote-strip, .quote-grid { grid-template-columns: 1fr; } }
+  .quote-card { background: var(--bg-2); border: 1px solid var(--rule); border-radius: 6px; padding: 2rem; display: flex; flex-direction: column; gap: 1.1rem; margin: 0; }
+  .quote-card blockquote { margin: 0; }
+  .quote-card blockquote p { font-size: 1.05rem; line-height: 1.6; color: var(--ink); margin: 0 0 0.8rem; }
+  .quote-card blockquote p:last-child { margin-bottom: 0; }
+  .quote-card .tr { font-size: 0.92rem; line-height: 1.6; color: var(--ink-soft); border-left: 2px solid var(--rule); padding-left: 1rem; }
+  .quote-card .tr p { margin: 0 0 0.6rem; } .quote-card .tr p:last-child { margin-bottom: 0; }
+  .quote-card .tr .lbl, .quote-card .who { font-family: var(--mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.09em; color: var(--muted); }
+  .quote-card .tr .lbl { display: block; margin-bottom: 0.4rem; }
+  .quote-card .who { line-height: 1.7; }
+  .quote-card .who strong { display: block; color: var(--yellow); font-weight: 500; font-size: 0.75rem; }
+  .quote-card .who a { color: var(--ink-soft); border-bottom: 1px solid var(--rule); }
+  .quote-more { margin-top: 1.75rem; font-family: var(--mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; }
+  .quote-more a { color: var(--yellow); }
+  .strip-h { font-size: 1.3rem; margin: 3.5rem 0 1.5rem; }
+  .speak-lede { font-size: 1.15rem; line-height: 1.7; color: var(--ink-soft); max-width: 62ch; margin-top: 1.5rem; }
+  .speak-topics { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 2rem 0 2.5rem; }
+  .speak-topics span { border: 1px solid var(--rule); border-radius: 999px; padding: 0.5rem 1rem; font-size: 0.85rem; color: var(--ink-soft); }
+  .speak-cta, .cta-btns { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
   .external-links {
     display: flex; gap: 2rem; margin-top: 2.5rem;
     font-family: var(--mono); font-size: 0.75rem;
@@ -1516,6 +1542,7 @@
     <a href="#work">Work</a>
     <a href="#books">Books</a>
     <a href="#career">Career</a>
+    <a href="speaking/">Speaking</a>
     <a href="#connect">Connect</a>
     <a href="/faq/">FAQ</a>
     <details class="nav-drop">
@@ -1556,12 +1583,9 @@
     </div>
 
     <div class="cta-row">
-      <a href="#about" class="btn-primary">
-        Read his story
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-      </a>
+      <div class="cta-btns"><a href="https://www.linkedin.com/in/nelsoninno/" class="btn-primary" target="_blank" rel="noopener">Talk to Nelson <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a><a href="https://www.linkedin.com/in/nelsoninno/" class="btn-secondary" target="_blank" rel="noopener">Book Nelson to speak</a></div>
       <div class="links">
-        <a href="https://www.linkedin.com/in/nelsoninno/" target="_blank">LinkedIn</a>
+        <a href="speaking/">Speaking</a>
         <a href="https://unstableinnovation.com" target="_blank">Books</a>
         <a href="https://wespark.io" target="_blank">WeSpark</a>
       </div>
@@ -1597,7 +1621,7 @@
   <div class="about-grid">
     <div>
       <div class="eyebrow">About <span class="num">– 01</span></div>
-      <h2>A founder shaped by <span class="accent">two continents</span>, building for many.</h2>
+      <h2>An engineer and educator shaped by <span class="accent">two continents</span>.</h2>
     </div>
     <div class="about-body">
       <p>Nelson Inno is a Salvadoran entrepreneur, the co-founder and CEO of <a class="brand-link" href="https://wespark.io" target="_blank" rel="noopener">WeSpark</a>, and the author of <em>Unstable Innovation</em>. He helps enterprises, governments, and universities adopt AI and emerging technology, with education and training as his deepest expertise, and co-designed Bitcoin Diploma 2.0 with El Salvador's National Bitcoin Office, a curriculum the country's Ministry of Education plans to bring to up to <em>500,000 students</em> over the coming years.</p>
@@ -1618,7 +1642,7 @@
   <div class="metrics">
     <div class="metric">
       <div class="num">7<em>+</em></div>
-      <div class="label"><strong>Years of entrepreneurial</strong> experience building in education</div>
+      <div class="label"><strong>Years running WeSpark</strong> with enterprises, governments and universities</div>
     </div>
     <div class="metric">
       <div class="num">1,200<em>+</em></div>
@@ -1630,7 +1654,7 @@
     </div>
     <div class="metric">
       <div class="num">110K<em>+</em></div>
-      <div class="label"><strong>End users</strong> reached through learning systems</div>
+      <div class="label"><strong>People reached</strong> through WeSpark learning programs</div>
     </div>
   </div>
   <div class="metrics-foot">Across seven years of WeSpark engagements with Fortune 500 enterprises, governments, universities, and foundations.</div>
@@ -1642,12 +1666,12 @@
   <div class="building">
     <div>
       <div class="eyebrow">Now <span class="num">– 02</span></div>
-      <h2>What he's <span class="accent">building now</span>.</h2>
+      <h2>What he does for <span class="accent">organizations today</span>.</h2>
     </div>
     <div style="position: relative;">
       <div class="building-body">
         <p><a class="brand-link" href="https://wespark.io" target="_blank" rel="noopener">WeSpark</a>'s first focus is AI-powered education and training. The best learning has always come from skilled facilitators who truly know the people in the room: their role, their gaps, their blind spots. That is what turns information into behavior that sticks. That model became too expensive to scale, so organizations fell back on webinars and e-learning that measure clicks, not comprehension. Nelson's answer combines the three things that make learning actually land: strong visualization, real interactivity, and artificial intelligence. Together they bring the personal, engaging quality of great coaching to entire teams, and that is the work Nelson cares about most.</p>
-        <p>Around that core, WeSpark increasingly builds AI implementations and automations directly: internal systems, workflows, and tools that let small teams operate far above their size. <em><a class="brand-link" href="https://everybodyknowsyou.com" target="_blank" rel="noopener">everybodyknowsyou</a></em>, the AI-native venture Nelson co-founded, is one example, running roughly 90% of its operations autonomously. The throughline is always the same. Take a real problem, and use technology, design, and education to solve it in a way that lasts.</p>
+        <p>Around that core, WeSpark increasingly builds AI implementations and automations directly: internal systems, workflows, and tools that let small teams operate far above their size. <em><a class="brand-link" href="https://everybodyknowsyou.com" target="_blank" rel="noopener">everybodyknowsyou</a></em>, the company Nelson co-founded, is one example: it runs most of its operations with AI and builds websites that Google and AI can find. The throughline is always the same. Take a real problem, and use technology, design, and education to solve it in a way that lasts.</p>
       </div>
     </div>
   </div>
@@ -1710,6 +1734,10 @@
   <h2>Selected partners across <span class="accent">seven years</span>.</h2>
 
   <img loading="lazy" class="logos-img" src="images/photos/Customers%20Nelson%20Inno%20White.webp" alt="Organizations Nelson Inno has worked with – WeSpark clients and partners" width="1400" height="833">
+  <h3 class="strip-h">What clients and colleagues say</h3>
+  <div class="quote-strip"><figure class="quote-card"><blockquote lang="en"><p>&ldquo;He led a challenging session with a large group consisting of multiple business partners with great results, and followed up with an excellent summary and digitisation of all assets.&rdquo;</p></blockquote><figcaption class="who"><strong>Nestor Danas</strong>Brand Director, Procter &amp; Gamble · Client · <a href="https://www.wespark.io/design" target="_blank" rel="noopener">wespark.io</a></figcaption></figure><figure class="quote-card"><blockquote lang="en"><p>&ldquo;In just three days, he delivered a fully fledged, professional website that captures exactly who we are: the brand, the look, the feel, all of it.&rdquo;</p></blockquote><figcaption class="who"><strong>Andrea Hernandez Tobar</strong>Origen Ganadero · everybodyknowsyou client · <a href="https://www.google.com/maps/place/Everybody+Knows+You/@13.7489783,-88.93025,9z/data=!4m6!3m5!1s0x416eb16ae0adcfc5:0x2869cdf325a69607!8m2!3d13.7489783!4d-88.93025!16s%2Fg%2F11z8nmhsr4" target="_blank" rel="noopener">Google review</a></figcaption></figure><figure class="quote-card"><blockquote lang="en"><p>&ldquo;Entering a room with Nelson for 30 minutes means that you'll leave the room a lot more inspired and motivated to work and develop your ideas, concepts, and projects.&rdquo;</p></blockquote><figcaption class="who"><strong>Dr. Tarik El Bouyahyani</strong>Worked with Nelson at different companies, May 2020 · <a href="https://www.linkedin.com/in/nelsoninno/details/recommendations/" target="_blank" rel="noopener">LinkedIn</a></figcaption></figure></div>
+  <div class="quote-more"><a href="what-others-say-about-nelson-inno/">Read what others say about Nelson &rarr;</a></div>
+
 </section>
 
 <!-- ==================== BOOKS ==================== -->
@@ -1829,10 +1857,20 @@
   </div>
 </section>
 
+<!-- ==================== SPEAKING ==================== -->
+<div class="section-divider"><hr><div class="marker"></div><hr></div>
+<section class="section" id="speaking">
+  <div class="eyebrow">Speaking <span class="num">– 07</span></div>
+  <h2>Book Nelson <span class="accent">to speak</span>.</h2>
+  <p class="speak-lede">Keynotes, workshops, panels and fireside chats for companies, governments, universities and conferences. In person or virtual, in Spanish, English or German.</p>
+  <div class="speak-topics"><span>AI: focus and impact</span><span>Innovation and megatrends</span><span>Education</span><span>Bitcoin</span><span>Entrepreneurship</span><span>Applied philosophy for builders and innovators</span></div>
+  <div class="speak-cta"><a href="speaking/" class="btn-primary">See topics and past stages <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a><a href="https://www.linkedin.com/in/nelsoninno/" class="btn-secondary" target="_blank" rel="noopener">Book Nelson to speak</a></div>
+</section>
+
 <!-- ==================== TIMELINE ==================== -->
 <div class="section-divider"><hr><div class="marker"></div><hr></div>
 <section class="section" id="career">
-  <div class="eyebrow">Career <span class="num">– 07</span></div>
+  <div class="eyebrow">Career <span class="num">– 08</span></div>
   <h2>Fifteen years of <span class="accent">learning by building</span>.</h2>
 
   <div class="timeline-wrap">
@@ -1851,7 +1889,7 @@
       <div class="tl-content">
         <div class="role">Co-Founder &amp; CTO, <a class="brand-link" href="https://everybodyknowsyou.com" target="_blank" rel="noopener">everybodyknowsyou</a></div>
         <div class="org">San Salvador</div>
-        <div class="detail">AI-native web hosting and discoverability infrastructure connecting Central America to AI search engines. Around 90% of operations run autonomously.</div>
+        <div class="detail">Websites that Google and AI can find, and AI search consulting, for companies in Central America. Runs most of its operations with AI.</div>
       </div>
     </div>
 
@@ -1943,7 +1981,7 @@
 <section class="section">
   <div class="philosophy-block">
     <div>
-      <div class="eyebrow">Philosophy <span class="num">– 08</span></div>
+      <div class="eyebrow">Philosophy <span class="num">– 09</span></div>
       <h2>How he <span class="accent">operates</span>.</h2>
     </div>
     <div style="position: relative;">
@@ -1978,7 +2016,7 @@
 <!-- ==================== GALLERY ==================== -->
 <div class="section-divider"><hr><div class="marker"></div><hr></div>
 <section class="section" id="press">
-  <div class="eyebrow">Photos <span class="num">– 09</span></div>
+  <div class="eyebrow">Photos <span class="num">– 10</span></div>
   <h2>Press &amp; <span class="accent">portrait</span> assets.</h2>
 
   <div class="gallery-grid">
@@ -2050,21 +2088,23 @@ Nelson lives by the mantra: Be the ordinary, build the extraordinary.</p>
 <!-- ==================== CONNECT ==================== -->
 <div class="section-divider"><hr><div class="marker"></div><hr></div>
 <section class="section" id="connect">
-  <div class="eyebrow">Connect <span class="num">– 10</span></div>
+  <div class="eyebrow">Connect <span class="num">– 11</span></div>
   <h2>The fastest path is <span class="accent">LinkedIn</span>.</h2>
 
   <div class="connect-wrap">
     <div class="connect-text">
-      The people who reach out usually share something. They want to see real change, they want to be part of building it, and they care about doing it well. If that sounds like you, and you would like to work with Nelson, WeSpark, or everybodyknowsyou, LinkedIn is the fastest way to reach him.<br><br>
-      Nelson works with US teams remotely. El Salvador is within two hours of every mainland US time zone all year, with no daylight saving changes.<br><br>
-      WeSpark is the home of the <em>work</em>.<br>
-      Nelson Inno is the home of the <em>person</em> behind it.
+      Most people reach out for one of two reasons: help with AI, innovation or education in their organization, or a speaker for their event. Both start on LinkedIn.<br><br>
+      Nelson works with US teams remotely. El Salvador is within two hours of every mainland US time zone all year, with no daylight saving changes.
     </div>
 
     <div class="connect-channels">
-      <a class="channel primary" href="https://www.linkedin.com/in/nelsoninno/" target="_blank">
-        <div class="name">Connect on LinkedIn</div>
-        <div class="platform">/in/nelsoninno →</div>
+      <a class="channel primary" href="https://www.linkedin.com/in/nelsoninno/" target="_blank" rel="noopener">
+        <div class="name">Talk to Nelson</div>
+        <div class="platform">LinkedIn · /in/nelsoninno →</div>
+      </a>
+      <a class="channel primary" href="https://www.linkedin.com/in/nelsoninno/" target="_blank" rel="noopener">
+        <div class="name">Book Nelson to speak</div>
+        <div class="platform">LinkedIn · event details →</div>
       </a>
       <a class="channel" href="https://primal.net/nelson" target="_blank">
         <div class="name">NOSTR</div>

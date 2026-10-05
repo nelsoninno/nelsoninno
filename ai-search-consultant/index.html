@@ -171,6 +171,12 @@
     "@id": "https://wespark.io/#organization"
    },
    "knowsAbout": [
+    "Entrepreneurship",
+    "Applied Philosophy",
+    "Bitcoin",
+    "Education",
+    "Innovation",
+    "Megatrends",
     "Artificial Intelligence",
     "AI Strategy",
     "AI Implementation",
@@ -1439,6 +1445,8 @@
     border-bottom: 1px solid var(--muted); padding-bottom: 2px;
   }
   .faq-back a:hover { border-color: var(--yellow); }
+  a.brand-link { color: inherit; border-bottom: 1px solid var(--yellow); transition: color 0.2s; }
+  a.brand-link:hover { color: var(--yellow); }
 </style>
 
 <style>
@@ -1495,6 +1503,36 @@
   .two-col .logo-panel img { border: none; aspect-ratio: auto; object-fit: contain; width: 100%; height: auto; }
   .pq { max-width: 900px; margin: 0 auto; text-align: center; }
   .pq .pull-quote { max-width: 26ch; font-size: clamp(1.7rem, 3.6vw, 2.8rem); }
+  .quote-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 1rem; }
+  .quote-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; margin-top: 1rem; align-items: start; }
+  @media (max-width: 920px) { .quote-strip, .quote-grid { grid-template-columns: 1fr; } }
+  .quote-card { background: var(--bg-2); border: 1px solid var(--rule); border-radius: 6px; padding: 2rem; display: flex; flex-direction: column; gap: 1.1rem; margin: 0; }
+  .quote-card blockquote { margin: 0; }
+  .quote-card blockquote p { font-size: 1.05rem; line-height: 1.6; color: var(--ink); margin: 0 0 0.8rem; }
+  .quote-card blockquote p:last-child { margin-bottom: 0; }
+  .quote-card .tr { font-size: 0.92rem; line-height: 1.6; color: var(--ink-soft); border-left: 2px solid var(--rule); padding-left: 1rem; }
+  .quote-card .tr p { margin: 0 0 0.6rem; } .quote-card .tr p:last-child { margin-bottom: 0; }
+  .quote-card .tr .lbl, .quote-card .who { font-family: var(--mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.09em; color: var(--muted); }
+  .quote-card .tr .lbl { display: block; margin-bottom: 0.4rem; }
+  .quote-card .who { line-height: 1.7; }
+  .quote-card .who strong { display: block; color: var(--yellow); font-weight: 500; font-size: 0.75rem; }
+  .quote-card .who a { color: var(--ink-soft); border-bottom: 1px solid var(--rule); }
+  .quote-more { margin-top: 1.75rem; font-family: var(--mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; }
+  .quote-more a { color: var(--yellow); }
+  .updated { font-family: var(--mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-top: 1.5rem; }
+  .cta-hint { margin-top: 1rem; font-size: 0.9rem; color: var(--ink-soft); max-width: 52ch; line-height: 1.6; }
+  .hero.svc.solo { display: block; min-height: auto; }
+  .hero.svc.solo h1 { max-width: 18ch; }
+  .stage-list { border-top: 1px solid var(--rule); }
+  .stage { display: grid; grid-template-columns: 170px 1fr; gap: 1.5rem; padding: 1.4rem 0; border-bottom: 1px solid var(--rule); }
+  @media (max-width: 720px) { .stage { grid-template-columns: 1fr; gap: 0.4rem; } }
+  .stage .d { font-family: var(--mono); font-size: 0.75rem; color: var(--yellow); letter-spacing: 0.08em; text-transform: uppercase; padding-top: 0.3rem; }
+  .stage h3 { font-size: 1.2rem; margin: 0 0 0.35rem; }
+  .stage p { color: var(--ink-soft); font-size: 0.95rem; line-height: 1.6; margin: 0; }
+  .stage p a, .svc a.more, .formats-note a { color: var(--ink); border-bottom: 1px solid var(--yellow); }
+  .svc .for { margin-top: 0.9rem; font-family: var(--mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); line-height: 1.6; }
+  .svc a.more { display: inline-block; margin-top: 1rem; font-size: 0.92rem; }
+  .formats-note { margin-top: 2rem; color: var(--ink-soft); line-height: 1.7; max-width: 70ch; }
 </style>
 
 <style>
@@ -1526,6 +1564,7 @@
     <a href="../#work">Work</a>
     <a href="../#books">Books</a>
     <a href="../#career">Career</a>
+    <a href="../speaking/">Speaking</a>
     <a href="../#connect">Connect</a>
     <a href="../faq/">FAQ</a>
     <details class="nav-drop">
@@ -1674,12 +1713,6 @@
     <span class="active">English</span> · <a href="../es/">Español</a>
   </div>
 </footer>
-<script>
-(function(){var b=document.querySelector('.nav-toggle'),n=document.getElementById('siteNav');
-if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);});
-n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('open');b.setAttribute('aria-expanded','false');});});}
-document.addEventListener('click',function(e){document.querySelectorAll('details.nav-drop[open]').forEach(function(d){if(!d.contains(e.target))d.removeAttribute('open');});});})();
-</script>
 
 <script>
   const topbar = document.getElementById('topbar');
@@ -1689,5 +1722,11 @@ document.addEventListener('click',function(e){document.querySelectorAll('details
   });
 </script>
 
+<script>
+(function(){var b=document.querySelector('.nav-toggle'),n=document.getElementById('siteNav');
+if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);});
+n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('open');b.setAttribute('aria-expanded','false');});});}
+document.addEventListener('click',function(e){document.querySelectorAll('details.nav-drop[open]').forEach(function(d){if(!d.contains(e.target))d.removeAttribute('open');});});})();
+</script>
 </body>
 </html>
