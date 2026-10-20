@@ -1491,8 +1491,8 @@
 
   /* 1 – WeSpark: ready for the AI era */
   .vz-ready { margin: 0.25rem 0 2.25rem; padding: 1.4rem; border: 1px solid var(--rule); border-radius: 10px; background: var(--bg-2); }
-  .vz-ready .tag { font-family: var(--mono); font-size: 0.64rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--yellow); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.6rem; }
-  .vz-ready .tag::after { content: ''; flex: 1; height: 1px; background: var(--rule); }
+  .vz-ready .tag, .vz-days .tag { font-family: var(--mono); font-size: 0.64rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--yellow); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.6rem; }
+  .vz-ready .tag::after, .vz-days .tag::after { content: ''; flex: 1; height: 1px; background: var(--rule); }
   .vz-ready ol { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; position: relative; }
   .vz-ready ol li { position: relative; border: 1px solid var(--muted-2); border-radius: 8px; padding: 0.75rem 0.8rem; transition: border-color 0.4s, background 0.4s, transform 0.4s; }
   .vz-ready ol li b { display: block; font-family: var(--display); font-weight: 500; font-size: 1rem; line-height: 1.2; color: var(--muted); letter-spacing: -0.01em; transition: color 0.4s; }
@@ -1531,14 +1531,14 @@
   .vz-days .live { margin-top: 1.4rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.6rem; opacity: 0; transform: translateY(6px); transition: opacity 0.5s, transform 0.5s; }
   .vz-days .live .lt { display: inline-flex; align-items: center; gap: 0.55rem; font-family: var(--display); font-weight: 500; font-size: 1.15rem; letter-spacing: -0.01em; color: var(--ink); margin-right: 0.3rem; }
   .vz-days .live .lt::before { content: ''; width: 0.6rem; height: 0.6rem; border-radius: 50%; background: #CEFF00; box-shadow: 0 0 10px #CEFF00; animation: vz-blink 1.6s ease-in-out infinite; }
-  .vz-days .live .chip { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.04em; color: var(--ink); border: 1px solid var(--muted-2); background: var(--bg); border-radius: 999px; padding: 0.3rem 0.65rem; opacity: 0; transform: scale(0.8); transition: opacity 0.35s, transform 0.35s cubic-bezier(.2,.8,.2,1.4); }
-  .vz-days .live .more { font-size: 0.85rem; color: var(--ink-soft); opacity: 0; transition: opacity 0.35s; }
+  .vz-days .live .chip { font-family: var(--mono); font-size: 0.8rem; letter-spacing: 0.04em; color: var(--ink); border: 1px solid var(--muted-2); background: var(--bg); border-radius: 999px; padding: 0.5rem 1rem; opacity: 0; transform: scale(0.8); transition: opacity 0.35s, transform 0.35s cubic-bezier(.2,.8,.2,1.4); }
+  .vz-days .live .chip.more { border-color: var(--yellow); color: var(--yellow); font-weight: 500; }
   .vz-days.live-on .live { opacity: 1; transform: none; }
-  .vz-days.live-on .live .chip, .vz-days.live-on .live .more { opacity: 1; transform: none; }
+  .vz-days.live-on .live .chip { opacity: 1; transform: none; }
   .vz-days.live-on .live .chip:nth-of-type(2) { transition-delay: 0.25s; }
   .vz-days.live-on .live .chip:nth-of-type(3) { transition-delay: 0.4s; }
   .vz-days.live-on .live .chip:nth-of-type(4) { transition-delay: 0.55s; }
-  .vz-days.live-on .live .more { transition-delay: 0.7s; }
+  .vz-days.live-on .live .chip.more { transition-delay: 0.7s; }
   @keyframes vz-blink { 50% { opacity: 0.45; } }
   @media (max-width: 520px) { .vz-days { padding: 1.2rem 1rem 1rem; } .vz-days .trk { right: 1.45rem; } .vz-days ol { gap: 0.5rem; grid-template-columns: repeat(3, 1fr) 2rem; } .vz-days li { font-size: 0.78rem; } .vz-days .live .lt { font-size: 1rem; } }
 
@@ -1753,7 +1753,7 @@
         <p>Para los clientes adecuados, WeSpark también construye la IA: automatizaciones, herramientas internas y un segundo cerebro de empresa que da a sus líderes el pulso en vivo de lo que pasa en toda la organización, actualizado cada 30 minutos aproximadamente.</p>
         <figure class="vz vz-ready"><div class="lane-people"><div class="tag">El enfoque de WeSpark para la formación en IA</div><ol><li><b>Muy visual</b><span>Lo ves antes de usarlo</span></li><li><b>Muy interactiva</b><span>Práctica, no diapositivas</span></li><li><b>Tareas reales</b><span>Tu propio trabajo, hecho con IA</span></li></ol><div class="out">La fluidez en IA crece en todo el equipo</div></div></figure>
         <p>Nelson también es cofundador y CTO de <a class="brand-link" href="https://everybodyknowsyou.com" target="_blank" rel="noopener">everybodyknowsyou</a> (EKY), una agencia de visibilidad en IA que creó en 2026 con Marcela Lemus Walsh, su CEO. EKY crea sitios web a la medida en español e inglés en tres días, diseñados desde cero y hechos para que Google y asistentes de IA como ChatGPT, Claude y Gemini encuentren a personas y negocios y los describan correctamente. También ayuda a las empresas a ser la respuesta cuando sus clientes le preguntan a la IA, con consultoría de visibilidad en IA.</p>
-        <div class="vz vz-days"><div class="w"><div class="trk"><i></i></div><ol><li><b>Día 1</b>Entrevista<br>de negocio</li><li><b>Día 2</b>Revisión del<br>borrador web</li><li><b>Día 3</b>Últimos detalles<br>y lanzamiento</li><li class="ok"><b>Listo</b></li></ol></div><div class="live"><span class="lt">En línea · te encuentran Google y la IA</span><span class="chip">Claude</span><span class="chip">Gemini</span><span class="chip">ChatGPT</span><span class="more">y otros</span></div></div>
+        <div class="vz vz-days"><div class="tag">El enfoque de EKY para que te encuentren</div><div class="w"><div class="trk"><i></i></div><ol><li><b>Día 1</b>Entrevista<br>de negocio</li><li><b>Día 2</b>Revisión del<br>borrador web</li><li><b>Día 3</b>Últimos detalles<br>y lanzamiento</li><li class="ok"><b>Listo</b></li></ol></div><div class="live"><span class="lt">En línea · te encuentran Google y la IA</span><span class="chip">Claude</span><span class="chip">Gemini</span><span class="chip">ChatGPT</span><span class="chip more">y otros modelos de IA</span></div></div>
         <p>El hilo conductor es siempre el mismo. Tomar un problema real y usar tecnología, diseño y educación para resolverlo de forma que perdure.</p>
       </div>
     </div>

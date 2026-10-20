@@ -1595,8 +1595,8 @@
 
   /* 1 – WeSpark: ready for the AI era */
   .vz-ready { margin: 0.25rem 0 2.25rem; padding: 1.4rem; border: 1px solid var(--rule); border-radius: 10px; background: var(--bg-2); }
-  .vz-ready .tag { font-family: var(--mono); font-size: 0.64rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--yellow); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.6rem; }
-  .vz-ready .tag::after { content: ''; flex: 1; height: 1px; background: var(--rule); }
+  .vz-ready .tag, .vz-days .tag { font-family: var(--mono); font-size: 0.64rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--yellow); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.6rem; }
+  .vz-ready .tag::after, .vz-days .tag::after { content: ''; flex: 1; height: 1px; background: var(--rule); }
   .vz-ready ol { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; position: relative; }
   .vz-ready ol li { position: relative; border: 1px solid var(--muted-2); border-radius: 8px; padding: 0.75rem 0.8rem; transition: border-color 0.4s, background 0.4s, transform 0.4s; }
   .vz-ready ol li b { display: block; font-family: var(--display); font-weight: 500; font-size: 1rem; line-height: 1.2; color: var(--muted); letter-spacing: -0.01em; transition: color 0.4s; }
@@ -1635,14 +1635,14 @@
   .vz-days .live { margin-top: 1.4rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.6rem; opacity: 0; transform: translateY(6px); transition: opacity 0.5s, transform 0.5s; }
   .vz-days .live .lt { display: inline-flex; align-items: center; gap: 0.55rem; font-family: var(--display); font-weight: 500; font-size: 1.15rem; letter-spacing: -0.01em; color: var(--ink); margin-right: 0.3rem; }
   .vz-days .live .lt::before { content: ''; width: 0.6rem; height: 0.6rem; border-radius: 50%; background: #CEFF00; box-shadow: 0 0 10px #CEFF00; animation: vz-blink 1.6s ease-in-out infinite; }
-  .vz-days .live .chip { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.04em; color: var(--ink); border: 1px solid var(--muted-2); background: var(--bg); border-radius: 999px; padding: 0.3rem 0.65rem; opacity: 0; transform: scale(0.8); transition: opacity 0.35s, transform 0.35s cubic-bezier(.2,.8,.2,1.4); }
-  .vz-days .live .more { font-size: 0.85rem; color: var(--ink-soft); opacity: 0; transition: opacity 0.35s; }
+  .vz-days .live .chip { font-family: var(--mono); font-size: 0.8rem; letter-spacing: 0.04em; color: var(--ink); border: 1px solid var(--muted-2); background: var(--bg); border-radius: 999px; padding: 0.5rem 1rem; opacity: 0; transform: scale(0.8); transition: opacity 0.35s, transform 0.35s cubic-bezier(.2,.8,.2,1.4); }
+  .vz-days .live .chip.more { border-color: var(--yellow); color: var(--yellow); font-weight: 500; }
   .vz-days.live-on .live { opacity: 1; transform: none; }
-  .vz-days.live-on .live .chip, .vz-days.live-on .live .more { opacity: 1; transform: none; }
+  .vz-days.live-on .live .chip { opacity: 1; transform: none; }
   .vz-days.live-on .live .chip:nth-of-type(2) { transition-delay: 0.25s; }
   .vz-days.live-on .live .chip:nth-of-type(3) { transition-delay: 0.4s; }
   .vz-days.live-on .live .chip:nth-of-type(4) { transition-delay: 0.55s; }
-  .vz-days.live-on .live .more { transition-delay: 0.7s; }
+  .vz-days.live-on .live .chip.more { transition-delay: 0.7s; }
   @keyframes vz-blink { 50% { opacity: 0.45; } }
   @media (max-width: 520px) { .vz-days { padding: 1.2rem 1rem 1rem; } .vz-days .trk { right: 1.45rem; } .vz-days ol { gap: 0.5rem; grid-template-columns: repeat(3, 1fr) 2rem; } .vz-days li { font-size: 0.78rem; } .vz-days .live .lt { font-size: 1rem; } }
 
@@ -1858,7 +1858,7 @@
         <p>For the right clients, WeSpark also builds the AI itself: automations, internal tools, and a company second brain that gives leaders a live pulse of what is happening across the organization, updated about every 30 minutes.</p>
         <figure class="vz vz-ready"><div class="lane-people"><div class="tag">WeSpark's approach to AI training</div><ol><li><b>Highly visual</b><span>See it before you use it</span></li><li><b>Highly interactive</b><span>Hands-on, not slides</span></li><li><b>Real tasks</b><span>Your own work, done with AI</span></li></ol><div class="out">AI fluency rises across the whole team</div></div></figure>
         <p>Nelson is also co-founder and CTO of <a class="brand-link" href="https://everybodyknowsyou.com" target="_blank" rel="noopener">everybodyknowsyou</a> (EKY), an AI discoverability agency he started in 2026 with Marcela Lemus Walsh, its CEO. EKY builds custom websites in English and Spanish in three days, designed from scratch and made so Google and AI assistants like ChatGPT, Claude and Gemini find people and businesses and describe them correctly. It also helps companies become the answer when their customers ask AI, through AI discoverability consulting.</p>
-        <div class="vz vz-days"><div class="w"><div class="trk"><i></i></div><ol><li><b>Day 1</b>Business<br>interview</li><li><b>Day 2</b>Website<br>draft review</li><li><b>Day 3</b>Final touches,<br>then launch</li><li class="ok"><b>Done</b></li></ol></div><div class="live"><span class="lt">Live · found by Google and AI</span><span class="chip">Claude</span><span class="chip">Gemini</span><span class="chip">ChatGPT</span><span class="more">and others</span></div></div>
+        <div class="vz vz-days"><div class="tag">EKY's approach to making you discoverable</div><div class="w"><div class="trk"><i></i></div><ol><li><b>Day 1</b>Business<br>interview</li><li><b>Day 2</b>Website<br>draft review</li><li><b>Day 3</b>Final touches,<br>then launch</li><li class="ok"><b>Done</b></li></ol></div><div class="live"><span class="lt">Live · found by Google and AI</span><span class="chip">Claude</span><span class="chip">Gemini</span><span class="chip">ChatGPT</span><span class="chip more">and other AI models</span></div></div>
         <p>The throughline is always the same. Take a real problem, and use technology, design, and education to solve it in a way that lasts.</p>
       </div>
     </div>
