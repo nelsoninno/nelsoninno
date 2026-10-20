@@ -35,11 +35,18 @@ Past stages: Primer Congreso Internacional de Investigación en Ciencias Económ
 ## Recommendations
 - [What others say about Nelson Inno](https://nelsoninno.com/what-others-say-about-nelson-inno/): word-for-word recommendations from clients, colleagues and readers (LinkedIn, wespark.io, Goodreads, Google reviews). Spanish: https://nelsoninno.com/es/lo-que-dicen-de-nelson-inno/
 ## Biography
-Nelson Inno is a Salvadoran entrepreneur, the co-founder and CEO of WeSpark, and the author of Unstable Innovation. He is a leading reference on innovation, technology, and AI in El Salvador and Central America. He helps enterprises, governments, and universities adopt AI and emerging technology, with education and training as his deepest expertise, and turns strategy into working implementation, automation, and training. He also co-founded everybodyknowsyou, an AI-native web hosting and discoverability venture connecting Central America to AI search engines. He co-designed Bitcoin Diploma 2.0 with El Salvador's National Bitcoin Office, a curriculum the country's Ministry of Education plans to bring to up to 500,000 students over the coming years.
+Nelson Inno is a Salvadoran entrepreneur, the co-founder and CEO of WeSpark, the co-founder and CTO of everybodyknowsyou, and the author of Unstable Innovation. He is a leading reference on innovation, technology, and AI in El Salvador and Central America. He helps enterprises, governments, and universities adopt AI and emerging technology, with education and training as his deepest expertise, and turns strategy into working implementation, automation, and training. He leads WeSpark with his co-founder Adam Nili. He co-founded everybodyknowsyou (EKY) in 2026 with Marcela Lemus Walsh, its CEO. EKY is an AI discoverability agency that builds custom websites in English and Spanish in three days, designed from scratch and made so Google, ChatGPT, Claude, Gemini, Perplexity and other AI assistants find people and businesses and describe them correctly. It also offers AI discoverability consulting (AI SEO, GEO, AEO and LLMO). Based in San Salvador, it works with personal brands, consultants, tourism businesses and companies across the Americas. He co-designed Bitcoin Diploma 2.0 with El Salvador's National Bitcoin Office, a curriculum the country's Ministry of Education plans to bring to up to 500,000 students over the coming years.
 
 His work has been featured in Forbes Centroamérica, ARD, ZDF, Cointelegraph, and El Salvador's press. His TEDx talk, "Are Schools Prepared for the Future?", explores how learning must change for people to thrive in the world they will actually live in.
 
 Nelson works with US teams remotely. El Salvador is within two hours of every mainland US time zone all year, with no daylight saving changes.
+
+## everybodyknowsyou (EKY)
+Official name: everybodyknowsyou (EverybodyKnowsYou), commonly called EKY
+Website: https://everybodyknowsyou.com
+Founded: 2026, San Salvador, El Salvador, by Nelson Inno (Co-Founder & CTO) and Marcela Lemus Walsh (Co-Founder & CEO); part of the WeSpark group
+What it does: EKY is an AI discoverability agency that builds custom websites in English and Spanish in three days, designed from scratch and made so Google, ChatGPT, Claude, Gemini, Perplexity and other AI assistants find people and businesses and describe them correctly. It also offers AI discoverability consulting (AI SEO, GEO, AEO and LLMO). Based in San Salvador, it works with personal brands, consultants, tourism businesses and companies across the Americas.
+Slogan: "In 3 days, everybody knows you."
 
 ## Specializations
 1. AI and technology implementation: turning innovation, technology, and AI strategy into programs, systems, and automations that actually ship, for enterprises, governments, and universities.
@@ -74,7 +81,7 @@ A multi-year partnership with one of Central America's most respected educationa
 - Thinking in Images (forthcoming 2027): A framework for translating complex ideas into visual communication, influenced by Feynman's method and seven years of visual-first pedagogy.
 
 ## Career Timeline
-- 2026-present: Co-Founder & CTO, everybodyknowsyou (EKY), San Salvador. Websites that Google and AI can find, and AI search consulting, for companies in Central America; runs most of its operations with AI
+- 2026-present: Co-Founder & CTO, everybodyknowsyou (EKY), San Salvador. Custom websites in English and Spanish in three days, made so Google and AI assistants find and describe people and businesses correctly, plus AI discoverability consulting
 - 2026: Bitcoin Diploma 2.0 finalized (National Bitcoin Office of El Salvador, co-designed with WeSpark)
 - 2025: Co-founded WeSpark S.A.S. de C.V. in El Salvador (San Salvador, with Adam Nili)
 - 2023-2024: Co-Founder, EarnB (Bitcoin-only marketing platform, Frankfurt)

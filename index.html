@@ -76,8 +76,8 @@
       "@id": "https://nelsoninno.com/#person",
       "knowsLanguage": ["es", "en", "de"],
       "name": "Nelson Inno",
-      "jobTitle": "Co-Founder & CEO, WeSpark",
-      "description": "Salvadoran entrepreneur and expert in innovation, artificial intelligence, and emerging technology. Co-Founder and CEO of WeSpark, co-founder of everybodyknowsyou, and co-designer of El Salvador's national Bitcoin Diploma 2.0.",
+      "jobTitle": ["Co-Founder & CEO, WeSpark", "Co-Founder & CTO, everybodyknowsyou"],
+      "description": "Salvadoran entrepreneur and expert in innovation, artificial intelligence, and emerging technology. Co-Founder and CEO of WeSpark, Co-Founder and CTO of everybodyknowsyou, and co-designer of El Salvador's national Bitcoin Diploma 2.0.",
       "url": "https://nelsoninno.com/",
       "image": "https://nelsoninno.com/images/social-share.jpg",
       "nationality": "Salvadoran",
@@ -85,9 +85,14 @@
         "@type": "Place",
         "name": "San Salvador, El Salvador"
       },
-      "worksFor": {
-        "@id": "https://wespark.io/#organization"
-      },
+      "worksFor": [
+        {
+          "@id": "https://wespark.io/#organization"
+        },
+        {
+          "@id": "https://everybodyknowsyou.com/#org"
+        }
+      ],
       "alumniOf": {
         "@type": "CollegeOrUniversity",
         "name": "Hochschule Furtwangen University"
@@ -282,9 +287,78 @@
       "@id": "https://wespark.io/#organization",
       "name": "WeSpark",
       "url": "https://wespark.io",
-      "founder": {
-        "@id": "https://nelsoninno.com/#person"
+      "founder": [
+        {
+          "@id": "https://nelsoninno.com/#person"
+        },
+        {
+          "@type": "Person",
+          "name": "Adam Nili",
+          "jobTitle": "Co-Founder & CSO, WeSpark"
+        }
+      ],
+      "description": "Innovation agency headquartered in San Salvador, El Salvador, focused on digital transformation and AI: above all AI training that is highly visual, highly interactive and built on real tasks, plus AI implementation such as automations and company second brains.",
+      "subOrganization": {
+        "@id": "https://everybodyknowsyou.com/#org"
       }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://everybodyknowsyou.com/#org",
+      "name": "everybodyknowsyou",
+      "alternateName": [
+        "EKY",
+        "EverybodyKnowsYou",
+        "everybodyknowsyou.com"
+      ],
+      "url": "https://everybodyknowsyou.com/",
+      "logo": "https://everybodyknowsyou.com/images/logo/eky-logo-complete.png",
+      "slogan": "In 3 days, everybody knows you.",
+      "description": "everybodyknowsyou (EKY) is an AI discoverability agency that builds custom websites in English and Spanish in three days, designed from scratch and made so Google, ChatGPT, Claude, Gemini, Perplexity and other AI assistants find people and businesses and describe them correctly. It also offers AI discoverability consulting (AI SEO, GEO, AEO and LLMO). Based in San Salvador, it works with personal brands, consultants, tourism businesses and companies across the Americas.",
+      "foundingDate": "2026",
+      "founder": [
+        {
+          "@id": "https://nelsoninno.com/#person"
+        },
+        {
+          "@type": "Person",
+          "name": "Marcela Lemus Walsh",
+          "jobTitle": "Co-Founder & CEO, everybodyknowsyou"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "San Salvador",
+        "addressCountry": "SV"
+      },
+      "areaServed": [
+        "El Salvador",
+        "Central America",
+        "Latin America",
+        "United States"
+      ],
+      "knowsLanguage": [
+        "es",
+        "en"
+      ],
+      "knowsAbout": [
+        "Web design",
+        "Bilingual websites",
+        "AI discoverability",
+        "AI SEO",
+        "Generative Engine Optimization",
+        "Answer Engine Optimization",
+        "Language Model Optimization",
+        "Schema.org",
+        "Personal branding"
+      ],
+      "parentOrganization": {
+        "@id": "https://wespark.io/#organization"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/everybodyknowsyou/",
+        "https://www.instagram.com/everybodyknowsyou.eky"
+      ]
     },
     {
       "@type": "Book",
@@ -1410,8 +1484,8 @@
   .channel.primary .platform { color: var(--yellow); }
   .channel.primary .name { color: var(--yellow); }
 
-  a.brand-link { color: inherit; border-bottom: 1px solid var(--yellow); transition: color 0.2s; }
-  a.brand-link:hover { color: var(--yellow); }
+  a.brand-link { color: var(--yellow); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em; text-decoration-color: var(--yellow); transition: color 0.2s, text-decoration-color 0.2s; }
+  a.brand-link:hover { color: var(--ink); text-decoration-color: var(--yellow); }
   a.media-item { color: inherit; text-decoration: none; }
   .media-item.media-multi { cursor: default; }
   .media-multi a { color: inherit; }
@@ -1500,6 +1574,113 @@
     .section { padding: 5rem var(--pad-x); }
   }
 
+
+  /* Hero titles: two titles on one line, roles below */
+  .hero .role strong .sep { margin-left: 0.6rem; }
+  .hero .role .br { flex-basis: 100%; height: 0; }
+  /* Company logos under section 02 title */
+  .org-logos { display: flex; flex-direction: column; align-items: flex-start; gap: 1.6rem; margin-top: 0.5rem; }
+  .org-logos a { display: block; opacity: 0.88; transition: opacity 0.2s, transform 0.2s; }
+  .org-logos a:hover { opacity: 1; transform: translateX(3px); }
+  .org-logos img { display: block; height: auto; max-width: 100%; }
+  .org-logos .lg-ws { width: 210px; }
+  .org-logos .lg-eky { width: 250px; }
+  .org-logos .lg-cap { display: block; margin-top: 0.6rem; font-family: var(--mono); font-size: 0.66rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-soft); }
+  @media (max-width: 920px) { .org-logos { flex-direction: row; flex-wrap: wrap; align-items: center; gap: 1.25rem 2rem; } .org-logos .lg-ws { width: 170px; } .org-logos .lg-eky { width: 200px; } }
+
+
+  /* ============== HTML VISUALS ============== */
+  .vz { position: relative; font-family: var(--body); color: var(--ink-soft); }
+  .vz-cap { font-family: var(--mono); font-size: 0.66rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-top: 0.9rem; }
+
+  /* 1 – WeSpark: ready for the AI era */
+  .vz-ready { margin: 0.25rem 0 2.25rem; padding: 1.4rem; border: 1px solid var(--rule); border-radius: 10px; background: var(--bg-2); }
+  .vz-ready .tag { font-family: var(--mono); font-size: 0.64rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--yellow); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.6rem; }
+  .vz-ready .tag::after { content: ''; flex: 1; height: 1px; background: var(--rule); }
+  .vz-ready ol { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; position: relative; }
+  .vz-ready ol li { position: relative; border: 1px solid var(--muted-2); border-radius: 8px; padding: 0.75rem 0.8rem; transition: border-color 0.4s, background 0.4s, transform 0.4s; }
+  .vz-ready ol li b { display: block; font-family: var(--display); font-weight: 500; font-size: 1rem; line-height: 1.2; color: var(--muted); letter-spacing: -0.01em; transition: color 0.4s; }
+  .vz-ready ol li span { display: block; margin-top: 0.3rem; font-size: 0.8rem; line-height: 1.35; color: var(--muted); transition: color 0.4s; }
+  .vz-ready ol li:not(:last-child)::after { content: '\2192'; position: absolute; left: 100%; width: 1.5rem; text-align: center; top: 50%; transform: translateY(-50%); font-family: var(--mono); font-size: 1rem; color: var(--muted-2); transition: color 0.4s; z-index: 1; }
+  .vz-ready ol li.lit { border-color: var(--yellow); background: rgba(252,211,7,0.06); transform: translateY(-2px); }
+  .vz-ready ol li.lit b { color: var(--ink); }
+  .vz-ready ol li.lit span { color: var(--ink-soft); }
+  .vz-ready ol li.lit::after { color: var(--yellow); }
+  .vz-ready .out { margin-top: 1rem; display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--muted-2); border-radius: 999px; padding: 0.4rem 0.8rem; transition: all 0.45s; }
+  .vz-ready .out::before { content: '\2192'; }
+  .vz-ready .out.lit { background: var(--yellow); border-color: var(--yellow); color: #0E0D0B; box-shadow: 0 0 22px rgba(252,211,7,0.35); }
+  @media (max-width: 520px) {
+    .vz-ready { padding: 1.1rem; }
+    .vz-ready ol { grid-template-columns: 1fr; gap: 0.6rem; }
+    .vz-ready ol li { display: grid; grid-template-columns: 8.5rem 1fr; gap: 0.6rem; align-items: baseline; padding: 0.6rem 0.75rem; }
+    .vz-ready ol li span { margin-top: 0; }
+    .vz-ready ol li:not(:last-child)::after { content: '\2193'; left: 50%; width: auto; top: auto; bottom: -0.55rem; transform: translate(-50%, 50%); }
+  }
+
+  /* 2 – three days */
+  .vz-days { margin: 0.25rem 0 2.25rem; padding: 1.4rem 1.4rem 1.2rem; border: 1px solid var(--rule); border-radius: 10px; background: var(--bg-2); }
+  .vz-days .w { position: relative; }
+  .vz-days ol { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr) 3.2rem; gap: 1rem; position: relative; padding-top: 1.6rem; }
+  .vz-days .trk { position: absolute; left: 0.45rem; right: 2.65rem; top: 0.45rem; height: 2px; background: var(--muted-2); border-radius: 2px; overflow: hidden; }
+  .vz-days .trk i { position: absolute; inset: 0; background: var(--yellow); transform-origin: left; transform: scaleX(0); }
+  .vz-days li { position: relative; font-size: 0.9rem; line-height: 1.35; color: var(--muted); transition: color 0.4s; }
+  .vz-days li::before { content: ''; position: absolute; top: -1.6rem; left: 0; width: 0.9rem; height: 0.9rem; border-radius: 50%; background: var(--bg); border: 2px solid var(--muted-2); transition: background 0.3s, border-color 0.3s, box-shadow 0.3s; }
+  .vz-days li b { display: block; font-family: var(--mono); font-weight: 500; font-size: 0.66rem; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 0.3rem; }
+  .vz-days li.done { color: var(--ink); }
+  .vz-days li.done b { color: var(--yellow); }
+  .vz-days li.done::before { background: var(--yellow); border-color: var(--yellow); box-shadow: 0 0 0 5px rgba(252,211,7,0.15); }
+  .vz-days li.ok::before { width: 1.5rem; height: 1.5rem; top: -1.9rem; left: -0.2rem; content: '\2713'; display: flex; align-items: center; justify-content: center; font: 700 0.85rem/1 var(--body); color: var(--muted); }
+  .vz-days li.ok.done::before { background: #CEFF00; border-color: #CEFF00; color: #0E0D0B; box-shadow: 0 0 0 6px rgba(206,255,0,0.16), 0 0 18px rgba(206,255,0,0.45); }
+  .vz-days li.ok.done b { color: #CEFF00; }
+  .vz-days .live { margin-top: 1.4rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.6rem; opacity: 0; transform: translateY(6px); transition: opacity 0.5s, transform 0.5s; }
+  .vz-days .live .lt { display: inline-flex; align-items: center; gap: 0.55rem; font-family: var(--display); font-weight: 500; font-size: 1.15rem; letter-spacing: -0.01em; color: var(--ink); margin-right: 0.3rem; }
+  .vz-days .live .lt::before { content: ''; width: 0.6rem; height: 0.6rem; border-radius: 50%; background: #CEFF00; box-shadow: 0 0 10px #CEFF00; animation: vz-blink 1.6s ease-in-out infinite; }
+  .vz-days .live .chip { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.04em; color: var(--ink); border: 1px solid var(--muted-2); background: var(--bg); border-radius: 999px; padding: 0.3rem 0.65rem; opacity: 0; transform: scale(0.8); transition: opacity 0.35s, transform 0.35s cubic-bezier(.2,.8,.2,1.4); }
+  .vz-days .live .more { font-size: 0.85rem; color: var(--ink-soft); opacity: 0; transition: opacity 0.35s; }
+  .vz-days.live-on .live { opacity: 1; transform: none; }
+  .vz-days.live-on .live .chip, .vz-days.live-on .live .more { opacity: 1; transform: none; }
+  .vz-days.live-on .live .chip:nth-of-type(2) { transition-delay: 0.25s; }
+  .vz-days.live-on .live .chip:nth-of-type(3) { transition-delay: 0.4s; }
+  .vz-days.live-on .live .chip:nth-of-type(4) { transition-delay: 0.55s; }
+  .vz-days.live-on .live .more { transition-delay: 0.7s; }
+  @keyframes vz-blink { 50% { opacity: 0.45; } }
+  @media (max-width: 520px) { .vz-days { padding: 1.2rem 1rem 1rem; } .vz-days .trk { right: 1.45rem; } .vz-days ol { gap: 0.5rem; grid-template-columns: repeat(3, 1fr) 2rem; } .vz-days li { font-size: 0.78rem; } .vz-days .live .lt { font-size: 1rem; } }
+
+  /* 4 – count-up metrics: no extra CSS needed */
+
+  /* 5 – preferences */
+  .vz-pref { margin: 0.5rem 0 1.5rem; display: grid; gap: 0.95rem; max-width: 460px; }
+  .vz-pref .row { display: grid; grid-template-columns: 6.2rem 1fr 6.2rem; align-items: center; gap: 0.9rem; font-family: var(--display); font-size: 1.02rem; letter-spacing: -0.01em; }
+  .vz-pref .pick { color: var(--yellow); font-weight: 500; }
+  .vz-pref .other { color: var(--muted); text-align: right; }
+  .vz-pref .trk { position: relative; height: 2px; background: var(--muted-2); border-radius: 2px; }
+  .vz-pref .trk i { position: absolute; top: 50%; left: 50%; width: 0.95rem; height: 0.95rem; margin: -0.475rem 0 0 -0.475rem; border-radius: 50%; background: var(--yellow); box-shadow: 0 0 0 5px rgba(252,211,7,0.14); transition: left 1.2s cubic-bezier(.2,.8,.2,1); }
+  .vz-pref.on .trk i { left: 8%; }
+  .vz-pref.on .row:nth-child(2) .trk i { transition-delay: 0.18s; }
+  .vz-pref.on .row:nth-child(3) .trk i { transition-delay: 0.36s; }
+  .vz-pref .pick, .vz-pref .other { transition: color 0.4s, text-shadow 0.4s, transform 0.4s; display: inline-block; }
+  .vz-pref .row.tug .other { color: var(--ink-soft); }
+  .vz-pref .row.tug .pick { color: var(--muted); }
+  .vz-pref .row.back .pick { transform: scale(1.08); text-shadow: 0 0 14px rgba(252,211,7,0.7); }
+
+  /* 6 – time zones */
+  .vz-tz { margin-top: 1.8rem; font-family: var(--body); font-size: 1rem; line-height: 1.4; letter-spacing: 0; }
+  .vz-tz .tz-head { display: grid; grid-template-columns: 7.5rem 3.4rem 1fr; gap: 0.75rem; font-family: var(--mono); font-size: 0.6rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); padding-bottom: 0.5rem; }
+    .vz-tz .tz-row { display: grid; grid-template-columns: 7.5rem 3.4rem 1fr; gap: 0.75rem; align-items: center; padding: 0.42rem 0; border-top: 1px solid var(--rule); font-size: 0.85rem; color: var(--ink-soft); }
+  .vz-tz .tz-row.home { color: var(--ink); }
+  .vz-tz .tz-row.home .t { color: var(--yellow); }
+  .vz-tz .t { font-family: var(--mono); font-size: 0.82rem; color: var(--ink); }
+  .vz-tz .bar { position: relative; height: 0.9rem; background: linear-gradient(90deg, transparent 16.66%, rgba(252,211,7,0.09) 16.66%, rgba(252,211,7,0.09) 83.33%, transparent 83.33%); border-radius: 3px; }
+  .vz-tz .bar::after { content: ''; position: absolute; left: 50%; top: -0.2rem; bottom: -0.2rem; width: 1px; background: var(--yellow); opacity: 0.6; }
+  .vz-tz .bar i { position: absolute; top: 0.2rem; bottom: 0.2rem; background: var(--yellow); border-radius: 2px; transition: left 0.9s cubic-bezier(.2,.8,.2,1), width 0.9s cubic-bezier(.2,.8,.2,1); left: 50%; width: 0; }
+  .vz-tz .bar b { position: absolute; top: 50%; transform: translate(-50%, -50%); font-family: var(--mono); font-weight: 500; font-size: 0.6rem; color: var(--ink-soft); white-space: nowrap; }
+  .vz-tz .tz-foot { font-family: var(--mono); font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-top: 0.6rem; }
+  @media (max-width: 520px) { .vz-tz .tz-head, .vz-tz .tz-row { grid-template-columns: 6.4rem 3rem 1fr; gap: 0.5rem; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .vz *, .vz *::before, .vz *::after { transition: none !important; animation: none !important; }
+  }
+
   /* ============== EKY FOOTER CREDIT ============== */
   .eky-credit {
     display: inline-flex; align-items: center; gap: 0.5rem;
@@ -1570,8 +1751,9 @@
     <div class="hero-eyebrow">Nelson Inno · El Salvador</div>
     <h1 aria-label="Nelson Inno">Nelson<br><span class="accent">Inno</span></h1>
     <div class="role">
-      <strong>Co-Founder &amp; CEO, WeSpark</strong>
-      <span class="sep">/</span> Author
+      <strong>Co-Founder &amp; CEO, <a class="brand-link" href="https://wespark.io" target="_blank" rel="noopener">WeSpark</a> <span class="sep">/</span></strong>
+      <strong>Co-Founder &amp; CTO, <a class="brand-link" href="https://everybodyknowsyou.com" target="_blank" rel="noopener">everybodyknowsyou</a></strong>
+      <span class="br"></span>Author
       <span class="sep">/</span> Speaker
     </div>
 
@@ -1625,7 +1807,7 @@
       <h2>An engineer and educator shaped by <span class="accent">two continents</span>.</h2>
     </div>
     <div class="about-body">
-      <p>Nelson Inno is a Salvadoran entrepreneur, the co-founder and CEO of <a class="brand-link" href="https://wespark.io" target="_blank" rel="noopener">WeSpark</a>, and the author of <em>Unstable Innovation</em>. He helps enterprises, governments, and universities adopt AI and emerging technology, with education and training as his deepest expertise, and co-designed Bitcoin Diploma 2.0 with El Salvador's National Bitcoin Office, a curriculum the country's Ministry of Education plans to bring to up to <em>500,000 students</em> over the coming years.</p>
+      <p>Nelson Inno is a Salvadoran entrepreneur, the co-founder and CEO of <a class="brand-link" href="https://wespark.io" target="_blank" rel="noopener">WeSpark</a>, the co-founder and CTO of <a class="brand-link" href="https://everybodyknowsyou.com" target="_blank" rel="noopener">everybodyknowsyou</a>, and the author of <em>Unstable Innovation</em>. He helps enterprises, governments, and universities adopt AI and emerging technology, with education and training as his deepest expertise, and co-designed Bitcoin Diploma 2.0 with El Salvador's National Bitcoin Office, a curriculum the country's Ministry of Education plans to bring to up to <em>500,000 students</em> over the coming years.</p>
       <p>His work has been featured in Forbes Centroamérica, ARD, ZDF, Cointelegraph, and El Salvador's press. His TEDx talk, <em>Are Schools Prepared for the Future?</em>, explores the same question that has guided his career: how learning has to change if the people who learn through it are going to thrive in the world they will actually live in.</p>
       <p>He works in Spanish, English and German, across Central America, the USA, Germany and Colombia.</p>
     </div>
@@ -1668,11 +1850,16 @@
     <div>
       <div class="eyebrow">Now <span class="num">– 02</span></div>
       <h2>What he does for <span class="accent">organizations today</span>.</h2>
+      <div class="org-logos"><a href="https://wespark.io" target="_blank" rel="noopener" aria-label="WeSpark"><img loading="lazy" class="lg-ws" src="images/logos/wespark-logo-wide.webp" alt="WeSpark Innovation Agency" width="720" height="176"><span class="lg-cap">Innovation Agency</span></a><a href="https://everybodyknowsyou.com" target="_blank" rel="noopener" aria-label="everybodyknowsyou"><img loading="lazy" class="lg-eky" src="images/logos/everybodyknowsyou-logo-wide.svg" alt="Everybody Knows You, AI Discoverability Agency" width="1057" height="160"><span class="lg-cap">AI Discoverability Agency</span></a></div>
     </div>
     <div style="position: relative;">
       <div class="building-body">
-        <p><a class="brand-link" href="https://wespark.io" target="_blank" rel="noopener">WeSpark</a>'s first focus is AI-powered education and training. The best learning has always come from skilled facilitators who truly know the people in the room: their role, their gaps, their blind spots. That is what turns information into behavior that sticks. That model became too expensive to scale, so organizations fell back on webinars and e-learning that measure clicks, not comprehension. Nelson's answer combines the three things that make learning actually land: strong visualization, real interactivity, and artificial intelligence. Together they bring the personal, engaging quality of great coaching to entire teams, and that is the work Nelson cares about most.</p>
-        <p>Around that core, WeSpark increasingly builds AI implementations and automations directly: internal systems, workflows, and tools that let small teams operate far above their size. <em><a class="brand-link" href="https://everybodyknowsyou.com" target="_blank" rel="noopener">everybodyknowsyou</a></em>, the company Nelson co-founded, is one example: it runs most of its operations with AI and builds websites that Google and AI can find. The throughline is always the same. Take a real problem, and use technology, design, and education to solve it in a way that lasts.</p>
+        <p><a class="brand-link" href="https://wespark.io" target="_blank" rel="noopener">WeSpark</a> is an innovation agency that Nelson leads with his co-founder Adam Nili. Its field is digital transformation, today centered on AI, and above all on AI training that prepares people and organizations for the AI era. The best learning has always come from skilled facilitators who know the people in the room, but that model became too expensive to scale, so organizations fell back on webinars and e-learning that measure clicks, not comprehension. WeSpark's training is highly visual, highly interactive, and built on real, valuable tasks from people's own work. That is the work Nelson cares about most.</p>
+        <p>For the right clients, WeSpark also builds the AI itself: automations, internal tools, and a company second brain that gives leaders a live pulse of what is happening across the organization, updated about every 30 minutes.</p>
+        <figure class="vz vz-ready"><div class="lane-people"><div class="tag">WeSpark's approach to AI training</div><ol><li><b>Highly visual</b><span>See it before you use it</span></li><li><b>Highly interactive</b><span>Hands-on, not slides</span></li><li><b>Real tasks</b><span>Your own work, done with AI</span></li></ol><div class="out">AI fluency rises across the whole team</div></div></figure>
+        <p>Nelson is also co-founder and CTO of <a class="brand-link" href="https://everybodyknowsyou.com" target="_blank" rel="noopener">everybodyknowsyou</a> (EKY), an AI discoverability agency he started in 2026 with Marcela Lemus Walsh, its CEO. EKY builds custom websites in English and Spanish in three days, designed from scratch and made so Google and AI assistants like ChatGPT, Claude and Gemini find people and businesses and describe them correctly. It also helps companies become the answer when their customers ask AI, through AI discoverability consulting.</p>
+        <div class="vz vz-days"><div class="w"><div class="trk"><i></i></div><ol><li><b>Day 1</b>Business<br>interview</li><li><b>Day 2</b>Website<br>draft review</li><li><b>Day 3</b>Final touches,<br>then launch</li><li class="ok"><b>Done</b></li></ol></div><div class="live"><span class="lt">Live · found by Google and AI</span><span class="chip">Claude</span><span class="chip">Gemini</span><span class="chip">ChatGPT</span><span class="more">and others</span></div></div>
+        <p>The throughline is always the same. Take a real problem, and use technology, design, and education to solve it in a way that lasts.</p>
       </div>
     </div>
   </div>
@@ -1890,7 +2077,7 @@
       <div class="tl-content">
         <div class="role">Co-Founder &amp; CTO, <a class="brand-link" href="https://everybodyknowsyou.com" target="_blank" rel="noopener">everybodyknowsyou</a></div>
         <div class="org">San Salvador</div>
-        <div class="detail">Websites that Google and AI can find, and AI search consulting, for companies in Central America. Runs most of its operations with AI.</div>
+        <div class="detail">Custom websites in English and Spanish in three days, made so Google and AI assistants find and describe people and businesses correctly, plus AI discoverability consulting.</div>
       </div>
     </div>
 
@@ -1973,7 +2160,7 @@
   </div>
 
   <div class="tl-summary">
-    Nelson trained as an industrial engineer in Germany and spent his corporate years at Microsoft, Siemens, Avianca, and Marquardt before Lufthansa, where he built four innovation departments in three years. He founded WeSpark in 2019 and leads it today from San Salvador.
+    Nelson trained as an industrial engineer in Germany and spent his corporate years at Microsoft, Siemens, Avianca, and Marquardt before Lufthansa, where he built four innovation departments in three years. He founded WeSpark in 2019 and leads it today from San Salvador, and co-founded everybodyknowsyou in 2026.
   </div>
 </section>
 
@@ -1990,6 +2177,7 @@
         <p>Nelson's professional life is organized around three directional preferences and three operating principles.</p>
 
         <p>The preferences sound simple and are not: <em>slow rather than fast</em>, but with the intention, direction, and focus that move you further than anyone else. <em>Quality rather than quantity</em>, because the right quality brings abundance in the things that matter. <em>Calmness rather than noise</em>; and yet, when the moment calls for it, knowing how to make people genuinely excited.</p>
+        <div class="vz vz-pref"><div class="row"><span class="pick">Slow</span><span class="trk"><i></i></span><span class="other">Fast</span></div><div class="row"><span class="pick">Quality</span><span class="trk"><i></i></span><span class="other">Quantity</span></div><div class="row"><span class="pick">Calm</span><span class="trk"><i></i></span><span class="other">Noise</span></div></div>
 
       </div>
 
@@ -2076,7 +2264,7 @@
           <span class="bio-lang">Nelson Inno – Biography – English</span>
           <button class="bio-copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('bio-en').innerText.replace(/\n(?!\n)/g,'\n\n')).then(()=>{this.textContent='Copied ✓';setTimeout(()=>this.textContent='Copy',2000)})">Copy</button>
         </div>
-        <p id="bio-en" class="bio-text">Nelson Inno is a Salvadoran entrepreneur, co-founder and CEO of WeSpark, and author of Unstable Innovation. He helps enterprises, governments, and universities adopt AI and emerging technology, with education and training as his deepest expertise, and co-designed Bitcoin Diploma 2.0 with El Salvador&#39;s National Bitcoin Office, a curriculum the country's Ministry of Education plans to bring to up to 500,000 students over the coming years.
+        <p id="bio-en" class="bio-text">Nelson Inno is a Salvadoran entrepreneur, co-founder and CEO of WeSpark, co-founder and CTO of everybodyknowsyou, and author of Unstable Innovation. He helps enterprises, governments, and universities adopt AI and emerging technology, with education and training as his deepest expertise, and co-designed Bitcoin Diploma 2.0 with El Salvador&#39;s National Bitcoin Office, a curriculum the country's Ministry of Education plans to bring to up to 500,000 students over the coming years.
 
 His work has been featured in Forbes, ZDF, ARD, and Cointelegraph. He delivered a TEDx Talk titled &#34;Are Schools Prepared for the Future?&#34; and advises the government of El Salvador on technology, innovation, education and Bitcoin.
 
@@ -2096,6 +2284,7 @@ Nelson lives by the mantra: Be the ordinary, build the extraordinary.</p>
     <div class="connect-text">
       Most people reach out for one of two reasons: help with AI, innovation or education in their organization, or a speaker for their event. Both start on LinkedIn.<br><br>
       Nelson works with US teams remotely. El Salvador is within two hours of every mainland US time zone all year, with no daylight saving changes.
+      <div class="vz vz-tz" data-same="same"><div class="tz-head"><span>City</span><span>Now</span><span>Hours from San Salvador</span></div><div class="tz-row home" data-tz="America/El_Salvador"><span>San Salvador</span><span class="t">--:--</span><span></span></div><div class="tz-row" data-tz="America/Los_Angeles"><span>Los Angeles</span><span class="t">--:--</span><span class="bar"><i></i><b></b></span></div><div class="tz-row" data-tz="America/Denver"><span>Denver</span><span class="t">--:--</span><span class="bar"><i></i><b></b></span></div><div class="tz-row" data-tz="America/Chicago"><span>Chicago</span><span class="t">--:--</span><span class="bar"><i></i><b></b></span></div><div class="tz-row" data-tz="America/New_York"><span>New York</span><span class="t">--:--</span><span class="bar"><i></i><b></b></span></div><div class="tz-foot">Live clocks · shaded band = within two hours</div></div>
     </div>
 
     <div class="connect-channels">
@@ -2238,6 +2427,111 @@ Nelson lives by the mantra: Be the ordinary, build the extraordinary.</p>
 if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);});
 n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('open');b.setAttribute('aria-expanded','false');});});}
 document.addEventListener('click',function(e){document.querySelectorAll('details.nav-drop[open]').forEach(function(d){if(!d.contains(e.target))d.removeAttribute('open');});});})();
+</script>
+
+<script>
+/* HTML visuals: each one starts only when it scrolls into view */
+(function(){
+  var RM = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function onView(el, fn, once){
+    if(!('IntersectionObserver' in window)){ fn(true); return; }
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){
+      if(e.isIntersecting){ fn(true); if(once!==false) io.unobserve(el); } else if(once===false){ fn(false); }
+    }); }, { threshold: 0.35 });
+    io.observe(el);
+  }
+  /* simple on/off visuals */
+  document.querySelectorAll('.vz-pref').forEach(function(el){ onView(el, function(){ el.classList.add('on'); }); });
+
+  /* WeSpark: visual -> interactive -> real tasks -> AI-fluent people (loops while on screen) */
+  document.querySelectorAll('.vz-ready').forEach(function(el){
+    var steps = el.querySelectorAll('ol li'), out = el.querySelector('.lane-people .out'), timers = [], running = false;
+    function all(on){ steps.forEach(function(x){ x.classList.toggle('lit', on); }); out.classList.toggle('lit', on); }
+    if(RM){ all(true); return; }
+    function run(){
+      timers.forEach(clearTimeout); timers = []; all(false);
+      steps.forEach(function(x, i){ timers.push(setTimeout(function(){ x.classList.add('lit'); }, 400 + i * 1000)); });
+      timers.push(setTimeout(function(){ out.classList.add('lit'); }, 400 + steps.length * 1000));
+      timers.push(setTimeout(function(){ if(running) run(); }, 9000));
+    }
+    onView(el, function(v){ running = v; if(v) run(); else { timers.forEach(clearTimeout); timers = []; } }, false);
+  });
+
+  /* preferences: now and then a row gets pulled the other way, then springs back */
+  document.querySelectorAll('.vz-pref').forEach(function(el){
+    if(RM) return;
+    var rows = el.querySelectorAll('.row'), last = -1;
+    function tug(){
+      if(el.classList.contains('on') && !document.hidden){
+        var n; do { n = Math.floor(Math.random() * rows.length); } while(n === last && rows.length > 1); last = n;
+        var r = rows[n], k = r.querySelector('.trk i');
+        k.style.transitionDelay = '0s';
+        k.style.transition = 'left 1.1s ease-in-out';
+        k.style.left = (55 + Math.random() * 25) + '%'; r.classList.add('tug');
+        setTimeout(function(){
+          k.style.transition = 'left 0.75s cubic-bezier(.3,1.7,.5,1)'; k.style.left = '8%';
+          r.classList.remove('tug'); r.classList.add('back');
+          setTimeout(function(){ r.classList.remove('back'); }, 900);
+        }, 1300);
+      }
+      setTimeout(tug, 2600 + Math.random() * 2600);
+    }
+    setTimeout(tug, 3000);
+  });
+
+  /* three days + launch check: loops while on screen */
+  document.querySelectorAll('.vz-days').forEach(function(el){
+    var trk = el.querySelector('.trk'), bar = trk.querySelector('i'), li = el.querySelectorAll('li'), timers = [], running = false;
+    function at(i){ var t = trk.getBoundingClientRect(), d = li[i].getBoundingClientRect(); return Math.max(0.02, Math.min(1, (d.left + 7 - t.left) / t.width)); }
+    function clear(){ timers.forEach(clearTimeout); timers = []; }
+    function show(){ bar.style.transition = 'none'; bar.style.transform = 'scaleX(1)'; li.forEach(function(x){ x.classList.add('done'); }); el.classList.add('live-on'); }
+    function run(){
+      clear();
+      bar.style.transition = 'none'; bar.style.transform = 'scaleX(0)'; li.forEach(function(x){ x.classList.remove('done'); }); el.classList.remove('live-on');
+      void bar.offsetWidth;
+      li.forEach(function(x, i){
+        timers.push(setTimeout(function(){ bar.style.transition = 'transform 1s cubic-bezier(.4,0,.2,1)'; bar.style.transform = 'scaleX(' + (i === li.length - 1 ? 1 : at(i)) + ')'; x.classList.add('done'); if(i === li.length - 1) el.classList.add('live-on'); }, 300 + i * 1200));
+      });
+      timers.push(setTimeout(function(){ if(running) run(); }, 11500));
+    }
+    if(RM){ show(); return; }
+    onView(el, function(v){ running = v; if(v) run(); else clear(); }, false);
+  });
+
+  /* metrics count up */
+  document.querySelectorAll('.metric .num').forEach(function(n){
+    var tn = n.firstChild; if(!tn || tn.nodeType !== 3) return;
+    var raw = tn.nodeValue.trim(), m = raw.match(/^([\d,.]+)(K?)$/); if(!m) return;
+    var target = parseInt(m[1].replace(/[,.]/g, ''), 10), k = m[2], sep = (m[1].match(/[,.]/) || [''])[0];
+    if(RM) return;
+    onView(n, function(){
+      var t0 = null, dur = 1400;
+      function f(x){ return sep ? String(x).replace(/\B(?=(\d{3})+(?!\d))/g, sep) : String(x); }
+      function step(ts){ if(!t0) t0 = ts; var p = Math.min(1, (ts - t0) / dur), e = 1 - Math.pow(1 - p, 3);
+        tn.nodeValue = f(Math.round(target * e)) + k; if(p < 1) requestAnimationFrame(step); }
+      tn.nodeValue = '0' + k; requestAnimationFrame(step);
+    });
+  });
+
+  /* time zones: live clocks, offsets from San Salvador */
+  document.querySelectorAll('.vz-tz').forEach(function(el){
+    var HOME = 'America/El_Salvador', SPAN = 3;
+    function off(tz, d){ var a = new Date(d.toLocaleString('en-US', { timeZone: tz })), b = new Date(d.toLocaleString('en-US', { timeZone: 'UTC' })); return (a - b) / 3600000; }
+    function tick(){
+      var d = new Date(), h = off(HOME, d), same = el.getAttribute('data-same') || 'same';
+      el.querySelectorAll('.tz-row').forEach(function(r){
+        var tz = r.getAttribute('data-tz'), t = r.querySelector('.t'), i = r.querySelector('.bar i'), b = r.querySelector('.bar b');
+        try { t.textContent = d.toLocaleTimeString('en-GB', { timeZone: tz, hour: '2-digit', minute: '2-digit' }); } catch(e) { return; }
+        if(!i) return;
+        var diff = Math.round((off(tz, d) - h) * 2) / 2, pos = 50 + diff / SPAN * 50;
+        i.style.left = Math.min(50, pos) + '%'; i.style.width = Math.abs(pos - 50) + '%';
+        b.textContent = diff === 0 ? same : (diff > 0 ? '+' : '−') + Math.abs(diff) + 'h';
+        b.style.left = (diff === 0 ? 59 : pos + (diff > 0 ? 7 : -7)) + '%';
+      });
+    }
+    tick(); setInterval(tick, 30000);
+  });
+})();
 </script>
 </body>
 </html>
